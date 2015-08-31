@@ -14,6 +14,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ECSlidingViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PNChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,12 +79,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SWTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TTTAttributedLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Tweaks.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -82,7 +132,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04160A57FB1862435536B7730ADE13EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A99575AE3862B5FDABB70E71D46025C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1787F783FA6AD5654D2FEA2BBF7A2EF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2965E38DCEBC6E89D5362BA6561D3FBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5047C3839761E4EBF94A900438590C5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,12 +162,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>583B8CC56FA06ABB43FEEFA122E02EA3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5BF7BAA8A0EC348C6328320463A64EC2</key>
+		<key>55E3BAD594CAB8A0672DDE1E423B67E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,22 +172,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>699B73F1946033574CEF6ECE7557DBD7</key>
+		<key>6B3EF377F49984C2E86DC300A00DE016</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A0DCBC828465FC82BA005D3C63CA8DE</key>
+		<key>72AC0498D10828713C36518E630D9DAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E1B66951DDCEBFD4CD75486623C02ED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7B1F2EFEAD4438FF693F37E40D5D1E88</key>
+		<key>736DBEEED7D12DE6B92B4256214E0348</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,27 +192,67 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8709B8CDE65ACD3D2789A2A68A0C5B0D</key>
+		<key>8F626A2123E7416D3AD890B3F876E8F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CD443287171C7B29A096A4E8C91E2F9</key>
+		<key>97025990E31546ED6091AC28FFF84A56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADAC68B109DC187F3EAB423255B4EA74</key>
+		<key>A29BCA1C14E1B2413D427FF1E1579865</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E24F81188E3A588B3FCCA82541ED36A4</key>
+		<key>AC0803A7EF486BFEB611BA9971DC4A0E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B281DA29A9C3EDFB45BA53651F6BA611</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B64140802F0B841B5F0185D673BEFEBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B964E4D81C8CAC7CA42926BD085BF906</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B99CADFD8CB9135E8F2659D817BAA5A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD9BBB07B8776EA930B73E99C30EBBC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDE0B7668B6EC1B2BF166A65E070AF5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF6B62D79728EF0641BA03AAAE9C576B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E2F74799F9EF79F0CD94AC783D543A73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD577924AAA1264383426364B25DE6CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

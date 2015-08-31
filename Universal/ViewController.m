@@ -7,16 +7,24 @@
 //
 
 #import "ViewController.h"
+#import <CocoaLumberjack/DDLog.h>
+
+
 
 @interface ViewController ()
 
+
 @end
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    DDLogVerbose(@"Meet George Jetson");
 }
 
 - (void)didReceiveMemoryWarning {

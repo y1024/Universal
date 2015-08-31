@@ -22,6 +22,16 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.4.2)
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
+  - ECSlidingViewController (2.0.3)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
@@ -33,6 +43,8 @@ PODS:
   - MBProgressHUD (0.9.1)
   - MJExtension (2.5.9)
   - MJRefresh (2.4.7)
+  - PNChart (0.8.7):
+    - UICountingLabel (~> 1.2.0)
   - RDVTabBarController (1.1.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -41,9 +53,15 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - RESideMenu (4.0.7)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (1.1.3)
+  - SWTableViewCell (0.3.7)
+  - TTTAttributedLabel (1.13.4)
+  - Tweaks (2.0.0)
+  - UICountingLabel (1.2.0)
   - YTKKeyValueStore (0.1.2):
     - FMDB (~> 2.0)
   - YTKNetwork (0.5.0):
@@ -52,6 +70,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - CocoaAsyncSocket
+  - CocoaLumberjack
+  - ECSlidingViewController (~> 2.0.3)
   - FMDB
   - IQKeyboardManager
   - KVOController
@@ -59,15 +80,24 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJExtension
   - MJRefresh
+  - PNChart
   - RDVTabBarController
   - ReactiveCocoa (= 2.5)
+  - RESideMenu (~> 4.0.7)
   - SDWebImage (~> 3.7)
+  - SVProgressHUD
+  - SWTableViewCell (~> 0.3.7)
+  - TTTAttributedLabel
+  - Tweaks
   - YTKKeyValueStore
   - YTKNetwork
 
 SPEC CHECKSUMS:
   AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   IQKeyboardManager: c87b6600cbfca89d1fe6e8052d936e6c20f65375
   KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
@@ -75,9 +105,16 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 2330aeb6c83428c820749290bf766e81827cda65
   MJRefresh: 6eb2f61338f89f64fd628fd43debcf479381ff59
+  PNChart: c1755716bbd45386d2035b2bf2ce73e6d3f8cb22
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
   YTKNetwork: 3f163c181ce5f03d52cf88f39d6757f46894280c
 
