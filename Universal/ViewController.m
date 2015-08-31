@@ -25,7 +25,11 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     // Do any additional setup after loading the view, typically from a nib.
 
     DDLogVerbose(@"Meet George Jetson");
+    
+    
+        
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

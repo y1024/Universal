@@ -30,6 +30,16 @@ pod 'ReactiveCocoa' , '2.5'
 
 pod 'SWTableViewCell', '~> 0.3.7'
 pod 'Tweaks'
+pod 'BlocksKit'
+pod 'SlackTextViewController'
+
+pod "TSMessages"
+pod "MWPhotoBrowser"
+pod 'MMDrawerController', '~> 0.5.7'
+pod 'MSDynamicsDrawerViewController'
+
+#pod 'dyci'
+
 
 
 pod 'ECSlidingViewController', '~> 2.0.3'
