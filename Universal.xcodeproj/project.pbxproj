@@ -35,6 +35,7 @@
 		CD05BB5B1B960DD600D9B6C9 /* TSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB541B960DD600D9B6C9 /* TSTableView.m */; };
 		CD05BB5D1B960DD600D9B6C9 /* TSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB591B960DD600D9B6C9 /* TSWebView.m */; };
 		CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */; };
+		CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		CD05BB591B960DD600D9B6C9 /* TSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebView.m; sourceTree = "<group>"; };
 		CD05BB5F1B960FF700D9B6C9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GPXFileBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				CD05BB4F1B960CA600D9B6C9 /* OptionalHeaders.h */,
+				CD05BB621B96113D00D9B6C9 /* BundleFiles */,
 				CD05BB4B1B960C7400D9B6C9 /* GZIP */,
 			);
 			path = Optional;
@@ -425,6 +428,14 @@
 				CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		CD05BB621B96113D00D9B6C9 /* BundleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */,
+			);
+			path = BundleFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
+				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
 				37AD9BDE1B943E1400F1D180 /* Images.xcassets in Resources */,
 			);
