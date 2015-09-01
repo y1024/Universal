@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <CocoaLumberjack/DDLog.h>
 
+#import "PodHeaders.h"
 
 
 @interface ViewController ()
@@ -16,7 +16,7 @@
 
 @end
 
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 
 @implementation ViewController
 
