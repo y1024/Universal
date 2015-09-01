@@ -16,4 +16,6 @@
 
 + (void)statusBarWhite;
 
++ (NSString*)netWorkName;
+
 @end

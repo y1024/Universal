@@ -22,6 +22,12 @@
 		37D8C1231B959EAF0073F1CC /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1221B959EAF0073F1CC /* NSString+Extension.m */; };
 		37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1261B95A00A0073F1CC /* UIAlertView+Extension.m */; };
 		37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C12A1B95A11E0073F1CC /* NSUserDefaults+Extension.m */; };
+		37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C12E1B95B14C0073F1CC /* UIColor+Extension.m */; };
+		37D8C1331B95B3980073F1CC /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1321B95B3980073F1CC /* NSArray+Extension.m */; };
+		37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1361B95B4140073F1CC /* NSDictionary+Extension.m */; };
+		37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */; };
+		37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */; };
+		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,18 @@
 		37D8C1261B95A00A0073F1CC /* UIAlertView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Extension.m"; sourceTree = "<group>"; };
 		37D8C1291B95A11E0073F1CC /* NSUserDefaults+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Extension.h"; sourceTree = "<group>"; };
 		37D8C12A1B95A11E0073F1CC /* NSUserDefaults+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Extension.m"; sourceTree = "<group>"; };
+		37D8C12D1B95B14C0073F1CC /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		37D8C12E1B95B14C0073F1CC /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		37D8C1311B95B3980073F1CC /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
+		37D8C1321B95B3980073F1CC /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
+		37D8C1351B95B4140073F1CC /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		37D8C1361B95B4140073F1CC /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		37D8C1391B95C0E90073F1CC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		37D8C13D1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+Extension.h"; sourceTree = "<group>"; };
+		37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+Extension.m"; sourceTree = "<group>"; };
+		37D8C1411B95C3EA0073F1CC /* NSURLCache+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCache+Extension.h"; sourceTree = "<group>"; };
+		37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+Extension.m"; sourceTree = "<group>"; };
 		387FC035A8EBA73BB6238623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		77D685AB5BD7E49DCCFC6944 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B54E67C32BE8A23181F36C35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +144,12 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				37D8C1401B95C3D60073F1CC /* NSURLCache */,
+				37D8C13C1B95C33A0073F1CC /* NSHTTPCookieStorage */,
+				37D8C1381B95C0D40073F1CC /* UIImage */,
+				37D8C1341B95B3FF0073F1CC /* NSDictionary */,
+				37D8C1301B95B37C0073F1CC /* NSArray */,
+				37D8C12C1B95B13C0073F1CC /* UIColor */,
 				37D8C1281B95A10A0073F1CC /* NSUserDefaults */,
 				37D8C1241B959FF30073F1CC /* UIAlertView */,
 				37D8C1201B959E9A0073F1CC /* NSString */,
@@ -260,6 +284,60 @@
 				37D8C12A1B95A11E0073F1CC /* NSUserDefaults+Extension.m */,
 			);
 			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		37D8C12C1B95B13C0073F1CC /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				37D8C12D1B95B14C0073F1CC /* UIColor+Extension.h */,
+				37D8C12E1B95B14C0073F1CC /* UIColor+Extension.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		37D8C1301B95B37C0073F1CC /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				37D8C1311B95B3980073F1CC /* NSArray+Extension.h */,
+				37D8C1321B95B3980073F1CC /* NSArray+Extension.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		37D8C1341B95B3FF0073F1CC /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				37D8C1351B95B4140073F1CC /* NSDictionary+Extension.h */,
+				37D8C1361B95B4140073F1CC /* NSDictionary+Extension.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		37D8C1381B95C0D40073F1CC /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				37D8C1391B95C0E90073F1CC /* UIImage+Extension.h */,
+				37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		37D8C13C1B95C33A0073F1CC /* NSHTTPCookieStorage */ = {
+			isa = PBXGroup;
+			children = (
+				37D8C13D1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.h */,
+				37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */,
+			);
+			path = NSHTTPCookieStorage;
+			sourceTree = "<group>";
+		};
+		37D8C1401B95C3D60073F1CC /* NSURLCache */ = {
+			isa = PBXGroup;
+			children = (
+				37D8C1411B95C3EA0073F1CC /* NSURLCache+Extension.h */,
+				37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */,
+			);
+			path = NSURLCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,10 +476,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */,
+				37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */,
+				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
+				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
+				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
+				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,
 				37AD9BD91B943E1400F1D180 /* ViewController.m in Sources */,
+				37D8C1331B95B3980073F1CC /* NSArray+Extension.m in Sources */,
 				377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */,
 				377C111E1B95958700FD4EB6 /* UIScreen+Extension.m in Sources */,
 				37AD9BD61B943E1400F1D180 /* AppDelegate.m in Sources */,

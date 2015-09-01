@@ -27,4 +27,68 @@
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
 }
 
++ (NSString*)netWorkName
+{
+    UIApplication *mainApplication = [UIApplication sharedApplication];
+    
+    /*
+     // 遍历当前app的所有属性，找到关于状态栏的
+     unsigned int appOutCount = 0 ;
+     Ivar *ivars = class_copyIvarList(mainApplication.class, &appOutCount);
+     for (int  i = 0 ; i < appOutCount; i ++) {
+     Ivar ivar = ivars[i];
+     printf("遍历当前app的所有属性:%s\n", ivar_getName(ivar));
+     }
+     
+     // 遍历状态栏的所有成员
+     unsigned int statusBarOutCount = 0;
+     id statusBar = [mainApplication valueForKeyPath:@"statusBar"];
+     Ivar *statusBar_ivars = class_copyIvarList([statusBar class], &statusBarOutCount);
+     
+     for (int i = 0; i < statusBarOutCount; i++) {
+     Ivar ivar =statusBar_ivars[i];
+     printf("遍历状态栏的所有成员:%s\n", ivar_getName(ivar));
+     }
+     
+     //所有当前显示的视图
+     
+     NSArray *foregroundView_children = [[[mainApplication valueForKeyPath:@"statusBar"] valueForKeyPath:@"foregroundView"] subviews];
+     for (id childView in foregroundView_children) {
+     NSLog(@"所有当前显示的视图:%@", [childView class]);
+     }
+     */
+    
+    //获取当前网络状态
+    NSArray *children = [[[mainApplication valueForKeyPath:@"statusBar"] valueForKeyPath:@"foregroundView"] subviews];
+    
+    int type = 0;
+    for (id child in children) {
+        
+        if ([child isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
+            type = [[child valueForKeyPath:@"dataNetworkType"] intValue];
+        }
+    }
+    
+    if (type == 0 ) {
+        return @"没有网络";
+        
+    }
+    if (type == 1) {
+        return @"2g 网络";
+    }
+    if (type == 2) {
+        return @"3g 网络";
+    }
+    if (type == 3 ) {
+        return @"4g 网络";
+    }
+    if (type == 5 ) {
+        return  @"wifi 网络";
+    }
+    else
+    {
+        return @"未知网络";
+    }
+}
+
 @end

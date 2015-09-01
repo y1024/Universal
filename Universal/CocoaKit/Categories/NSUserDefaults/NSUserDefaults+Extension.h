@@ -10,4 +10,12 @@
 
 @interface NSUserDefaults (Extension)
 
++ (id)objectForKey:(NSString*)key;
+
++ (void)removeObjectForKey:(NSString*)key;
+
++ (void)setObject:(id)obj forKey:(NSString*)key;
+
+
+
 @end

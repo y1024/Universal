@@ -12,5 +12,30 @@
 
 + (NSString*)HomePath;
 
+- (BOOL)notNull;
+
+- (NSString*)reutf8;
+
+- (NSString*)utf8;
+
+/**
+ *  汉语转拼音 带空格
+ *
+ *  @return
+ */
+- (NSString*)combineSyllablesWithBlank;
+
+/**
+ *  汉语转拼音 无空格
+ *
+ *  @return
+ */
+- (NSString*)combineSyllablesNoBlank;
+
+- (BOOL)isContainsString:(NSString *)aString;
+
++ (NSString*)WIFIName;
+
+
 
 @end
