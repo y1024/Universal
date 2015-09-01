@@ -33,8 +33,8 @@
 		CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB4D1B960C7400D9B6C9 /* GZIP.m */; };
 		CD05BB5A1B960DD600D9B6C9 /* TSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB521B960DD600D9B6C9 /* TSCollectionView.m */; };
 		CD05BB5B1B960DD600D9B6C9 /* TSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB541B960DD600D9B6C9 /* TSTableView.m */; };
-		CD05BB5C1B960DD600D9B6C9 /* TSView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB561B960DD600D9B6C9 /* TSView.m */; };
 		CD05BB5D1B960DD600D9B6C9 /* TSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB591B960DD600D9B6C9 /* TSWebView.m */; };
+		CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,11 +103,11 @@
 		CD05BB521B960DD600D9B6C9 /* TSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCollectionView.m; sourceTree = "<group>"; };
 		CD05BB531B960DD600D9B6C9 /* TSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTableView.h; sourceTree = "<group>"; };
 		CD05BB541B960DD600D9B6C9 /* TSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTableView.m; sourceTree = "<group>"; };
-		CD05BB551B960DD600D9B6C9 /* TSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSView.h; sourceTree = "<group>"; };
-		CD05BB561B960DD600D9B6C9 /* TSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSView.m; sourceTree = "<group>"; };
 		CD05BB571B960DD600D9B6C9 /* TSViewHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSViewHeaders.h; sourceTree = "<group>"; };
 		CD05BB581B960DD600D9B6C9 /* TSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSWebView.h; sourceTree = "<group>"; };
 		CD05BB591B960DD600D9B6C9 /* TSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSWebView.m; sourceTree = "<group>"; };
+		CD05BB5F1B960FF700D9B6C9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				CD05BB5E1B960FDD00D9B6C9 /* UIView */,
 				CD05BB461B96083B00D9B6C9 /* NSData */,
 				CD05BB421B96065000D9B6C9 /* AVCaptureDevice */,
 				37D8C1401B95C3D60073F1CC /* NSURLCache */,
@@ -407,8 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				CD05BB571B960DD600D9B6C9 /* TSViewHeaders.h */,
-				CD05BB551B960DD600D9B6C9 /* TSView.h */,
-				CD05BB561B960DD600D9B6C9 /* TSView.m */,
 				CD05BB531B960DD600D9B6C9 /* TSTableView.h */,
 				CD05BB541B960DD600D9B6C9 /* TSTableView.m */,
 				CD05BB511B960DD600D9B6C9 /* TSCollectionView.h */,
@@ -417,6 +416,15 @@
 				CD05BB591B960DD600D9B6C9 /* TSWebView.m */,
 			);
 			path = TSView;
+			sourceTree = "<group>";
+		};
+		CD05BB5E1B960FDD00D9B6C9 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CD05BB5F1B960FF700D9B6C9 /* UIView+Extension.h */,
+				CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,11 +568,11 @@
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
+				CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */,
 				CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
 				CD05BB5A1B960DD600D9B6C9 /* TSCollectionView.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
-				CD05BB5C1B960DD600D9B6C9 /* TSView.m in Sources */,
 				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
 				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,
 				37AD9BD91B943E1400F1D180 /* ViewController.m in Sources */,

@@ -6,7 +6,6 @@
 //  Copyright (c) 2015年 iOS. All rights reserved.
 //
 
-#import "TSView.h"
 #import "TSTableView.h"
 #import "TSCollectionView.h"
 #import "TSWebView.h"

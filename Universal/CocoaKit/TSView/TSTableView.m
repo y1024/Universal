@@ -12,10 +12,7 @@
 
 @implementation TSTableView
 
-+ (instancetype)loadFromNibWithNibName:(NSString*)nibName
-{
-    return [[[NSBundle mainBundle]loadNibNamed:nibName owner:nil options:nil]firstObject];
-}
+
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
 {

@@ -14,7 +14,6 @@
     
 }
 
-+ (instancetype)loadFromNibWithNibName:(NSString*)nibName;
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style;
 
