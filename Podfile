@@ -31,24 +31,24 @@ pod 'ReactiveCocoa' , '2.5'
 pod 'SWTableViewCell', '~> 0.3.7'
 pod 'Tweaks'
 pod 'BlocksKit'
-pod 'SlackTextViewController'
+#pod 'SlackTextViewController'
 
-pod "TSMessages"
+#pod "TSMessages"
 pod "MWPhotoBrowser"
-pod 'MMDrawerController', '~> 0.5.7'
-pod 'MSDynamicsDrawerViewController'
+#pod 'MMDrawerController', '~> 0.5.7'
+#pod 'MSDynamicsDrawerViewController'
 
 #pod 'dyci'
 
 
 
-pod 'ECSlidingViewController', '~> 2.0.3'
+#pod 'ECSlidingViewController', '~> 2.0.3'
 
 
 
-pod 'CocoaAsyncSocket'
-pod 'TTTAttributedLabel'
+#pod 'CocoaAsyncSocket'
+#pod 'TTTAttributedLabel'
 pod 'CocoaLumberjack'
-pod 'RESideMenu', '~> 4.0.7'
-pod 'PNChart'
+#pod 'RESideMenu', '~> 4.0.7'
+#pod 'PNChart'
 
