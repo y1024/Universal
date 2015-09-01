@@ -28,6 +28,8 @@
 		37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */; };
 		37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */; };
 		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
+		CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */; };
+		CD05BB491B96086500D9B6C9 /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB481B96086500D9B6C9 /* NSData+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		387FC035A8EBA73BB6238623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		77D685AB5BD7E49DCCFC6944 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B54E67C32BE8A23181F36C35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD05BB431B96066B00D9B6C9 /* AVCaptureDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+Extension.h"; sourceTree = "<group>"; };
+		CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+Extension.m"; sourceTree = "<group>"; };
+		CD05BB471B96086500D9B6C9 /* NSData+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extension.h"; sourceTree = "<group>"; };
+		CD05BB481B96086500D9B6C9 /* NSData+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				CD05BB461B96083B00D9B6C9 /* NSData */,
+				CD05BB421B96065000D9B6C9 /* AVCaptureDevice */,
 				37D8C1401B95C3D60073F1CC /* NSURLCache */,
 				37D8C13C1B95C33A0073F1CC /* NSHTTPCookieStorage */,
 				37D8C1381B95C0D40073F1CC /* UIImage */,
@@ -340,6 +348,24 @@
 			path = NSURLCache;
 			sourceTree = "<group>";
 		};
+		CD05BB421B96065000D9B6C9 /* AVCaptureDevice */ = {
+			isa = PBXGroup;
+			children = (
+				CD05BB431B96066B00D9B6C9 /* AVCaptureDevice+Extension.h */,
+				CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */,
+			);
+			path = AVCaptureDevice;
+			sourceTree = "<group>";
+		};
+		CD05BB461B96083B00D9B6C9 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				CD05BB471B96086500D9B6C9 /* NSData+Extension.h */,
+				CD05BB481B96086500D9B6C9 /* NSData+Extension.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +506,7 @@
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
+				CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
 				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
@@ -490,6 +517,7 @@
 				377C111E1B95958700FD4EB6 /* UIScreen+Extension.m in Sources */,
 				37AD9BD61B943E1400F1D180 /* AppDelegate.m in Sources */,
 				37AD9BD31B943E1400F1D180 /* main.m in Sources */,
+				CD05BB491B96086500D9B6C9 /* NSData+Extension.m in Sources */,
 				37D8C1231B959EAF0073F1CC /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

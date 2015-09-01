@@ -20,3 +20,5 @@
 #import "UIImage+Extension.h"
 #import "NSHTTPCookieStorage+Extension.h"
 #import "NSURLCache+Extension.h"
+#import "AVCaptureDevice+Extension.h"
+#import "NSData+Extension.h"

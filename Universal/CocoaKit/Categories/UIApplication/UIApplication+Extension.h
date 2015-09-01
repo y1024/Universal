@@ -18,4 +18,6 @@
 
 + (NSString*)netWorkName;
 
++ (void)callPhone:(NSString*)phone;
+
 @end

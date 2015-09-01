@@ -7,6 +7,12 @@
 //
 
 #import "UIApplication+Extension.h"
+#import "PodHeaders.h"
+
+
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+
 
 @implementation UIApplication (Extension)
 
@@ -89,6 +95,26 @@
     {
         return @"未知网络";
     }
+}
+
++ (void)callPhone:(NSString*)phone
+{
+    CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
+    CTCarrier *carrier = [info subscriberCellularProvider];
+    NSString *isoCountryCode =  [carrier mobileCountryCode];
+    if ([isoCountryCode length]!=0) {
+        
+        NSURL *phoneNumberURL = [NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@",phone]];
+        [[UIApplication sharedApplication] openURL:phoneNumberURL];
+        
+    }else{
+        NSString *msg =  @"呼叫失败，没有可用的SIM卡!";
+        
+        
+        [UIAlertView showAlertViewWithTitle:@"提示" message:msg cancle:@"确定" other:nil delegate:nil tag:0];
+        
+    }
+
 }
 
 @end
