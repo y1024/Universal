@@ -15,5 +15,22 @@
     return [[[NSBundle mainBundle]loadNibNamed:nibName owner:nil options:nil]firstObject];
 }
 
+- (CGFloat)width
+{
+    return CGRectGetWidth(self.frame);
+}
+- (CGFloat)height
+{
+    return CGRectGetHeight(self.frame);
+}
+
+- (CGFloat)centerX
+{
+    return self.center.x;
+}
+- (CGFloat)centerY
+{
+    return self.center.y;
+}
 
 @end

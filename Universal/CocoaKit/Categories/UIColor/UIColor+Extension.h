@@ -12,6 +12,8 @@
 
 + (UIColor*)hexString:(NSString*)_HexString;
 
+
+
 + (UIColor*)R:(CGFloat)_R G:(CGFloat)_G B:(CGFloat)_B;
 
 + (UIColor*)R:(CGFloat)_R G:(CGFloat)_G B:(CGFloat)_B A:(CGFloat)_A;

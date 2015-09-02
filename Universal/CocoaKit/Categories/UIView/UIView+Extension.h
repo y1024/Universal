@@ -12,5 +12,13 @@
 
 + (instancetype)loadFromNibWithNibName:(NSString*)nibName;
 
+- (CGFloat)width;
+
+- (CGFloat)height;
+
+- (CGFloat)centerX;
+
+- (CGFloat)centerY;
+
 
 @end

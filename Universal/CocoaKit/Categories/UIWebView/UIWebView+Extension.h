@@ -12,4 +12,11 @@
 
 - (void)loadURL:(NSString*)url;
 
+/**
+ *  加载  html字符串 处理图片
+ *
+ *  @param htmlString
+ */
+- (void)loadHTMLString:(NSString*)htmlString;
+
 @end
