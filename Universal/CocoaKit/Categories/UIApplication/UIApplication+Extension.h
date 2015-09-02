@@ -16,6 +16,11 @@
 
 + (void)statusBarWhite;
 
+/**
+ *  2G 3G 4G WIFI
+ *
+ *  @return 
+ */
 + (NSString*)netWorkName;
 
 + (void)callPhone:(NSString*)phone;

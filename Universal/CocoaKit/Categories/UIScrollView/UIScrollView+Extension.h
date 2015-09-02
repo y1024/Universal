@@ -1,16 +1,15 @@
 //
-//  MYCollectionView.h
-//  CocoaKit
+//  UITableView+Extension.h
+//  Universal
 //
-//  Created by sky on 15/6/11.
-//  Copyright (c) 2015年 iOS. All rights reserved.
+//  Created by emiaobao on 15/9/2.
+//  Copyright (c) 2015年 emiaobao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface TSCollectionView : UICollectionView
+@interface UIScrollView (Extension)
 
-- (id)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout;
 
 /**
  *  添加传统的 MJ下拉刷新
@@ -18,7 +17,7 @@
  *  @param target
  *  @param action
  */
-- (void)ts_addMJHeaderWithTarget:(id)target action:(SEL)action;
+- (void)addMJHeaderWithTarget:(id)target action:(SEL)action;
 
 /**
  *  需要修改内部代码
@@ -27,12 +26,12 @@
  *  @param target target
  *  @param aciton action
  */
-- (void)ts_addMJGifHeaderWithTarget:(id)target action:(SEL)aciton;
+- (void)addMJGifHeaderWithTarget:(id)target action:(SEL)aciton;
 
 /**
  *  开始MJ下拉刷新
  */
-- (void)ts_beginMJRefresh;
+- (void)beginMJRefresh;
 
 /**
  *  结束MJ刷新
