@@ -30,6 +30,10 @@
     scroll.contentSize = CGSizeMake([UIScreen width], [UIScreen height]);
     
     [scroll addMJHeaderWithTarget:self action:@selector(refresh:)];
+    
+    
+    DDLogWarn(@"home:%@",[NSString HomePath]);
+    
 }
 
 - (void)refresh:(MJRefreshHeader*)view
