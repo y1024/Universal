@@ -31,10 +31,14 @@ pod 'ReactiveCocoa' , '2.5'
 pod 'SWTableViewCell', '~> 0.3.7'
 pod 'Tweaks'
 pod 'BlocksKit'
+
+pod 'CocoaLumberjack'
+pod "MWPhotoBrowser"
+
 #pod 'SlackTextViewController'
 
 #pod "TSMessages"
-pod "MWPhotoBrowser"
+
 #pod 'MMDrawerController', '~> 0.5.7'
 #pod 'MSDynamicsDrawerViewController'
 
@@ -48,7 +52,7 @@ pod "MWPhotoBrowser"
 
 #pod 'CocoaAsyncSocket'
 #pod 'TTTAttributedLabel'
-pod 'CocoaLumberjack'
+
 #pod 'RESideMenu', '~> 4.0.7'
 #pod 'PNChart'
 

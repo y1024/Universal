@@ -153,4 +153,10 @@
 
 }
 
++ (NSString*)UUID
+{
+    NSString *UUID = [[UIDevice currentDevice].identifierForVendor UUIDString];
+    
+    return UUID;
+}
 @end

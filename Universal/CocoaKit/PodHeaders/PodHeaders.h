@@ -12,6 +12,10 @@
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 
+#define MAS_SHORTHAND_GLOBALS
+#define MAS_SHORTHAND
+
+
 #import <YTKKeyValueStore.h>
 #import <RDVTabBarController.h>
 #import <YTKNetwork/YTKRequest.h>

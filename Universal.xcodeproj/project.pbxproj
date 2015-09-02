@@ -10,6 +10,7 @@
 		29B67D8F083F0803CAC0D48D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54E67C32BE8A23181F36C35 /* libPods.a */; };
 		376DBB031B96A4A6008A84B7 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 376DBB011B96A4A6008A84B7 /* UIScrollView+Extension.m */; };
 		376DBB071B96A658008A84B7 /* UIWebView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 376DBB061B96A658008A84B7 /* UIWebView+Extension.m */; };
+		376DBB0B1B96DD23008A84B7 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 376DBB0A1B96DD23008A84B7 /* MBProgressHUD+Extension.m */; };
 		377C111E1B95958700FD4EB6 /* UIScreen+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C111D1B95958700FD4EB6 /* UIScreen+Extension.m */; };
 		377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11211B9596B100FD4EB6 /* NSBundle+Extension.m */; };
 		377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11291B959A4000FD4EB6 /* UIApplication+Extension.m */; };
@@ -52,6 +53,8 @@
 		376DBB011B96A4A6008A84B7 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
 		376DBB051B96A658008A84B7 /* UIWebView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Extension.h"; sourceTree = "<group>"; };
 		376DBB061B96A658008A84B7 /* UIWebView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Extension.m"; sourceTree = "<group>"; };
+		376DBB091B96DD23008A84B7 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		376DBB0A1B96DD23008A84B7 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
 		377C11131B958FE700FD4EB6 /* PodHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodHeaders.h; sourceTree = "<group>"; };
 		377C11161B95945200FD4EB6 /* CategoryHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHeaders.h; sourceTree = "<group>"; };
 		377C111C1B95958700FD4EB6 /* UIScreen+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Extension.h"; sourceTree = "<group>"; };
@@ -162,6 +165,15 @@
 			path = UIWebView;
 			sourceTree = "<group>";
 		};
+		376DBB081B96DD0B008A84B7 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				376DBB091B96DD23008A84B7 /* MBProgressHUD+Extension.h */,
+				376DBB0A1B96DD23008A84B7 /* MBProgressHUD+Extension.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		377C11111B958FE700FD4EB6 /* CocoaKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				376DBB081B96DD0B008A84B7 /* MBProgressHUD */,
 				376DBB041B96A647008A84B7 /* UIWebView */,
 				376DBAFF1B96A4A6008A84B7 /* UIScrollView */,
 				CD05BB5E1B960FDD00D9B6C9 /* UIView */,
@@ -597,6 +610,7 @@
 				CD05BB491B96086500D9B6C9 /* NSData+Extension.m in Sources */,
 				CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */,
 				37D8C1231B959EAF0073F1CC /* NSString+Extension.m in Sources */,
+				376DBB0B1B96DD23008A84B7 /* MBProgressHUD+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

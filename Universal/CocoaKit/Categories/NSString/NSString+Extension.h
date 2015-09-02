@@ -36,6 +36,7 @@
 
 + (NSString*)WIFIName;
 
++ (NSString*)UUID;
 
 
 @end
