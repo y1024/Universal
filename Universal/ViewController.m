@@ -33,6 +33,7 @@
     
     
     DDLogWarn(@"home:%@",[NSString HomePath]);
+
     
 }
 

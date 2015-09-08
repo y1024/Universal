@@ -25,9 +25,5 @@
 #import "UIView+Extension.h"
 #import "UIScrollView+Extension.h"
 #import "UIWebView+Extension.h"
+#import "UIWindow+Extension.h"
 
-#define UIColorFromRGB(rgbValue) \
-[UIColor colorWithRed:((rgbValue >> 16) & 0xFF)/255.f \
-green:((rgbValue >> 8) & 0xFF)/255.f \
-blue:(rgbValue & 0xFF)/255.f \
-alpha:1.0f]

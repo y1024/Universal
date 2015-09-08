@@ -28,7 +28,6 @@
             [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
         }
     }
-
 }
 
 @end

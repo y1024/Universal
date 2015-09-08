@@ -25,4 +25,6 @@
 
 + (void)callPhone:(NSString*)phone;
 
++ (void)endEditing;
+
 @end
