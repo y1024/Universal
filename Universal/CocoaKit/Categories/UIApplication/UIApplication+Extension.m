@@ -13,6 +13,7 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
+#import "UIWindow+Extension.h"
 
 @implementation UIApplication (Extension)
 
@@ -32,6 +33,12 @@
 {
     [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
 }
+
++ (void)endEditing
+{
+    [[UIWindow keyWindow]resignFirstResponder];
+}
+
 
 + (NSString*)netWorkName
 {

@@ -32,6 +32,8 @@
     [scroll addMJHeaderWithTarget:self action:@selector(refresh:)];
     
     
+    DDLogWarn(@"home:%@",[NSString HomePath]);
+
     
 }
 

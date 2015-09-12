@@ -33,8 +33,10 @@
         
         return NO ;
     }
-
-    if ([self isEqualToString:@""]) {
+    
+    NSString *selfString = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    if ([selfString isEqualToString:@""]) {
         
         return NO;
     }

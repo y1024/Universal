@@ -8,12 +8,13 @@
 
 #import "MBProgressHUD+Extension.h"
 #import "UIScreen+Extension.h"
+#import "UIWindow+Extension.h"
 
 @implementation MBProgressHUD (Extension)
 
 + (void)debug:(NSString*)text
 {
-    UIWindow *keyWindow = [UIApplication sharedApplication].windows[0];
+    UIWindow *keyWindow = [UIWindow keyWindow];
     MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:keyWindow animated:YES];
     hub.mode = MBProgressHUDModeText;
     hub.labelText = text;
@@ -44,7 +45,7 @@
 
 + (void)hideAll
 {
-    UIWindow *keyWindow = [UIApplication sharedApplication].windows[0];
+    UIWindow *keyWindow = [UIWindow keyWindow];
     
     [MBProgressHUD hideAllHUDsForView:keyWindow animated:YES];
 }

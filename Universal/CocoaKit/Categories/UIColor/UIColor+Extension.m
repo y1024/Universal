@@ -96,4 +96,12 @@
     return RGBColor;
 }
 
++ (UIColor*)hex:(NSInteger)hex
+{
+    CGFloat R = (hex >> 16) & 0xFF;
+    CGFloat G = (hex >> 8) & 0xFF;
+    CGFloat B = (hex) & 0xFF;
+    return [self R:R G:G B:B];
+}
+
 @end

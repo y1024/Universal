@@ -15,6 +15,7 @@
 		377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11211B9596B100FD4EB6 /* NSBundle+Extension.m */; };
 		377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11291B959A4000FD4EB6 /* UIApplication+Extension.m */; };
 		377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11311B959CCC00FD4EB6 /* UIDevice+Extension.m */; };
+		37AB4AFC1B9E80DF00E9E587 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AB4AFB1B9E80DF00E9E587 /* UIWindow+Extension.m */; };
 		37AD9BD31B943E1400F1D180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9BD21B943E1400F1D180 /* main.m */; };
 		37AD9BD61B943E1400F1D180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9BD51B943E1400F1D180 /* AppDelegate.m */; };
 		37AD9BD91B943E1400F1D180 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9BD81B943E1400F1D180 /* ViewController.m */; };
@@ -65,6 +66,8 @@
 		377C11291B959A4000FD4EB6 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
 		377C11301B959CCC00FD4EB6 /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
 		377C11311B959CCC00FD4EB6 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		37AB4AFA1B9E80DF00E9E587 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
+		37AB4AFB1B9E80DF00E9E587 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		37AD9BCD1B943E1400F1D180 /* Universal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AD9BD11B943E1400F1D180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37AD9BD21B943E1400F1D180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				37AB4AF91B9E80CD00E9E587 /* UIWindow */,
 				376DBB081B96DD0B008A84B7 /* MBProgressHUD */,
 				376DBB041B96A647008A84B7 /* UIWebView */,
 				376DBAFF1B96A4A6008A84B7 /* UIScrollView */,
@@ -253,6 +257,15 @@
 				377C11311B959CCC00FD4EB6 /* UIDevice+Extension.m */,
 			);
 			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		37AB4AF91B9E80CD00E9E587 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				37AB4AFA1B9E80DF00E9E587 /* UIWindow+Extension.h */,
+				37AB4AFB1B9E80DF00E9E587 /* UIWindow+Extension.m */,
+			);
+			path = UIWindow;
 			sourceTree = "<group>";
 		};
 		37AD9BC41B943E1400F1D180 = {
@@ -601,6 +614,7 @@
 				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
 				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,
 				37AD9BD91B943E1400F1D180 /* ViewController.m in Sources */,
+				37AB4AFC1B9E80DF00E9E587 /* UIWindow+Extension.m in Sources */,
 				37D8C1331B95B3980073F1CC /* NSArray+Extension.m in Sources */,
 				377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */,
 				376DBB071B96A658008A84B7 /* UIWebView+Extension.m in Sources */,
