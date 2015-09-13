@@ -51,12 +51,12 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
-  - IQKeyboardManager (3.3.0)
+  - IQKeyboardManager (3.3.1)
   - KVOController (1.0.3)
   - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
-  - MJExtension (2.5.9)
-  - MJRefresh (2.4.7)
+  - MJExtension (2.5.10)
+  - MJRefresh (2.4.9)
   - MWPhotoBrowser (2.1.1):
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
@@ -109,12 +109,12 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
-  IQKeyboardManager: c87b6600cbfca89d1fe6e8052d936e6c20f65375
+  IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
   KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  MJExtension: 2330aeb6c83428c820749290bf766e81827cda65
-  MJRefresh: 6eb2f61338f89f64fd628fd43debcf479381ff59
+  MJExtension: 944fb5a12bceb9b866914527f66101566e66292b
+  MJRefresh: be84acb912d0a66364f76a75426698a39528e2ed
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
