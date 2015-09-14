@@ -161,4 +161,16 @@
     
     return UUID;
 }
+
++ (NSString*)timestamp
+{
+    NSDate *datenow = [NSDate date];
+    NSTimeZone *zone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    NSInteger interval = [zone secondsFromGMTForDate:datenow];
+    NSDate *localeDate = [datenow  dateByAddingTimeInterval: interval];
+    NSString *timeSp = [NSString stringWithFormat:@"%f", [localeDate timeIntervalSince1970]];
+    
+    return timeSp;
+}
+
 @end

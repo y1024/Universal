@@ -38,5 +38,13 @@
 
 + (NSString*)UUID;
 
+/**
+ *  时间戳
+ *
+ *  @return
+ */
++ (NSString*)timestamp;
+
+
 
 @end
