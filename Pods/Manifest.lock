@@ -69,6 +69,7 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - Realm/Headers (0.95.0)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -95,6 +96,7 @@ DEPENDENCIES:
   - MWPhotoBrowser
   - RDVTabBarController
   - ReactiveCocoa (= 2.5)
+  - Realm/Headers
   - SDWebImage (~> 3.7)
   - SVProgressHUD
   - SWTableViewCell (~> 0.3.7)
@@ -118,6 +120,7 @@ SPEC CHECKSUMS:
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Realm: bbb171b96728ea136ed5cd354dca2a3d6529923c
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
