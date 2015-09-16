@@ -20,6 +20,16 @@
  */
 - (void)loadHTMLString:(NSString*)htmlString;
 
+/**
+ *  utf-8编码
+ */
+- (void)utf8Coding;
+
+/**
+ *  增加CSS样式
+ */
+- (void)addCss;
+
 
 
 @end
