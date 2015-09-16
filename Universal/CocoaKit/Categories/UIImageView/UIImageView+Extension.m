@@ -8,6 +8,8 @@
 
 #import "UIImageView+Extension.h"
 
+#import "CategoryHeaders.h"
+
 
 @implementation UIImageView (Extension)
 
@@ -21,7 +23,7 @@
     
     CGFloat lengths[] = {lineW,intervalW};
     CGContextRef lineRef = UIGraphicsGetCurrentContext();
-    CGContextSetStrokeColorWithColor(lineRef, [UIColor redColor].CGColor);
+    CGContextSetStrokeColorWithColor(lineRef, [UIColor R:187 G:187 B:187].CGColor);
     
     CGContextSetLineDash(lineRef, 0, lengths, 2);  //画虚线
     CGContextMoveToPoint(lineRef, 0.0, 0.0);    //开始画线
