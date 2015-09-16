@@ -11,8 +11,6 @@
 @interface MBProgressHUD (Extension)
 
 
-
-
 + (void)showInView:(UIView*)view text:(NSString*)text;
 
 + (void)loadingInView:(UIView*)view text:(NSString*)text;

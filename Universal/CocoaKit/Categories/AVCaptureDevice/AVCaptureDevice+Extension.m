@@ -59,7 +59,7 @@
     {
         DDLogDebug(@"系统还未知是否访问，第一次开启相机时");
         
-        access = NO ;
+        access = YES ;
     }
     
     if (![UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
