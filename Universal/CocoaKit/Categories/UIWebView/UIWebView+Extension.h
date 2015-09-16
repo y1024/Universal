@@ -10,6 +10,7 @@
 
 @interface UIWebView (Extension)
 
+
 - (void)loadURL:(NSString*)url;
 
 /**
@@ -18,5 +19,7 @@
  *  @param htmlString
  */
 - (void)loadHTMLString:(NSString*)htmlString;
+
+
 
 @end

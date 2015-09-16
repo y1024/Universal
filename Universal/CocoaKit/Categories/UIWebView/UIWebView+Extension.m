@@ -11,6 +11,8 @@
 
 @implementation UIWebView (Extension)
 
+
+
 - (void)loadURL:(NSString*)url
 {
     [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0f]];
