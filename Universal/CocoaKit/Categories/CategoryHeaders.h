@@ -26,4 +26,6 @@
 #import "UIScrollView+Extension.h"
 #import "UIWebView+Extension.h"
 #import "UIWindow+Extension.h"
+#import "UIImageView+Extension.h"
+
 

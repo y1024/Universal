@@ -33,7 +33,11 @@
     
     
     DDLogWarn(@"home:%@",[NSString timestamp]);
-
+    
+    
+    UIImageView *line = [UIImageView drawImaginarylineWithRect:CGRectMake(0, 200, 320, 1)];
+    [self.view addSubview:line];
+    
     
 }
 

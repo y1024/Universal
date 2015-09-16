@@ -15,6 +15,7 @@
 		377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11211B9596B100FD4EB6 /* NSBundle+Extension.m */; };
 		377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11291B959A4000FD4EB6 /* UIApplication+Extension.m */; };
 		377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 377C11311B959CCC00FD4EB6 /* UIDevice+Extension.m */; };
+		3792D1311BA95C3900E8731C /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3792D1301BA95C3900E8731C /* UIImageView+Extension.m */; };
 		37AB4AFC1B9E80DF00E9E587 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AB4AFB1B9E80DF00E9E587 /* UIWindow+Extension.m */; };
 		37AD9BD31B943E1400F1D180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9BD21B943E1400F1D180 /* main.m */; };
 		37AD9BD61B943E1400F1D180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD9BD51B943E1400F1D180 /* AppDelegate.m */; };
@@ -66,6 +67,8 @@
 		377C11291B959A4000FD4EB6 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
 		377C11301B959CCC00FD4EB6 /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
 		377C11311B959CCC00FD4EB6 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		3792D12F1BA95C3900E8731C /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		3792D1301BA95C3900E8731C /* UIImageView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
 		37AB4AFA1B9E80DF00E9E587 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
 		37AB4AFB1B9E80DF00E9E587 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		37AD9BCD1B943E1400F1D180 /* Universal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				3792D12E1BA95C2400E8731C /* UIImageView */,
 				37AB4AF91B9E80CD00E9E587 /* UIWindow */,
 				376DBB081B96DD0B008A84B7 /* MBProgressHUD */,
 				376DBB041B96A647008A84B7 /* UIWebView */,
@@ -257,6 +261,15 @@
 				377C11311B959CCC00FD4EB6 /* UIDevice+Extension.m */,
 			);
 			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		3792D12E1BA95C2400E8731C /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3792D12F1BA95C3900E8731C /* UIImageView+Extension.h */,
+				3792D1301BA95C3900E8731C /* UIImageView+Extension.m */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		37AB4AF91B9E80CD00E9E587 /* UIWindow */ = {
@@ -610,6 +623,7 @@
 				CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */,
 				CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
+				3792D1311BA95C3900E8731C /* UIImageView+Extension.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
 				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
 				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,
