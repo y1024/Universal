@@ -25,30 +25,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIScrollView *scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen width], [UIScreen height])];
-    [self.view addSubview:scroll];
-    scroll.contentSize = CGSizeMake([UIScreen width], [UIScreen height]);
-    
-    [scroll addMJHeaderWithTarget:self action:@selector(refresh:)];
-    
-    
-    DDLogWarn(@"home:%@",[NSString timestamp]);
-    
-    
-    UIImageView *line = [UIImageView drawImaginarylineWithRect:CGRectMake(0, 200, 320, 1)];
-    [self.view addSubview:line];
+//    UIScrollView *scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen width], [UIScreen height])];
+//    [self.view addSubview:scroll];
+//    scroll.contentSize = CGSizeMake([UIScreen width], [UIScreen height]);
+//    
+//    [scroll addMJHeaderWithTarget:self action:@selector(refresh:)];
+//    
+//    
+//    DDLogWarn(@"home:%@",[NSString timestamp]);
+//    
+//    
+//    UIImageView *line = [UIImageView drawImaginarylineWithRect:CGRectMake(0, 200, 320, 1)];
+//    [self.view addSubview:line];
     
     
 }
 
-- (void)refresh:(MJRefreshHeader*)view
-{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        [view endRefreshing];
-        
-    });
-}
+//- (void)refresh:(MJRefreshHeader*)view
+//{
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        [view endRefreshing];
+//        
+//    });
+//}
 
 
 - (void)didReceiveMemoryWarning {
