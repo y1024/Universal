@@ -15,6 +15,11 @@
 
 @implementation UIImage (Extension)
 
+- (void)writeToSavedPhotosAlbum
+{
+    UIImageWriteToSavedPhotosAlbum(self, nil, nil, nil);
+}
+
 + (UIImage*)noCacheWithName:(NSString*)imageFullName
 {
     UIImage  *resultImage = nil ;
@@ -47,7 +52,7 @@
                                   format:kBarcodeFormatQRCode
                                    width:w
                                   height:h
-                                   error:&error];//err 不写了
+                                   error:&error];
     
     CGImageRef image = [[ZXImage imageWithMatrix:result] cgimage];
     UIImage *qrImage = [UIImage imageWithCGImage:image];

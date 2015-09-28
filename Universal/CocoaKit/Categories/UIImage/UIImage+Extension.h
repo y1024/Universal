@@ -15,6 +15,9 @@
 - (UIImage*)blurPercent:(CGFloat)blurPercent;
 
 + (UIImage*)QRCodeImageWithString:(NSString*)string imageWeight:(CGFloat)w imageHeight:(CGFloat)h;
-
+/**
+ *  存入本地相册
+ */
+- (void)writeToSavedPhotosAlbum;
 
 @end
