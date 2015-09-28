@@ -11,7 +11,7 @@ pod 'YTKKeyValueStore'
 pod 'FMDB'
 pod 'MJExtension'
 
-pod 'Realm/Headers'
+#pod 'Realm/Headers'
 
 pod 'MJRefresh'
 
@@ -31,11 +31,16 @@ pod 'ReactiveCocoa' , '2.5'
 
 
 pod 'SWTableViewCell', '~> 0.3.7'
-pod 'Tweaks'
+#pod 'Tweaks'
 pod 'BlocksKit'
 
-pod 'CocoaLumberjack'
-pod "MWPhotoBrowser"
+#pod 'CocoaLumberjack'
+#pod "MWPhotoBrowser"
+
+
+pod 'ZXingObjC', '~> 3.0'
+
+pod 'pop', '~> 1.0'
 
 #pod 'SlackTextViewController'
 

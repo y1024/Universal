@@ -39,13 +39,13 @@
     
     if(authStatus == AVAuthorizationStatusAuthorized)
     {
-        DDLogDebug(@"允许状态");
+        NSLog(@"允许状态");
         
         access = YES ;
     }
     else if (authStatus == AVAuthorizationStatusRestricted)
     {
-        DDLogDebug(@"AVAuthorizationStatusRestricted");
+        NSLog(@"AVAuthorizationStatusRestricted");
         access = NO;
     }
     
@@ -57,7 +57,7 @@
     }
     else if (authStatus == AVAuthorizationStatusNotDetermined)
     {
-        DDLogDebug(@"系统还未知是否访问，第一次开启相机时");
+        NSLog(@"系统还未知是否访问，第一次开启相机时");
         
         access = YES ;
     }

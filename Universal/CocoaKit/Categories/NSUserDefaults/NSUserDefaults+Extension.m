@@ -34,7 +34,7 @@
 {
     id oldObj = [[NSUserDefaults standardUserDefaults]objectForKey:key];
     if (oldObj) {
-        DDLogDebug(@"oldObj:%@ newObj:%@",oldObj,obj);
+        NSLog(@"oldObj:%@ newObj:%@",oldObj,obj);
     }
     [[NSUserDefaults standardUserDefaults]setObject:obj forKey:key];
     [[NSUserDefaults standardUserDefaults]synchronize];

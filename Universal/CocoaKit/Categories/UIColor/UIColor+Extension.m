@@ -39,7 +39,7 @@
         }
         @catch (NSException *exception) {
             
-           DDLogDebug(@"\n__FUNCTION__:%s\n__LINE__:%d\nException:%@",__FUNCTION__,__LINE__,exception);
+           NSLog(@"\n__FUNCTION__:%s\n__LINE__:%d\nException:%@",__FUNCTION__,__LINE__,exception);
             
             return [UIColor blueColor] ;
             

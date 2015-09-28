@@ -88,11 +88,11 @@
         
         if (CFStringTransform((__bridge CFMutableStringRef)mutableChineseString, 0, kCFStringTransformMandarinLatin, NO))
         {
-                DDLogDebug(@"拼音带声调:%@",mutableChineseString);
+                NSLog(@"拼音带声调:%@",mutableChineseString);
         }
         if (CFStringTransform((__bridge CFMutableStringRef)mutableChineseString, 0, kCFStringTransformStripCombiningMarks, NO))
         {
-                DDLogDebug(@"不带拼音带声调:%@",mutableChineseString);
+                NSLog(@"不带拼音带声调:%@",mutableChineseString);
             
                 resultString = mutableChineseString ;
         }
@@ -144,7 +144,7 @@
         
         if (dictRef) {
             NSDictionary *networkInfo = (__bridge NSDictionary *)dictRef;
-            DDLogDebug(@"network info -> %@", networkInfo);
+            NSLog(@"network info -> %@", networkInfo);
             wifiName = [networkInfo objectForKey:(__bridge NSString *)kCNNetworkInfoKeySSID];
             CFRelease(dictRef);
         }

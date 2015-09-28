@@ -33,4 +33,13 @@
     return self.center.y;
 }
 
+- (UIView*)cornerRadius:(CGFloat)radius
+{
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = radius;
+    
+    return self;
+}
+
+
 @end

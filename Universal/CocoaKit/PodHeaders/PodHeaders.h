@@ -7,9 +7,10 @@
 //
 
 
-#import <CocoaLumberjack/DDLog.h>
+//#import <CocoaLumberjack/DDLog.h>
 
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+//static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 
 
 #define MAS_SHORTHAND_GLOBALS

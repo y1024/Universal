@@ -20,5 +20,14 @@
 
 - (CGFloat)centerY;
 
+/**
+ *  切圆角
+ *
+ *  @param radius
+ *
+ *  @return
+ */
+- (UIView*)cornerRadius:(CGFloat)radius;
+
 
 @end
