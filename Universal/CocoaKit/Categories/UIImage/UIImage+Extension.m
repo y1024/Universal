@@ -39,6 +39,31 @@
     return resultImage;
 }
 
++ (UIImage*)QRCodeImageWithString:(NSString*)string imageWeight:(CGFloat)w imageHeight:(CGFloat)h
+{
+    NSError *error = nil;
+    ZXMultiFormatWriter *writer = [ZXMultiFormatWriter writer];
+    ZXBitMatrix* result = [writer encode:string
+                                  format:kBarcodeFormatQRCode
+                                   width:w
+                                  height:h
+                                   error:&error];//err 不写了
+    
+    CGImageRef image = [[ZXImage imageWithMatrix:result] cgimage];
+    UIImage *qrImage = [UIImage imageWithCGImage:image];
+    
+    if (error) {
+        NSLog(@"生成条码图片错误:%@",[error localizedDescription]);
+        
+        return nil;
+    }
+    else
+    {
+          return qrImage;
+    }
+  
+}
+
 - (UIImage*)blurPercent:(CGFloat)blurPercent
 {
     NSData *imageData = UIImageJPEGRepresentation(self, 1); // convert to jpeg

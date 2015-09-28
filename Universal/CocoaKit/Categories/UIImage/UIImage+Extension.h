@@ -14,4 +14,7 @@
 
 - (UIImage*)blurPercent:(CGFloat)blurPercent;
 
++ (UIImage*)QRCodeImageWithString:(NSString*)string imageWeight:(CGFloat)w imageHeight:(CGFloat)h;
+
+
 @end

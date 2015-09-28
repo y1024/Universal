@@ -173,4 +173,33 @@
     return timeSp;
 }
 
++ (NSString*)stringWithCodeImage:(UIImage*)img;
+{
+    CGImageRef imageRef = img.CGImage;
+    
+    ZXLuminanceSource *source = [[ZXCGImageLuminanceSource alloc] initWithCGImage:imageRef];
+    ZXBinaryBitmap *bitmap = [ZXBinaryBitmap binaryBitmapWithBinarizer:[ZXHybridBinarizer binarizerWithSource:source]];
+    
+    NSError *error = nil;
+    
+    ZXDecodeHints *hints = [ZXDecodeHints hints];
+    
+    ZXMultiFormatReader *reader = [ZXMultiFormatReader reader];
+    ZXResult *result = [reader decode:bitmap
+                                hints:hints
+                                error:&error];
+    if (result) {
+        // The coded result as a string. The raw data can be accessed with
+        // result.rawBytes and result.length.
+        return result.text;
+        
+    } else {
+      
+        NSLog(@"解析条码失败");
+        
+        return  nil;
+    }
+}
+
+
 @end

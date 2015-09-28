@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (Extension)
 
@@ -44,7 +45,14 @@
  *  @return
  */
 + (NSString*)timestamp;
-
+/**
+ *  读取条码 信息
+ *
+ *  @param img <#img description#>
+ *
+ *  @return <#return value description#>
+ */
++ (NSString*)stringWithCodeImage:(UIImage*)img;
 
 
 @end

@@ -31,7 +31,7 @@
 #import <MJExtension.h>
 #import <BlocksKit.h>
 
-
+#import <ZXingObjC.h>
 
 #import "CategoryHeaders.h"
 
