@@ -173,6 +173,20 @@
     return timeSp;
 }
 
++ (NSString*)dateWithTimestamp:(NSInteger)seconds;
+{
+    NSDate *datenow = [NSDate dateWithTimeIntervalSince1970:seconds/1000];
+    NSTimeZone *zone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    NSInteger interval = [zone secondsFromGMTForDate:datenow];
+    NSDate *localeDate = [datenow  dateByAddingTimeInterval: interval];
+    NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    NSString *dateString = [formatter stringFromDate:localeDate];
+    
+    return dateString;
+}
+
 + (NSString*)stringWithCodeImage:(UIImage*)img;
 {
     CGImageRef imageRef = img.CGImage;

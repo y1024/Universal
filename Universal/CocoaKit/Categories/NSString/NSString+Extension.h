@@ -54,5 +54,14 @@
  */
 + (NSString*)stringWithCodeImage:(UIImage*)img;
 
+/**
+ *  时间戳 毫秒
+ *
+ *  @param seconds
+ *
+ *  @return
+ */
++ (NSString*)dateWithTimestamp:(NSInteger)seconds;
+
 
 @end

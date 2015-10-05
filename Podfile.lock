@@ -48,6 +48,7 @@ PODS:
   - MBProgressHUD (0.9.1)
   - MJExtension (2.5.12)
   - MJRefresh (2.4.11)
+  - pop (1.0.8)
   - RDVTabBarController (1.1.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -80,6 +81,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJExtension
   - MJRefresh
+  - pop (~> 1.0)
   - RDVTabBarController
   - ReactiveCocoa (= 2.5)
   - SDWebImage (~> 3.7)
@@ -100,6 +102,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 5ab633484e431f777387c70b676c80f993361f1b
   MJRefresh: b327947f35ab3eb16ca42646b26f7347e6aa7186
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
