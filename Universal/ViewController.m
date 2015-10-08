@@ -14,8 +14,8 @@
 
 @interface ViewController ()
 
-@property(nonatomic,strong)NSData *headerData;
-@property(nonatomic,strong)NSData *imageData;
+//@property(nonatomic,strong)NSData *headerData;
+//@property(nonatomic,strong)NSData *imageData;
 
 
 @end
@@ -41,19 +41,15 @@
 //    UIImageView *line = [UIImageView drawImaginarylineWithRect:CGRectMake(0, 200, 320, 1)];
 //    [self.view addSubview:line];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, 50, 50);
-    button.backgroundColor = [UIColor redColor];
-    [self.view addSubview:button];
-    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    button.frame = CGRectMake(0, 0, 50, 50);
+//    button.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:button];
+//    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
-- (void)buttonClick
-{
-    NSString * headerString = [NSString stringWithFormat:@"fileKey=%@.jpg;fileName=%@.jpg;fileLength=%.f;needCheckMd:0;fileMd5sum=\r\n",datenNow,datenNow,fileLength];
-    NSData *headerData = [headerString dataUsingEncoding:NSUTF8StringEncoding];
-}
+
 
 //- (void)refresh:(MJRefreshHeader*)view
 //{

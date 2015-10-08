@@ -30,6 +30,7 @@
 #import <MJRefresh.h>
 #import <MJExtension.h>
 #import <BlocksKit.h>
+#import <CocoaAsyncSocket.h>
 
 #import <ZXingObjC.h>
 
