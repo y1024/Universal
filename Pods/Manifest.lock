@@ -37,6 +37,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - CocoaAsyncSocket (7.4.2)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
@@ -74,6 +75,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - BlocksKit
+  - CocoaAsyncSocket
   - FMDB
   - IQKeyboardManager
   - KVOController
@@ -95,6 +97,7 @@ SPEC CHECKSUMS:
   AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   IQKeyboardManager: d863eb0bca424d1f6dad6bdd1f856af52664add8
   KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf

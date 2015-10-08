@@ -57,7 +57,7 @@ pod 'pop', '~> 1.0'
 
 
 
-#pod 'CocoaAsyncSocket'
+pod 'CocoaAsyncSocket'
 #pod 'TTTAttributedLabel'
 
 #pod 'RESideMenu', '~> 4.0.7'

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -106,6 +111,112 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>054F8E44D1B4B9F208CA1988868D9062</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0B8891B97645C73AABF39E83AE488FAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0E3F4FA6ABCA588BAF7DE96B87FF699D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1787F783FA6AD5654D2FEA2BBF7A2EF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1979390DFE3D15BC6A07AA3A46838565</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>366131078BA66DCFC0FC84FDA17B7FFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47C800E42623009B7192B025B3DD25A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A2786AE36F585554113BC8027E33937</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DC3F6CAD73DE6F1A38456C4618859B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5299D91250C2609C92AE61FD340616DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5352D432641F0656C90741034E32F31E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6951DA9871DA259A9AAA6EFC68AEF8EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BDA16E53B6C328B534492A726351C8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86ADF710EF79EF852562CE67AE914FA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F8825568B86E37EB8ED8F525022A5FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94D66F3748F69E6AC0BBB95FB1931768</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F652A0FA8F1D8E4AFC7C31D8FB88A61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B281DA29A9C3EDFB45BA53651F6BA611</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDE0B7668B6EC1B2BF166A65E070AF5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2F74799F9EF79F0CD94AC783D543A73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F318DC32122E05D1B90338AC69A6A775</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

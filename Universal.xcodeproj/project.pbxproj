@@ -38,6 +38,7 @@
 		CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB4D1B960C7400D9B6C9 /* GZIP.m */; };
 		CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */; };
 		CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */; };
+		CDC9FCA81BC3FD6E00B78E18 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC9FCA71BC3FD6E00B78E18 /* text.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		CD05BB5F1B960FF700D9B6C9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GPXFileBundle.bundle; sourceTree = "<group>"; };
+		CDC9FCA71BC3FD6E00B78E18 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 				37AD9BD51B943E1400F1D180 /* AppDelegate.m */,
 				37AD9BD71B943E1400F1D180 /* ViewController.h */,
 				37AD9BD81B943E1400F1D180 /* ViewController.m */,
+				CDC9FCA71BC3FD6E00B78E18 /* text.png */,
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
@@ -561,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
+				CDC9FCA81BC3FD6E00B78E18 /* text.png in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
 				37AD9BDE1B943E1400F1D180 /* Images.xcassets in Resources */,
