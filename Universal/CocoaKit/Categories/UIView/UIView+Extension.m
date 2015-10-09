@@ -21,7 +21,18 @@
 }
 - (CGFloat)height
 {
+
     return CGRectGetHeight(self.frame);
+}
+
+- (CGFloat)originX
+{
+    return self.frame.origin.x;
+}
+
+- (CGFloat)originY
+{
+    return self.frame.origin.y;
 }
 
 - (CGFloat)centerX
@@ -31,6 +42,15 @@
 - (CGFloat)centerY
 {
     return self.center.y;
+}
+
+- (CGFloat)buttomY
+{
+    return [self height] + [self originY];
+}
+- (CGFloat)rightX
+{
+    return [self originX] + [self width];
 }
 
 - (UIView*)cornerRadius:(CGFloat)radius

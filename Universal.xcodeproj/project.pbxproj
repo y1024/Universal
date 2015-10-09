@@ -38,6 +38,7 @@
 		CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB4D1B960C7400D9B6C9 /* GZIP.m */; };
 		CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */; };
 		CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */; };
+		CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */; };
 		CDC9FCA81BC3FD6E00B78E18 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC9FCA71BC3FD6E00B78E18 /* text.png */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,8 @@
 		CD05BB5F1B960FF700D9B6C9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GPXFileBundle.bundle; sourceTree = "<group>"; };
+		CD19B46A1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPResponseSerializer+Extension.h"; sourceTree = "<group>"; };
+		CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPResponseSerializer+Extension.m"; sourceTree = "<group>"; };
 		CDC9FCA71BC3FD6E00B78E18 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				CD19B4691BC7B23A00B063DC /* AFHTTPResponseSerializer */,
 				3792D12E1BA95C2400E8731C /* UIImageView */,
 				37AB4AF91B9E80CD00E9E587 /* UIWindow */,
 				376DBB081B96DD0B008A84B7 /* MBProgressHUD */,
@@ -481,6 +485,15 @@
 			path = BundleFiles;
 			sourceTree = "<group>";
 		};
+		CD19B4691BC7B23A00B063DC /* AFHTTPResponseSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				CD19B46A1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.h */,
+				CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */,
+			);
+			path = AFHTTPResponseSerializer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -623,6 +636,7 @@
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */,
 				376DBB031B96A4A6008A84B7 /* UIScrollView+Extension.m in Sources */,
+				CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
 				CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */,
 				CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */,

@@ -16,9 +16,21 @@
 
 - (CGFloat)height;
 
+- (CGFloat)originX;
+
+- (CGFloat)originY;
+
 - (CGFloat)centerX;
 
 - (CGFloat)centerY;
+
+
+
+- (CGFloat)buttomY;
+
+- (CGFloat)rightX;
+
+
 
 /**
  *  切圆角

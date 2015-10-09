@@ -5,7 +5,7 @@ pod 'YTKNetwork'
 
 
 pod 'RDVTabBarController'
-
+#pod 'APAddressBook'
 
 pod 'YTKKeyValueStore'
 pod 'FMDB'
@@ -15,7 +15,8 @@ pod 'MJExtension'
 
 pod 'MJRefresh'
 
-
+#pod 'PayPal-iOS-SDK'
+#pod 'CardIO'
 
 pod 'Masonry'
 pod 'KVOController'

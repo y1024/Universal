@@ -31,7 +31,7 @@
             [[NSScanner scannerWithString:[_HexString substringWithRange:NSMakeRange(5, 2)]]scanHexInt:&blueColor];
             
             
-            resultColor = [UIColor colorWithRed:redColor/255.0f green:greenColor/255.0f blue:blueColor/255.0f alpha:1];
+            resultColor = [self R:redColor G:greenColor B:blueColor];
             
             
             return resultColor;
@@ -60,7 +60,7 @@
             [[NSScanner scannerWithString:[_HexString substringWithRange:NSMakeRange(4, 2)]]scanHexInt:&blueColor];
             
             
-            resultColor = [UIColor colorWithRed:redColor/255.0f green:greenColor/255.0f blue:blueColor/255.0f alpha:1];
+            resultColor = [self R:redColor G:greenColor B:blueColor];
             
             return resultColor;
             

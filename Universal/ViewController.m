@@ -47,6 +47,17 @@
 //    [self.view addSubview:button];
 //    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
     
+    {
+        NSDate *now = [NSDate date];
+        NSLog(@"color:%@",[UIColor hex:0x111111]);
+        NSLog(@"dur:%f",[[NSDate date]timeIntervalSinceDate:now]);
+    }
+    {
+        NSDate *now = [NSDate date];
+        NSLog(@"color:%@",[UIColor hexString:@"111111"]);
+        NSLog(@"dur:%f",[[NSDate date]timeIntervalSinceDate:now]);
+    }
+
 }
 
 
