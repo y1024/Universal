@@ -10,6 +10,6 @@
 
 @interface AFHTTPResponseSerializer (Extension)
 
-- (void)addAcceptableContentType:(NSString*)type;
+
 
 @end

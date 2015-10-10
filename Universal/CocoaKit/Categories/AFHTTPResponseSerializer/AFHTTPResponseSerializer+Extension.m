@@ -10,11 +10,5 @@
 
 @implementation AFHTTPResponseSerializer (Extension)
 
-- (void)addAcceptableContentType:(NSString*)type
-{
-    NSMutableSet *mutSet = [NSMutableSet setWithSet:self.acceptableContentTypes];
-    [mutSet addObject:type];
-    self.acceptableContentTypes = mutSet ; 
-}
 
 @end
