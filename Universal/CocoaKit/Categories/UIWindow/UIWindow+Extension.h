@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface BorderView : UIView
+
+- (void)didAppearingAnimationStopped;
+
+
+@end
+
 @interface UIWindow (Extension)
 
 + (UIWindow*)keyWindow;
 
 @end
+
+
