@@ -8,6 +8,9 @@
 
 #import "SourceTableViewController.h"
 
+#import "PodHeaders.h"
+
+
 @interface SourceTableViewController ()
 
 @end
@@ -46,6 +49,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 /*
 // Override to support conditional editing of the table view.
