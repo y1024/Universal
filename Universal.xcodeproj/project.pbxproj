@@ -37,6 +37,7 @@
 		CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB4D1B960C7400D9B6C9 /* GZIP.m */; };
 		CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */; };
 		CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */; };
+		CD0CD1861BCB981C00FF8F93 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CD1851BCB981C00FF8F93 /* UIControl+Extension.m */; };
 		CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */; };
 		CD8703BA1BC900700023512D /* SourceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703B91BC900700023512D /* SourceTableViewController.m */; };
 		CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703BD1BC90D860023512D /* UITableView+Extension.m */; };
@@ -116,6 +117,8 @@
 		CD05BB5F1B960FF700D9B6C9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GPXFileBundle.bundle; sourceTree = "<group>"; };
+		CD0CD1841BCB981C00FF8F93 /* UIControl+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Extension.h"; sourceTree = "<group>"; };
+		CD0CD1851BCB981C00FF8F93 /* UIControl+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Extension.m"; sourceTree = "<group>"; };
 		CD19B46A1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPResponseSerializer+Extension.h"; sourceTree = "<group>"; };
 		CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPResponseSerializer+Extension.m"; sourceTree = "<group>"; };
 		CD8703B81BC900700023512D /* SourceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceTableViewController.h; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				CD0CD1831BCB980E00FF8F93 /* UIButton */,
 				CD8703BB1BC90D650023512D /* UITableView */,
 				CD19B4691BC7B23A00B063DC /* AFHTTPResponseSerializer */,
 				3792D12E1BA95C2400E8731C /* UIImageView */,
@@ -489,6 +493,15 @@
 			path = BundleFiles;
 			sourceTree = "<group>";
 		};
+		CD0CD1831BCB980E00FF8F93 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				CD0CD1841BCB981C00FF8F93 /* UIControl+Extension.h */,
+				CD0CD1851BCB981C00FF8F93 /* UIControl+Extension.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		CD19B4691BC7B23A00B063DC /* AFHTTPResponseSerializer */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +666,7 @@
 				CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
 				CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */,
+				CD0CD1861BCB981C00FF8F93 /* UIControl+Extension.m in Sources */,
 				CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
 				3792D1311BA95C3900E8731C /* UIImageView+Extension.m in Sources */,

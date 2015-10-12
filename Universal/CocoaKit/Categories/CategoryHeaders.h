@@ -27,5 +27,7 @@
 #import "UIWebView+Extension.h"
 #import "UIWindow+Extension.h"
 #import "UIImageView+Extension.h"
+#import "UITableView+Extension.h"
+#import "UIControl+Extension.h"
 
 
