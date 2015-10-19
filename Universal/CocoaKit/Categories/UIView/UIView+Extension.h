@@ -41,5 +41,8 @@
  */
 - (UIView*)cornerRadius:(CGFloat)radius;
 
+- (void)removeAllSubViews;
+
+- (void)removeSubView:(Class)cls;
 
 @end

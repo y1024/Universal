@@ -61,5 +61,21 @@
     return self;
 }
 
+- (void)removeAllSubViews
+{
+    for (UIView *subView in self.subviews) {
+        [subView removeFromSuperview];
+    }
+}
+
+- (void)removeSubView:(Class)cls;
+{
+    for (UIView *subView in self.subviews) {
+        if ([subView isKindOfClass:cls]) {
+            [subView removeFromSuperview];
+        }
+    }
+}
+
 
 @end

@@ -10,6 +10,8 @@
 
 #import "PodHeaders.h"
 
+#import "NSArray+Extension.h"
+#import "NSMutableArray+Extension.h"
 
 
 //#import <CocoaLumberjack/CocoaLumberjack.h>
@@ -26,6 +28,19 @@
     // Override point for customization after application launch.
     
     [self DDLog];
+    
+    
+    NSArray *ary = @[@"1"];
+    
+    NSMutableArray *ay2 = [NSMutableArray arrayWithArray:ary];
+    
+    ary[2];
+    
+    ay2[1];
+    
+    
+    [ay2 addObject:nil];
+    
     
     return YES;
 }

@@ -33,7 +33,7 @@ pod 'ReactiveCocoa' , '2.5'
 
 pod 'SWTableViewCell', '~> 0.3.7'
 #pod 'Tweaks'
-pod 'BlocksKit'
+#pod 'BlocksKit'
 
 #pod 'CocoaLumberjack'
 #pod "MWPhotoBrowser"

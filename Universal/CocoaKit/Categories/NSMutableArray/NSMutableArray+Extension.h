@@ -1,17 +1,13 @@
 //
-//  NSArray+Extension.h
+//  NSMutableArray+Extension.h
 //  Universal
 //
-//  Created by emiaobao on 15/9/1.
+//  Created by 杜晓星 on 15/10/16.
 //  Copyright (c) 2015年 emiaobao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (Extension)
-
-- (BOOL)notNull;
-
-
+@interface NSMutableArray (Extension)
 
 @end
