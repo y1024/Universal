@@ -58,7 +58,7 @@
 
 - (void)safeSetValue:(id)value key:(NSString*)key
 {
-    if (value) {
+    if (value && [key isKindOfClass:[NSString class]]) {
         [self safeSetValue:value key:key];
     }
     else

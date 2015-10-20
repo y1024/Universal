@@ -38,6 +38,10 @@
     
     ay2[1];
     
+    NSMutableDictionary *dic = @{@"key":@"value"};
+    [dic setValue:@"key" forKey:ary[3]];
+    
+
     
     [ay2 addObject:nil];
     
