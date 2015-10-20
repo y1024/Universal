@@ -23,5 +23,6 @@
  */
 + (instancetype)drawImaginarylineWithRect:(CGRect)rect;
 
+- (void)placeHolderImage:(NSString*)imageName urlImage:(NSString*)url;
 
 @end

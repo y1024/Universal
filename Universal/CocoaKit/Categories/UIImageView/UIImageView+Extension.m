@@ -8,7 +8,9 @@
 
 #import "UIImageView+Extension.h"
 
-#import "CategoryHeaders.h"
+#import "UIColor+Extension.h"
+
+#import <UIImageView+WebCache.h>
 
 
 @implementation UIImageView (Extension)
@@ -33,6 +35,11 @@
     line.image = UIGraphicsGetImageFromCurrentImageContext();
     
     return line;
+}
+
+- (void)placeHolderImage:(NSString*)imageName urlImage:(NSString*)url
+{
+    [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:imageName]];
 }
 
 @end

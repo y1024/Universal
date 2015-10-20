@@ -10,6 +10,8 @@
 
 @interface UIImage (Extension)
 
+
+
 /**
  *  本地读取图片
  *
@@ -42,5 +44,7 @@
  *  存入本地相册
  */
 - (void)writeToSavedPhotosAlbum;
+
+
 
 @end
