@@ -25,7 +25,15 @@
             [self reloadData];
         }
     }
-    
+}
+
+- (void)registerCellWithNib:(NSString*)nibName;
+{
+    [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:nibName];
+}
+- (void)registerCellWithClass:(Class)cls;
+{
+    [self registerClass:cls forCellReuseIdentifier:NSStringFromClass(cls)];
 }
 
 @end

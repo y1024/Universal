@@ -8,8 +8,17 @@
 
 #import "NSObject+Extension.h"
 #import <objc/runtime.h>
-
+#import <UIKit/UIKit.h>
 @implementation NSObject (Extension)
+
+- (void)receiveTextFieldChangeNotificationWithObj:(id)obj action:(SEL)sel
+{
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:sel name:UITextFieldTextDidChangeNotification object:obj];
+}
+- (void)removeAllNotification
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
 
 + (BOOL)methodSwizzle:(SEL)originalSelector withMethod:(SEL)swizzledSelector error:(NSError **)error
 {

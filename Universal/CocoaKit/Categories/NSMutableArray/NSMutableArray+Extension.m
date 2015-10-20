@@ -34,12 +34,12 @@
     
     BOOL arrayI =  [subclass methodSwizzle:@selector(objectAtIndex:) withMethod:@selector(safeObjectAtIndex:) error:nil];
     if (arrayI) {
-        NSLog(@"可变数组：数组越界方法交换成功");
+        NSLog(@"SEL:%@",NSStringFromSelector(@selector(safeObjectAtIndex:)));
     }
     
     BOOL arrayISafeAddMethod = [subclass methodSwizzle:@selector(addObject:) withMethod:@selector(safeAddObject:) error:nil];
     if (arrayISafeAddMethod) {
-        NSLog(@"arrayISafeAddMethod");
+       NSLog(@"SEL:%@",NSStringFromSelector(@selector(safeAddObject:)));
         
     }
 }

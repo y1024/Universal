@@ -12,4 +12,8 @@
 
 + (BOOL)methodSwizzle:(SEL)originalSelector withMethod:(SEL)swizzledSelector error:(NSError **)error;
 
+- (void)receiveTextFieldChangeNotificationWithObj:(id)obj action:(SEL)sel;
+
+- (void)removeAllNotification;
+
 @end

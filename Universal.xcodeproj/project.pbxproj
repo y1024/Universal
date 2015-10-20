@@ -41,6 +41,7 @@
 		CD8349B31BD10254007E75C2 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8349B21BD10254007E75C2 /* UIControl+Extension.m */; };
 		CD8703BA1BC900700023512D /* SourceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703B91BC900700023512D /* SourceTableViewController.m */; };
 		CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703BD1BC90D860023512D /* UITableView+Extension.m */; };
+		CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA128321BD5DE9200D7B22D /* NSMutableDictionary+Extension.m */; };
 		CDAA0BAE1BD0A76600A728D4 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAA0BAD1BD0A76600A728D4 /* NSMutableArray+Extension.m */; };
 		CDFCECB71BCF457800890E0D /* NSNull+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECB61BCF457800890E0D /* NSNull+Extension.m */; };
 		CDFCECBE1BCFA56B00890E0D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECBD1BCFA56B00890E0D /* NSObject+Extension.m */; };
@@ -127,6 +128,8 @@
 		CD8703B91BC900700023512D /* SourceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceTableViewController.m; sourceTree = "<group>"; };
 		CD8703BC1BC90D860023512D /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		CD8703BD1BC90D860023512D /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
+		CDA128311BD5DE9200D7B22D /* NSMutableDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Extension.h"; sourceTree = "<group>"; };
+		CDA128321BD5DE9200D7B22D /* NSMutableDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Extension.m"; sourceTree = "<group>"; };
 		CDAA0BAC1BD0A76600A728D4 /* NSMutableArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extension.h"; sourceTree = "<group>"; };
 		CDAA0BAD1BD0A76600A728D4 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
 		CDFCECB51BCF457800890E0D /* NSNull+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Extension.h"; sourceTree = "<group>"; };
@@ -220,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				CDA128301BD5DE8100D7B22D /* NSMutableDictionary */,
 				CD8349B01BD10254007E75C2 /* UIControl */,
 				CDAA0BAB1BD0A75800A728D4 /* NSMutableArray */,
 				CDFCECBB1BCFA55D00890E0D /* NSObject */,
@@ -529,6 +533,15 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
+		CDA128301BD5DE8100D7B22D /* NSMutableDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CDA128311BD5DE9200D7B22D /* NSMutableDictionary+Extension.h */,
+				CDA128321BD5DE9200D7B22D /* NSMutableDictionary+Extension.m */,
+			);
+			path = NSMutableDictionary;
+			sourceTree = "<group>";
+		};
 		CDAA0BAB1BD0A75800A728D4 /* NSMutableArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -695,6 +708,7 @@
 				377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */,
 				37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */,
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
+				CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */,
 				37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */,
 				376DBB031B96A4A6008A84B7 /* UIScrollView+Extension.m in Sources */,
 				CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */,
@@ -851,14 +865,12 @@
 			baseConfigurationReference = 387FC035A8EBA73BB6238623 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Universal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "31db6246-3b8b-49b1-8241-91907d6714f0";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -870,14 +882,12 @@
 			baseConfigurationReference = 77D685AB5BD7E49DCCFC6944 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Universal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "31db6246-3b8b-49b1-8241-91907d6714f0";
 				TARGETED_DEVICE_FAMILY = "1,2";

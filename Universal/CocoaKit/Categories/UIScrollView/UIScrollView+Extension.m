@@ -51,7 +51,7 @@
 
 - (void)endMJLoadNoMore
 {
-    [self.footer noticeNoMoreData];
+    [self.footer endRefreshingWithNoMoreData];
 }
 
 - (void)resetMJFooter

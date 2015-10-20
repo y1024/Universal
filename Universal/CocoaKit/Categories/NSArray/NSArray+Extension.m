@@ -63,10 +63,8 @@
     
     BOOL arrayIOverStepMethod =  [subclass methodSwizzle:@selector(objectAtIndex:) withMethod:@selector(safeObjectAtIndex:) error:nil];
     if (arrayIOverStepMethod) {
-        NSLog(@"不可变数组：数组越界方法交换成功");
+         NSLog(@"SEL:%@",NSStringFromSelector(@selector(safeObjectAtIndex:)));
     }
-
-    
 }
 
 

@@ -12,5 +12,8 @@
 
 - (void)reload:(BOOL)isRefresh sourceArray:(NSMutableArray*)source responseInoArray:(NSArray*)response class:(Class)sourceClass;
 
+- (void)registerCellWithNib:(NSString*)nibName;
+
+- (void)registerCellWithClass:(Class)cls;
 
 @end

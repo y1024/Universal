@@ -1,36 +1,17 @@
 //
-//  NSDictionary+Extension.m
+//  NSMutableDictionary+Extension.m
 //  Universal
 //
-//  Created by emiaobao on 15/9/1.
+//  Created by 杜晓星 on 15/10/20.
 //  Copyright (c) 2015年 emiaobao. All rights reserved.
 //
 
-#import "NSDictionary+Extension.h"
+#import "NSMutableDictionary+Extension.h"
 #import "NSObject+Extension.h"
 #import <objc/runtime.h>
 
-@implementation NSDictionary (Extension)
+@implementation NSMutableDictionary (Extension)
 
-- (BOOL)notNull
-{
-    if (!self) {
-        return NO;
-    }
-    
-    if ([self isKindOfClass:[NSNull class]]) {
-        
-        return NO;
-    }
-    if (![self isKindOfClass:[NSDictionary class]]) {
-        
-        return NO;
-    }
-    else
-    {
-        return YES;
-    }
-}
 
 + (void)load
 {
@@ -66,7 +47,5 @@
         return ;
     }
 }
-
-
 
 @end
