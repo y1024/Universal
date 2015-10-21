@@ -10,4 +10,6 @@
 
 @interface NSMutableDictionary (Extension)
 
+- (void)safeSetValue:(id)value key:(NSString*)key;
+
 @end

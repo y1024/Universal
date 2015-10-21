@@ -42,30 +42,30 @@
     }
 }
 
-+ (void)load
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSArray         *instanceArray = [NSArray array];
-        
-        [self methodSwizzleWithClassName:NSStringFromClass([instanceArray class])];
-        
-        
-    });
-    
-}
-
-+ (void)methodSwizzleWithClassName:(NSString*)clsName
-{
-    const char *clsCharName = clsName.UTF8String;
-    
-    Class subclass = objc_getClass(clsCharName);
-    
-    BOOL arrayIOverStepMethod =  [subclass methodSwizzle:@selector(objectAtIndex:) withMethod:@selector(safeObjectAtIndex:) error:nil];
-    if (arrayIOverStepMethod) {
-         NSLog(@"SEL:%@",NSStringFromSelector(@selector(safeObjectAtIndex:)));
-    }
-}
+//+ (void)load
+//{
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        NSArray         *instanceArray = [NSArray array];
+//        
+//        [self methodSwizzleWithClassName:NSStringFromClass([instanceArray class])];
+//        
+//        
+//    });
+//    
+//}
+//
+//+ (void)methodSwizzleWithClassName:(NSString*)clsName
+//{
+//    const char *clsCharName = clsName.UTF8String;
+//    
+//    Class subclass = objc_getClass(clsCharName);
+//    
+//    BOOL arrayIOverStepMethod =  [subclass methodSwizzle:@selector(objectAtIndex:) withMethod:@selector(safeObjectAtIndex:) error:nil];
+//    if (arrayIOverStepMethod) {
+//         NSLog(@"SEL:%@",NSStringFromSelector(@selector(safeObjectAtIndex:)));
+//    }
+//}
 
 
 - (id)safeObjectAtIndex:(NSUInteger)index
@@ -76,7 +76,7 @@
     }
     else
     {
-        return [self safeObjectAtIndex:index];
+        return [self objectAtIndex:index];
     }
     
 }

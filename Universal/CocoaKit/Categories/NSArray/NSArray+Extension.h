@@ -12,6 +12,6 @@
 
 - (BOOL)notNull;
 
-
+- (id)safeObjectAtIndex:(NSUInteger)index;
 
 @end

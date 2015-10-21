@@ -32,18 +32,19 @@
     
     NSArray *ary = @[@"1"];
     
+    
     NSMutableArray *ay2 = [NSMutableArray arrayWithArray:ary];
-    
-    ary[2];
-    
-    ay2[1];
-    
-    NSMutableDictionary *dic = @{@"key":@"value"};
-    [dic setValue:@"key" forKey:ary[3]];
-    
-
-    
-    [ay2 addObject:nil];
+//    
+    [ary safeObjectAtIndex:2];
+//
+//    ay2[1];
+//
+//    NSMutableDictionary *dic = @{@"key":@"value"};
+//    [dic setValue:@"key" forKey:ary[3]];
+//    
+//
+//    
+//    [ay2 addObject:nil];
     
     
     return YES;
