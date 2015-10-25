@@ -9,6 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+extern NSString *const soundAlert;              //soundAlert
+extern NSString *const backspace;               //退格
+extern NSString *const formFeed;                // Form feed
+extern NSString *const lineFeed;                //换行
+extern NSString *const enterKey;                //回车
+extern NSString *const horizontalTab;           //水平制表符
+extern NSString *const VerticalTab;             //垂直制表符
+extern NSString *const backslash;               //反斜杠
+extern NSString *const doubleQuotationMarks;    //双引号
+extern NSString *const SingleQuotes;            //单引号
 @interface NSString (Extension)
 
 + (NSString*)HomePath;
@@ -63,5 +73,6 @@
  */
 + (NSString*)dateWithTimestamp:(NSInteger)seconds;
 
+- (NSString*)replaceBackslash;
 
 @end

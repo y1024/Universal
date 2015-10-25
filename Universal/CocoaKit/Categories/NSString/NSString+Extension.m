@@ -11,6 +11,18 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 
+
+NSString *const soundAlert           = @"\a";
+NSString *const backspace            = @"\b";
+NSString *const formFeed             = @"\f";
+NSString *const lineFeed             = @"\n";
+NSString *const enterKey             = @"\r";
+NSString *const horizontalTab        = @"\t";
+NSString *const VerticalTab          = @"\v";
+NSString *const backslash            = @"\\";
+NSString *const doubleQuotationMarks = @"\"";
+NSString *const SingleQuotes         = @"\'";
+
 @implementation NSString (Extension)
 
 + (NSString*)HomePath
@@ -213,6 +225,26 @@
         
         return  nil;
     }
+}
+
+- (NSString*)replaceBackslash
+{
+    NSString *resultString = nil;
+    if ([self notNull]) {
+        NSMutableString *responseString = [NSMutableString stringWithString:self];
+        NSString *character = nil;
+        for (int i = 0; i < responseString.length; i ++) {
+            character = [responseString substringWithRange:NSMakeRange(i, 1)];
+            if ([character isEqualToString:backslash])
+                [responseString deleteCharactersInRange:NSMakeRange(i, 1)];
+        }
+        
+        
+        resultString = [NSString stringWithString:responseString];
+    }
+ 
+    
+    return resultString;
 }
 
 
