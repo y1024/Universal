@@ -9,7 +9,19 @@
 #import "NSObject+Extension.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
+#import <MJExtension.h>
+
 @implementation NSObject (Extension)
+
+- (NSDictionary*)mjInfo
+{
+    return [self JSONObject];
+}
+
++ (instancetype)initWithMjInfo:(NSDictionary*)info;
+{
+    return [self objectWithKeyValues:info];
+}
 
 - (void)receiveTextFieldChangeNotificationWithObj:(id)obj action:(SEL)sel
 {

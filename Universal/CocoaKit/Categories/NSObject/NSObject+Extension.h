@@ -16,4 +16,8 @@
 
 - (void)removeAllNotification;
 
+- (NSDictionary*)mjInfo;
+
++ (instancetype)initWithMjInfo:(NSDictionary*)info;
+
 @end
