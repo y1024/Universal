@@ -30,6 +30,11 @@
  */
 - (void)addCss;
 
-
+/**
+ *
+ *
+ *  @param info
+ */
++ (void)addCookieWithURL:(NSString*)url cookieInfo:(NSDictionary*)info;
 
 @end

@@ -43,6 +43,8 @@
 		CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703BD1BC90D860023512D /* UITableView+Extension.m */; };
 		CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA128321BD5DE9200D7B22D /* NSMutableDictionary+Extension.m */; };
 		CDAA0BAE1BD0A76600A728D4 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAA0BAD1BD0A76600A728D4 /* NSMutableArray+Extension.m */; };
+		CDB5841D1BDE3278008432A3 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5841C1BDE3278008432A3 /* NewViewController.m */; };
+		CDB584221BDE6996008432A3 /* PhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB584211BDE6996008432A3 /* PhoneTextField.m */; };
 		CDFCECB71BCF457800890E0D /* NSNull+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECB61BCF457800890E0D /* NSNull+Extension.m */; };
 		CDFCECBE1BCFA56B00890E0D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECBD1BCFA56B00890E0D /* NSObject+Extension.m */; };
 /* End PBXBuildFile section */
@@ -132,6 +134,10 @@
 		CDA128321BD5DE9200D7B22D /* NSMutableDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Extension.m"; sourceTree = "<group>"; };
 		CDAA0BAC1BD0A76600A728D4 /* NSMutableArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extension.h"; sourceTree = "<group>"; };
 		CDAA0BAD1BD0A76600A728D4 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
+		CDB5841B1BDE3278008432A3 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		CDB5841C1BDE3278008432A3 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		CDB584201BDE6996008432A3 /* PhoneTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTextField.h; sourceTree = "<group>"; };
+		CDB584211BDE6996008432A3 /* PhoneTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneTextField.m; sourceTree = "<group>"; };
 		CDFCECB51BCF457800890E0D /* NSNull+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Extension.h"; sourceTree = "<group>"; };
 		CDFCECB61BCF457800890E0D /* NSNull+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Extension.m"; sourceTree = "<group>"; };
 		CDFCECBC1BCFA56B00890E0D /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 		377C11111B958FE700FD4EB6 /* CocoaKit */ = {
 			isa = PBXGroup;
 			children = (
+				CDB5841E1BDE6996008432A3 /* CocoaView */,
 				CD05BB4A1B960C7400D9B6C9 /* Optional */,
 				377C11151B95943800FD4EB6 /* Categories */,
 				377C11121B958FE700FD4EB6 /* PodHeaders */,
@@ -336,6 +343,8 @@
 				37AD9BD51B943E1400F1D180 /* AppDelegate.m */,
 				CD8703B81BC900700023512D /* SourceTableViewController.h */,
 				CD8703B91BC900700023512D /* SourceTableViewController.m */,
+				CDB5841B1BDE3278008432A3 /* NewViewController.h */,
+				CDB5841C1BDE3278008432A3 /* NewViewController.m */,
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
@@ -551,6 +560,23 @@
 			path = NSMutableArray;
 			sourceTree = "<group>";
 		};
+		CDB5841E1BDE6996008432A3 /* CocoaView */ = {
+			isa = PBXGroup;
+			children = (
+				CDB5841F1BDE6996008432A3 /* PhoneTextField */,
+			);
+			path = CocoaView;
+			sourceTree = "<group>";
+		};
+		CDB5841F1BDE6996008432A3 /* PhoneTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CDB584201BDE6996008432A3 /* PhoneTextField.h */,
+				CDB584211BDE6996008432A3 /* PhoneTextField.m */,
+			);
+			path = PhoneTextField;
+			sourceTree = "<group>";
+		};
 		CDFCECB41BCF456600890E0D /* NSNull */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +737,7 @@
 				CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */,
 				37D8C1271B95A00A0073F1CC /* UIAlertView+Extension.m in Sources */,
 				376DBB031B96A4A6008A84B7 /* UIScrollView+Extension.m in Sources */,
+				CDB5841D1BDE3278008432A3 /* NewViewController.m in Sources */,
 				CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */,
 				CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
@@ -718,6 +745,7 @@
 				CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
 				3792D1311BA95C3900E8731C /* UIImageView+Extension.m in Sources */,
+				CDB584221BDE6996008432A3 /* PhoneTextField.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
 				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
 				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,

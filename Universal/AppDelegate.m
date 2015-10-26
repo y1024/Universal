@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NewViewController.h"
 
 #import "PodHeaders.h"
 
@@ -49,6 +50,7 @@
     NSString *str =@"{\"aps\":{\"content-available\":1,\"sound\":\"default\",\"alert\":{\"body\":\"医生回复您的问题，立刻点击查看\",\"title\":\"【问医生】\"},\"badge\":1},\"payload\":\"{\\\"params\\\":\\\"{\\\\\\\"userId\\\\\\\":\\\\\\\"386\\\\\\\",\\\\\\\"issueId\\\\\\\":\\\\\\\"564\\\\\\\"}\\\",\\\"url\\\":\\\"emb://askdoctordetail\\\"}\"}";
     NSString *resultString = [str replaceBackslash];
     
+    [str longLongValue];
     
     
     return YES;

@@ -10,9 +10,12 @@
 
 #import "PodHeaders.h"
 
+#import "NewViewController.h"
+
 
 @interface SourceTableViewController ()
 
+@property(nonatomic,strong)NewViewController *nextVC;
 
 @end
 
@@ -74,6 +77,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.row ==1){
+        if (!self.nextVC) {
+            NewViewController *newVC = [[NewViewController alloc]init];
+            self.nextVC = newVC;
+        }
+
+        [self.navigationController pushViewController:_nextVC animated:YES];
+    }
+    else
+    {
+        NSLog(@"viewControll:%ld",self.navigationController.viewControllers.count);
+    }
 }
 
 /*
