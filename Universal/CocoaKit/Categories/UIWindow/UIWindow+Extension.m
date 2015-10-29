@@ -49,7 +49,7 @@
 
 @implementation UIWindow (Extension)
 
-+ (UIWindow*)keyWindow
++ (UIWindow*)__ldx_keyWindow;
 {
     return [UIApplication sharedApplication].windows[0];
 }

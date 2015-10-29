@@ -30,13 +30,15 @@
     }
 }
 
-+ (void)setObject:(id)obj forKey:(NSString*)key
++ (void)__ldx_safeSetObject:(id)obj forKey:(NSString*)key
 {
-    id oldObj = [[NSUserDefaults standardUserDefaults]objectForKey:key];
-    if (oldObj) {
-        NSLog(@"oldObj:%@ newObj:%@",oldObj,obj);
+    if ([key isKindOfClass:[NSString class]]) {
+        id oldObj = [[NSUserDefaults standardUserDefaults]objectForKey:key];
+        if (oldObj) {
+            NSLog(@"oldObj:%@ newObj:%@",oldObj,obj);
+        }
+        [[NSUserDefaults standardUserDefaults]setObject:obj forKey:key];
+        [[NSUserDefaults standardUserDefaults]synchronize];
     }
-    [[NSUserDefaults standardUserDefaults]setObject:obj forKey:key];
-    [[NSUserDefaults standardUserDefaults]synchronize];
 }
 @end

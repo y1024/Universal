@@ -18,7 +18,7 @@
 
 @interface UIWindow (Extension)
 
-+ (UIWindow*)keyWindow;
++ (UIWindow*)__ldx_keyWindow;
 
 @end
 

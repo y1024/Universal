@@ -14,7 +14,7 @@
 
 + (void)removeObjectForKey:(NSString*)key;
 
-+ (void)setObject:(id)obj forKey:(NSString*)key;
++ (void)__ldx_safeSetObject:(id)obj forKey:(NSString*)key;
 
 
 

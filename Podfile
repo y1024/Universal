@@ -18,6 +18,7 @@ pod 'SWTableViewCell', '~> 0.3.7'
 pod 'ZXingObjC', '~> 3.0'
 pod 'pop', '~> 1.0'
 pod 'CocoaAsyncSocket'
+
 #pod 'APAddressBook'
 #pod 'Realm/Headers'
 #pod 'PayPal-iOS-SDK'

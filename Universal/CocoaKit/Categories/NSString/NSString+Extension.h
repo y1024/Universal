@@ -19,6 +19,7 @@ extern NSString *const VerticalTab;             //垂直制表符
 extern NSString *const backslash;               //反斜杠
 extern NSString *const doubleQuotationMarks;    //双引号
 extern NSString *const SingleQuotes;            //单引号
+
 @interface NSString (Extension)
 
 + (NSString*)HomePath;

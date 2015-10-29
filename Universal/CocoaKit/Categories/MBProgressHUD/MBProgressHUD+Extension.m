@@ -14,7 +14,7 @@
 
 + (void)debug:(NSString*)text
 {
-    UIWindow *keyWindow = [UIWindow keyWindow];
+    UIWindow *keyWindow = [UIWindow __ldx_keyWindow];
     MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:keyWindow animated:YES];
     hub.mode = MBProgressHUDModeText;
     hub.labelText = text;
@@ -45,7 +45,7 @@
 
 + (void)hideAll
 {
-    UIWindow *keyWindow = [UIWindow keyWindow];
+    UIWindow *keyWindow = [UIWindow __ldx_keyWindow];
     
     [MBProgressHUD hideAllHUDsForView:keyWindow animated:YES];
 }

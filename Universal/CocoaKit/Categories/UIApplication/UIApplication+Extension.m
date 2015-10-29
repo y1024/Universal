@@ -36,7 +36,7 @@
 
 + (void)endEditing
 {
-    [[UIWindow keyWindow]resignFirstResponder];
+    [[UIWindow __ldx_keyWindow]resignFirstResponder];
 }
 
 

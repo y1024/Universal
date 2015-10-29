@@ -14,6 +14,8 @@
 //#import "NSArray+Extension.h"
 //#import "NSMutableArray+Extension.h"
 
+#import "CategoryHeaders.h"
+
 
 //#import <CocoaLumberjack/CocoaLumberjack.h>
 
@@ -47,10 +49,17 @@
 //    
 //    [ay2 addObject:nil];
     
-    NSString *str =@"{\"aps\":{\"content-available\":1,\"sound\":\"default\",\"alert\":{\"body\":\"医生回复您的问题，立刻点击查看\",\"title\":\"【问医生】\"},\"badge\":1},\"payload\":\"{\\\"params\\\":\\\"{\\\\\\\"userId\\\\\\\":\\\\\\\"386\\\\\\\",\\\\\\\"issueId\\\\\\\":\\\\\\\"564\\\\\\\"}\\\",\\\"url\\\":\\\"emb://askdoctordetail\\\"}\"}";
-    NSString *resultString = [str replaceBackslash];
+//    NSString *str =@"{\"aps\":{\"content-available\":1,\"sound\":\"default\",\"alert\":{\"body\":\"医生回复您的问题，立刻点击查看\",\"title\":\"【问医生】\"},\"badge\":1},\"payload\":\"{\\\"params\\\":\\\"{\\\\\\\"userId\\\\\\\":\\\\\\\"386\\\\\\\",\\\\\\\"issueId\\\\\\\":\\\\\\\"564\\\\\\\"}\\\",\\\"url\\\":\\\"emb://askdoctordetail\\\"}\"}";
+//    NSString *resultString = [str replaceBackslash];
+//    
+//    [str longLongValue];
     
-    [str longLongValue];
+    
+    id dic = @{@"key":@"value"};
+    
+    [NSUserDefaults __ldx_safeSetObject:@"" forKey:dic];
+    
+
     
     
     return YES;
