@@ -20,6 +20,8 @@ extern NSString *const backslash;               //反斜杠
 extern NSString *const doubleQuotationMarks;    //双引号
 extern NSString *const SingleQuotes;            //单引号
 
+extern NSString *const regxAllNumbers;
+
 @interface NSString (Extension)
 
 + (NSString*)HomePath;
@@ -75,5 +77,29 @@ extern NSString *const SingleQuotes;            //单引号
 + (NSString*)dateWithTimestamp:(NSInteger)seconds;
 
 - (NSString*)replaceBackslash;
+
+/**
+ *  正则表达式匹配
+ *
+ *  @param condition
+ *
+ *  @return
+ */
+- (BOOL)regexWithString:(NSString*)condition;
+/**
+ *  正则检验纯数字
+ *
+ *  @return
+ */
+- (BOOL)regexAllNumbers;
+
+/**
+ *  utf8 data
+ *
+ *  @param data
+ *
+ *  @return
+ */
++ (NSString*)stringWithUTF8Data:(NSData*)data;
 
 @end

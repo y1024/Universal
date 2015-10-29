@@ -12,16 +12,17 @@
 #import <SystemConfiguration/CaptiveNetwork.h>
 
 
-NSString *const soundAlert           = @"\a";
-NSString *const backspace            = @"\b";
-NSString *const formFeed             = @"\f";
-NSString *const lineFeed             = @"\n";
-NSString *const enterKey             = @"\r";
-NSString *const horizontalTab        = @"\t";
-NSString *const VerticalTab          = @"\v";
-NSString *const backslash            = @"\\";
-NSString *const doubleQuotationMarks = @"\"";
-NSString *const SingleQuotes         = @"\'";
+NSString *const soundAlert              = @"\a";
+NSString *const backspace               = @"\b";
+NSString *const formFeed                = @"\f";
+NSString *const lineFeed                = @"\n";
+NSString *const enterKey                = @"\r";
+NSString *const horizontalTab           = @"\t";
+NSString *const VerticalTab             = @"\v";
+NSString *const backslash               = @"\\";
+NSString *const doubleQuotationMarks    = @"\"";
+NSString *const SingleQuotes            = @"\'";
+NSString *const regxAllNumbers          = @"^[0-9]+$";
 
 @implementation NSString (Extension)
 
@@ -247,5 +248,31 @@ NSString *const SingleQuotes         = @"\'";
     return resultString;
 }
 
+- (BOOL)regexWithString:(NSString*)condition
+{
+    BOOL result = NO;
+    if ([condition isKindOfClass:[NSString class]]) {
+        
+        NSPredicate *regxPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",condition];
+        result = [regxPredicate evaluateWithObject:self];
+    }
+    return result;
+}
+
+- (BOOL)regexAllNumbers;
+{
+   return  [self regexWithString:regxAllNumbers];
+}
+
++ (NSString*)stringWithUTF8Data:(NSData*)data
+{
+    if ([data isKindOfClass:[NSNull class]]) {
+        return nil;
+    }
+    else
+    {
+        return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    }
+}
 
 @end

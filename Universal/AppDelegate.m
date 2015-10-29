@@ -55,12 +55,20 @@
 //    [str longLongValue];
     
     
-    id dic = @{@"key":@"value"};
+    id dic = @{@"key":@"value",@"new":@[@{@"newKey":@"中国"}]};
+    
+    NSLog(@"str:%@",[dic __ldx_jsonString]);
     
     [NSUserDefaults __ldx_safeSetObject:@"" forKey:dic];
     
 
     
+    NSString *str = @"123";
+    
+    if ([str regexAllNumbers]) {
+        
+        NSLog(@"2");
+    }
     
     return YES;
 }

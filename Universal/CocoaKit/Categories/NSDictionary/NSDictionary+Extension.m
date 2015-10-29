@@ -9,6 +9,7 @@
 #import "NSDictionary+Extension.h"
 //#import "NSObject+Extension.h"
 //#import <objc/runtime.h>
+#import "NSString+Extension.h"
 
 @implementation NSDictionary (Extension)
 
@@ -66,7 +67,29 @@
         return ;
     }
 }
-
+- (NSString*)__ldx_jsonString
+{
+    if ([self isKindOfClass:[NSNull class]]) {
+        return nil;
+    }
+    else if ([self isKindOfClass:[NSString class]]) {
+        return (NSString*)self;
+    }
+    else if([self isKindOfClass:[NSData class]])
+    {
+        NSString *resultString = [NSString stringWithUTF8Data:(NSData*)self];
+        
+        return resultString;
+    }
+    else
+    {
+        NSData *infoData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:nil];
+        NSString *resultString = [NSString stringWithUTF8Data:infoData];
+        
+        return resultString;
+    }
+    
+}
 
 
 @end
