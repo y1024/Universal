@@ -26,8 +26,6 @@ extern NSString *const regxAllNumbers;
 
 + (NSString*)HomePath;
 
-
-
 - (NSString*)reutf8;
 
 - (NSString*)utf8;
@@ -101,5 +99,15 @@ extern NSString *const regxAllNumbers;
  *  @return
  */
 + (NSString*)stringWithUTF8Data:(NSData*)data;
+/**
+ *  资源路径
+ *
+ *  @param pathName
+ *  @param name
+ *  @param type
+ *
+ *  @return
+ */
++ (NSString*)resource:(NSString*)name type:(NSString*)type;
 
 @end

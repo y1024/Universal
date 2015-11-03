@@ -112,7 +112,12 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
     
     return NO ;
 }
-
++ (NSString*)resource:(NSString*)name type:(NSString*)type
+{
+    NSString *resourcePath = [[NSBundle mainBundle]pathForResource:name ofType:type];
+    
+    return resourcePath;
+}
 + (NSString*)WIFIName
 {
     NSString *wifiName = nil;

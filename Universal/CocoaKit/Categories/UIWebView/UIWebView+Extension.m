@@ -15,27 +15,17 @@
 + (void)addCookieWithURL:(NSString*)url cookieInfo:(NSDictionary*)info;
 
 {
-    // 定义 cookie 要设定的 host
     NSURL *cookieHost = [NSURL URLWithString:url];
-    
-    NSDictionary *cookieInfo = [NSDictionary dictionaryWithDictionary:info];
+    NSMutableDictionary *cookieInfo = [NSMutableDictionary dictionary];
     [cookieInfo setValue:[cookieHost host] forKey:NSHTTPCookieDomain];
-    [cookieHost setValue:[cookieHost path] forKey:NSHTTPCookiePath];
-
+    [cookieInfo setValue:[cookieHost path] forKey:NSHTTPCookiePath];
+    [cookieInfo setValue:@"NSHTTPCookieName" forKey:NSHTTPCookieName];
+    [cookieInfo setValue:info forKey:NSHTTPCookieValue];
+    [cookieInfo setValue:[NSDate dateWithTimeIntervalSinceNow:60*60*10] forKey:NSHTTPCookieExpires];
     
-    // 设定 cookie
     NSHTTPCookie *cookie = [NSHTTPCookie cookieWithProperties:cookieInfo];
     
-    // 设定 cookie 到 storage 中
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
-    
-    // 建立 NSURLRequest 连到 cookie.php，连线的时候会自动加入上面设定的 Cookie
-//    NSString *urlAddress = @"http://blog.toright.com/cookie.php";
-//    NSURL *myurl = [NSURL URLWithString:urlAddress];
-//    NSURLRequest *requestObj = [NSURLRequest requestWithURL:myurl];
-//    
-//    // 建立 UIWebView
-//    UIWebView *webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 }
 - (void)loadURL:(NSString*)url
 {
