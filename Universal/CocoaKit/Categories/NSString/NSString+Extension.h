@@ -26,7 +26,7 @@ extern NSString *const regxAllNumbers;
 
 + (NSString*)HomePath;
 
-- (BOOL)notNull;
+
 
 - (NSString*)reutf8;
 

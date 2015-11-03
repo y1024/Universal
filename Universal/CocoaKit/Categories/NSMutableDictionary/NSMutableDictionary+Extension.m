@@ -35,15 +35,15 @@
 //    
 //}
 
-//- (void)safeSetValue:(id)value key:(NSString*)key
-//{
-//    if (value && [key isKindOfClass:[NSString class]]) {
-//        [self setValue:value forKey:key];
-//    }
-//    else
-//    {
-//        return ;
-//    }
-//}
+- (void)safeSetValue:(id)value key:(NSString*)key
+{
+    if (value && [key isKindOfClass:[NSString class]]) {
+        [self setValue:value forKey:key];
+    }
+    else
+    {
+        return ;
+    }
+}
 
 @end

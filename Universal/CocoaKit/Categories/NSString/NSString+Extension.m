@@ -31,40 +31,13 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
 }
 
-- (BOOL)notNull
-{
-    if (!self) {
-        
-        return NO;
-    }
-    
-    if ([self isKindOfClass:[NSNull class]]) {
-        
-        return NO;
-    }
-    if (![self isKindOfClass:[NSString class]]) {
-        
-        return NO ;
-    }
-    
-    NSString *selfString = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    if ([selfString isEqualToString:@""]) {
-        
-        return NO;
-    }
-    else
-    {
-        return YES;
-    }
 
-}
 
 - (NSString*)reutf8;
 {
     NSString *resultString = nil ;
     
-    if ([self notNull]) {
+    if ([self notNullString]) {
         
         resultString = [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     }
@@ -77,7 +50,7 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
     NSString *UTF8String = nil ;
     
 
-    if ([self notNull]) {
+    if ([self notNullString]) {
         
         UTF8String = [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     }
@@ -87,7 +60,7 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
 
 - (NSString*)combineSyllablesWithBlank;
 {
-    if (![self notNull]) {
+    if (![self notNullString]) {
         
         return nil;
     }
@@ -231,7 +204,7 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
 - (NSString*)replaceBackslash
 {
     NSString *resultString = nil;
-    if ([self notNull]) {
+    if ([self notNullString]) {
         NSMutableString *responseString = [NSMutableString stringWithString:self];
         NSString *character = nil;
         for (int i = 0; i < responseString.length; i ++) {

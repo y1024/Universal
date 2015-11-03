@@ -20,6 +20,11 @@
     return [[UIDevice currentDevice].systemVersion floatValue];
 }
 
++ (BOOL)IOS9
+{
+    return [self systemVersion] >= 9.0 && [self systemVersion] < 10.0;
+}
+
 + (BOOL)IOS8
 {
     return [self systemVersion] >= 8.0 && [self systemVersion] < 9.0;

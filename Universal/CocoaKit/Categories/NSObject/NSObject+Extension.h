@@ -20,4 +20,8 @@
 
 + (instancetype)initWithMjInfo:(NSDictionary*)info;
 
+- (BOOL)notNullArray;
+- (BOOL)notNullString;
+- (BOOL)notNullDictionary;
+
 @end

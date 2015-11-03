@@ -10,7 +10,6 @@
 
 @interface NSArray (Extension)
 
-- (BOOL)notNull;
 
 - (id)safeObjectAtIndex:(NSUInteger)index;
 

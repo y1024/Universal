@@ -16,7 +16,7 @@
     if (isRefresh == YES) {
         [source removeAllObjects];
     }
-    if ([response notNull]) {
+    if ([response notNullArray]) {
         for (NSDictionary *modelInfo in response) {
             if ([modelInfo isKindOfClass:[NSDictionary class]]) {
                 id  model  = [sourceClass objectWithKeyValues:modelInfo];

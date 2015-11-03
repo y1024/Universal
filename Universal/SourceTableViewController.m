@@ -30,25 +30,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    UITextField *tf = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [self.view addSubview:tf];
-    FBKVOController *kvo = [[FBKVOController alloc]initWithObserver:self];
-    [kvo observe:tf keyPath:@"text" options:NSKeyValueObservingOptionNew block:^(id observer, id object, NSDictionary *change) {
-       
-        NSLog(@"change:%@",change);
-        
-    }];
-    
-    [self receiveTextFieldChangeNotificationWithObj:tf action:@selector(receiveNotification:)];
     
     
-}
-
-- (void)receiveNotification:(NSNotification*)noti
-{
-    UITextField *text = noti.object;
-    
-    NSLog(@"change:%@",text.text);
 }
 
 

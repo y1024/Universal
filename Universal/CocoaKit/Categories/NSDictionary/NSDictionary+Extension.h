@@ -10,10 +10,6 @@
 
 @interface NSDictionary (Extension)
 
-- (BOOL)notNull;
-
-- (void)safeSetValue:(id)value key:(NSString*)key;
-
 - (NSString*)__ldx_jsonString;
 
 @end

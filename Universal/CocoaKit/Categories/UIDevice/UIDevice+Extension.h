@@ -14,6 +14,8 @@
 
 + (float)systemVersion;
 
++ (BOOL)IOS9;
+
 + (BOOL)IOS8;
 
 + (BOOL)IOS7;

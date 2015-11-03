@@ -17,30 +17,7 @@
 
 @implementation NSArray (Extension)
 
-- (BOOL)notNull;
-{
-    if (!self) {
-        
-        return NO;
-    }
-    if ([self isKindOfClass:[NSNull class]]) {
-        
-        return NO;
-    }
-    
-    if (![self isKindOfClass:[NSArray class]]) {
-        
-        return NO ;
-    }
-    if ([self count] == 0) {
-        
-        return NO;
-    }
-    else
-    {
-        return YES;
-    }
-}
+
 
 //+ (void)load
 //{

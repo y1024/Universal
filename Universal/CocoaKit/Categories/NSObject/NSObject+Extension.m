@@ -58,4 +58,76 @@
     return YES;
 }
 
+- (BOOL)notNullArray;
+{
+    if (!self) {
+        
+        return NO;
+    }
+    if ([self isKindOfClass:[NSNull class]]) {
+        
+        return NO;
+    }
+    
+    if (![self isKindOfClass:[NSArray class]]) {
+        
+        return NO ;
+    }
+    if ([(NSArray*)self count] == 0) {
+        
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+- (BOOL)notNullString
+{
+    if (!self) {
+        
+        return NO;
+    }
+    
+    if ([self isKindOfClass:[NSNull class]]) {
+        
+        return NO;
+    }
+    if (![self isKindOfClass:[NSString class]]) {
+        
+        return NO ;
+    }
+    
+    NSString *selfString = [(NSString*)self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    if ([selfString isEqualToString:@""]) {
+        
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
+- (BOOL)notNullDictionary
+{
+    if (!self) {
+        return NO;
+    }
+    
+    if ([self isKindOfClass:[NSNull class]]) {
+        
+        return NO;
+    }
+    if (![self isKindOfClass:[NSDictionary class]]) {
+        
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
 @end
