@@ -25,4 +25,11 @@
 
 - (void)placeHolderImage:(NSString*)imageName urlImage:(NSString*)url;
 
+/**
+ *  绘制二维码
+ *
+ *  @param qrString
+ */
+- (void)setFrame:(CGRect)frame QRCodeImageWithQRString:(NSString*)qrString;
+
 @end

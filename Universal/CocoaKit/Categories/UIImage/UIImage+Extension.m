@@ -46,29 +46,54 @@
 
 + (UIImage*)QRCodeImageWithString:(NSString*)string imageWeight:(CGFloat)w imageHeight:(CGFloat)h
 {
-    NSError *error = nil;
-    ZXMultiFormatWriter *writer = [ZXMultiFormatWriter writer];
-    ZXBitMatrix* result = [writer encode:string
-                                  format:kBarcodeFormatQRCode
-                                   width:w
-                                  height:h
-                                   error:&error];
     
-    CGImageRef image = [[ZXImage imageWithMatrix:result] cgimage];
-    UIImage *qrImage = [UIImage imageWithCGImage:image];
-    
-    if (error) {
-        NSLog(@"生成条码图片错误:%@",[error localizedDescription]);
+    if ([UIDevice systemVersion] > 8.0) {
+        NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding]; // NSISOLatin1StringEncoding 编码
         
-        return nil;
+        CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+        [filter setValue:data forKey:@"inputMessage"];
+        
+        CIImage *outputImage = filter.outputImage;
+        CGSize CIImageSize = outputImage.extent.size;
+        CGAffineTransform transform = CGAffineTransformMakeScale(w/CIImageSize.width, h/CIImageSize.height); // scale 为放大倍数
+        CIImage *transformImage = [outputImage imageByApplyingTransform:transform];
+        
+        // 保存
+        CIContext *context = [CIContext contextWithOptions:nil];
+        CGImageRef imageRef = [context createCGImage:transformImage fromRect:transformImage.extent];
+        
+        UIImage *qrCodeImage = [UIImage imageWithCGImage:imageRef];
+        //    [UIImagePNGRepresentation(qrCodeImage) writeToFile:path atomically:NO];
+        
+        CGImageRelease(imageRef);
+        
+        return qrCodeImage;
     }
+    
     else
     {
-          return qrImage;
+        NSError *error = nil;
+        ZXMultiFormatWriter *writer = [ZXMultiFormatWriter writer];
+        ZXBitMatrix* result = [writer encode:string
+                                      format:kBarcodeFormatQRCode
+                                       width:w
+                                      height:h
+                                       error:&error];
+        
+        CGImageRef image = [[ZXImage imageWithMatrix:result] cgimage];
+        UIImage *qrImage = [UIImage imageWithCGImage:image];
+        
+        if (error) {
+            NSLog(@"生成条码图片错误:%@",[error localizedDescription]);
+            
+            return nil;
+        }
+        else
+        {
+            return qrImage;
+        }
     }
-  
 }
-
 - (UIImage*)blurPercent:(CGFloat)blurPercent
 {
     NSData *imageData = UIImageJPEGRepresentation(self, 1); // convert to jpeg

@@ -7,7 +7,7 @@
 //
 
 #import "NewViewController.h"
-
+#import "CategoryHeaders.h"
 @interface NewViewController ()
 
 @end
@@ -23,7 +23,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"%@",self);
+//    NSLog(@"%@",self);
 }
 
 - (void)viewDidLoad {
@@ -35,6 +35,19 @@
 //        [timer invalidate];
 //    });
        [timer invalidate];
+    
+//    self.view.backgroundColor = [UIColor whiteColor];
+//    
+//    UIImageView *imageView = [UIImageView new];
+//    
+//    [self.view addSubview:imageView];
+//
+////    imageView.frame = CGRectMake(0, 100, 200, 200);
+//            [imageView setFrame:CGRectMake(0,100, 100,100) QRCodeImageWithQRString:@"二维码www.baidu.com $@%a"];
+    
+    
+    NSLog(@"%@",[NSString QRCodeStringFromImage:@"foobar"]);
+    
 }
 
 - (void)testTimer
