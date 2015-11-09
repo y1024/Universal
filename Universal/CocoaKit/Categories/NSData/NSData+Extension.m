@@ -12,6 +12,18 @@
 
 @implementation NSData (Extension)
 
++ (NSData*)dataWithString:(NSString*)string
+{
+    if ([string isKindOfClass:[NSString class]]) {
+        return [string dataUsingEncoding:NSUTF8StringEncoding];
+    }
+    else
+    {
+        return nil;
+    }
+
+}
+
 - (NSData*)AESEncryptWithKey:(NSString*)key size:(size_t)size
 {
     NSUInteger dataLength = [self length];

@@ -12,4 +12,6 @@
 
 - (NSString*)__ldx_jsonString;
 
++ (NSDictionary*)__ldx_dictionaryWithData:(NSData*)data;
+
 @end
