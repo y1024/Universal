@@ -12,6 +12,9 @@
 
 #import <UIImageView+WebCache.h>
 
+#import "UIImage+Extension.h"
+
+#import "UIView+Extension.h"
 
 @implementation UIImageView (Extension)
 
@@ -40,6 +43,12 @@
 - (void)placeHolderImage:(NSString*)imageName urlImage:(NSString*)url
 {
     [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:imageName]];
+}
+
+- (void)setFrame:(CGRect)frame QRCodeImageWithQRString:(NSString*)qrString
+{
+    self.frame = frame;
+    self.image = [UIImage QRCodeImageWithString:qrString imageWeight:[self __ldx_width] imageHeight:[self __ldx_height]];
 }
 
 @end

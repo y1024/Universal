@@ -30,7 +30,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+//    UIImage *qrImage = [self QRCodeWithString:@"http://weibo.com/u/2255024877"];
     
+
+    
+
     
 }
 

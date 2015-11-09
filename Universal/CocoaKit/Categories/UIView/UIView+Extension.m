@@ -15,42 +15,42 @@
     return [[[NSBundle mainBundle]loadNibNamed:nibName owner:nil options:nil]firstObject];
 }
 
-- (CGFloat)width
+- (CGFloat)__ldx_width
 {
     return CGRectGetWidth(self.frame);
 }
-- (CGFloat)height
+- (CGFloat)__ldx_height
 {
 
     return CGRectGetHeight(self.frame);
 }
 
-- (CGFloat)originX
+- (CGFloat)__ldx_originX
 {
     return self.frame.origin.x;
 }
 
-- (CGFloat)originY
+- (CGFloat)__ldx_originY
 {
     return self.frame.origin.y;
 }
 
-- (CGFloat)centerX
+- (CGFloat)__ldx_centerX
 {
     return self.center.x;
 }
-- (CGFloat)centerY
+- (CGFloat)__ldx_centerY
 {
     return self.center.y;
 }
 
-- (CGFloat)buttomY
+- (CGFloat)__ldx_buttomY
 {
-    return [self height] + [self originY];
+    return [self __ldx_height] + [self __ldx_originY];
 }
-- (CGFloat)rightX
+- (CGFloat)__ldx_rightX
 {
-    return [self originX] + [self width];
+    return [self __ldx_originX] + [self __ldx_width];
 }
 
 - (UIView*)cornerRadius:(CGFloat)radius

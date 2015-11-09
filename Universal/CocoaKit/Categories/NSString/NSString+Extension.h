@@ -110,4 +110,13 @@ extern NSString *const regxAllNumbers;
  */
 + (NSString*)resource:(NSString*)name type:(NSString*)type;
 
+/**
+ *  urlencode
+ *
+ *  @return
+ */
+- (NSString*)urlencode;
+
++ (NSString*)QRCodeStringFromImage:(NSString*)imageName;
+
 @end

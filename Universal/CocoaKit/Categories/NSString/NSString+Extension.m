@@ -253,4 +253,44 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
     }
 }
 
+- (NSString *)urlencode {
+    NSMutableString *output = [NSMutableString string];
+    const unsigned char *source = (const unsigned char *)[self UTF8String];
+    size_t sourceLen = strlen((const char *)source);
+    for (int i = 0; i < sourceLen; ++i) {
+        const unsigned char thisChar = source[i];
+        if (thisChar == ' '){
+            [output appendString:@"+"];
+        } else if (thisChar == '.' || thisChar == '-' || thisChar == '_' || thisChar == '~' ||
+                   (thisChar >= 'a' && thisChar <= 'z') ||
+                   (thisChar >= 'A' && thisChar <= 'Z') ||
+                   (thisChar >= '0' && thisChar <= '9')) {
+            [output appendFormat:@"%c", thisChar];
+        } else {
+            [output appendFormat:@"%%%02X", thisChar];
+        }
+    }
+    return output;
+}
++ (NSString*)QRCodeStringFromImage:(NSString*)imageName;
+{
+    if (![imageName notNullString]) {
+        return nil;
+    }
+    else
+    {
+        CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{ CIDetectorAccuracy:CIDetectorAccuracyHigh }];
+        CIImage *image = [[CIImage alloc] initWithImage:[UIImage imageNamed:imageName]];
+        NSArray *features = [detector featuresInImage:image];
+        
+        NSString *resultString = @"";
+        
+        for (CIQRCodeFeature *feature in features) {
+            
+            resultString = [resultString stringByAppendingString:feature.messageString];
+
+        }
+        return resultString;
+    }
+}
 @end

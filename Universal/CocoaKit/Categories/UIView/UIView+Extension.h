@@ -12,23 +12,23 @@
 
 + (instancetype)loadFromNibWithNibName:(NSString*)nibName;
 
-- (CGFloat)width;
+- (CGFloat)__ldx_width;
 
-- (CGFloat)height;
+- (CGFloat)__ldx_height;
 
-- (CGFloat)originX;
+- (CGFloat)__ldx_originX;
 
-- (CGFloat)originY;
+- (CGFloat)__ldx_originY;
 
-- (CGFloat)centerX;
+- (CGFloat)__ldx_centerX;
 
-- (CGFloat)centerY;
+- (CGFloat)__ldx_centerY;
 
 
 
-- (CGFloat)buttomY;
+- (CGFloat)__ldx_buttomY;
 
-- (CGFloat)rightX;
+- (CGFloat)__ldx_rightX;
 
 
 
