@@ -12,4 +12,6 @@
 
 - (NSString*)__ldx_jsonString;
 
+- (id)safeObjectForKey:(NSString*)key;
+
 @end

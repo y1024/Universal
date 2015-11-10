@@ -34,7 +34,16 @@
     
 
     
-
+//    @"6e4e39b8177043d6abe8c39da528f034";
+    
+    
+//    YTKRequest *ytk = [[YTKRequest alloc]init];
+//    ytk.requestUrl = @"https://api.heweather.com/x3/weather?cityid=城市ID&key=你的认证key"
+//    [ytk startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
+//        
+//    } failure:^(YTKBaseRequest *request) {
+//        
+//    }];
     
 }
 

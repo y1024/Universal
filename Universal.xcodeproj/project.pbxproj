@@ -31,6 +31,11 @@
 		37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */; };
 		37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */; };
 		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
+		8D8E41C91BF06E3700ADB607 /* OneAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41C81BF06E3700ADB607 /* OneAPM.framework */; };
+		8D8E41CB1BF06E7F00ADB607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */; };
+		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
+		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
+		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
 		CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */; };
 		CD05BB491B96086500D9B6C9 /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB481B96086500D9B6C9 /* NSData+Extension.m */; };
 		CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB4D1B960C7400D9B6C9 /* GZIP.m */; };
@@ -98,6 +103,11 @@
 		37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+Extension.m"; sourceTree = "<group>"; };
 		387FC035A8EBA73BB6238623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		77D685AB5BD7E49DCCFC6944 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8D8E41C81BF06E3700ADB607 /* OneAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneAPM.framework; sourceTree = "<group>"; };
+		8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B54E67C32BE8A23181F36C35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD05BB431B96066B00D9B6C9 /* AVCaptureDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+Extension.h"; sourceTree = "<group>"; };
 		CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+Extension.m"; sourceTree = "<group>"; };
@@ -138,6 +148,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */,
+				8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */,
+				8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */,
+				8D8E41CB1BF06E7F00ADB607 /* SystemConfiguration.framework in Frameworks */,
+				8D8E41C91BF06E3700ADB607 /* OneAPM.framework in Frameworks */,
 				29B67D8F083F0803CAC0D48D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +163,10 @@
 		2D49C922A970DE662FA7C999 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E41D01BF06E9C00ADB607 /* libz.tbd */,
+				8D8E41CE1BF06E9000ADB607 /* CoreData.framework */,
+				8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */,
+				8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */,
 				B54E67C32BE8A23181F36C35 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -326,6 +345,7 @@
 				CDB5841B1BDE3278008432A3 /* NewViewController.h */,
 				CDB5841C1BDE3278008432A3 /* NewViewController.m */,
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
+				8D8E41C81BF06E3700ADB607 /* OneAPM.framework */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
 				37AD9BD01B943E1400F1D180 /* Supporting Files */,
@@ -826,6 +846,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Universal",
+				);
 				INFOPLIST_FILE = Universal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -844,6 +868,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Universal",
+				);
 				INFOPLIST_FILE = Universal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -45,11 +45,27 @@
 ////    imageView.frame = CGRectMake(0, 100, 200, 200);
 //            [imageView setFrame:CGRectMake(0,100, 100,100) QRCodeImageWithQRString:@"二维码www.baidu.com $@%a"];
     
+    [self.view removeAllSubViews];
     
     NSLog(@"%@",[NSString QRCodeStringFromImage:@"foobar"]);
     
+    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
+    [self.view addSubview:webView];
+    [webView loadURL:@"http://www.baidu.com"];
+    
+    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(repeatInfo:) userInfo:webView repeats:YES];
 }
-
+- (void)repeatInfo:(NSTimer*)timer
+{
+    UIWebView *web = timer.userInfo;
+    
+    int a = arc4random()%2;
+    
+    NSArray *ay = @[@"http://www.163.com",@"http://www.baidu.com",@"http://www.qq.com"];
+    
+    
+    [web loadURL:ay[a]];
+}
 - (void)testTimer
 {
 //    NSLog(@"testTimer");
