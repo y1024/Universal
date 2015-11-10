@@ -38,7 +38,7 @@
 
 - (NSData*)AES256DecryptWithKey:(NSString*)key;
 
-
++ (NSData*)dataWithString:(NSString*)string;
 
 
 @end

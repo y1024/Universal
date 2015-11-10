@@ -12,6 +12,10 @@
 
 - (NSString*)__ldx_jsonString;
 
+
 - (id)safeObjectForKey:(NSString*)key;
+
++ (NSDictionary*)__ldx_dictionaryWithData:(NSData*)data;
+
 
 @end

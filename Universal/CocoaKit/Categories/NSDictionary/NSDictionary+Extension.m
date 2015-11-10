@@ -37,6 +37,18 @@
 //    
 //}
 
++ (NSDictionary*)__ldx_dictionaryWithData:(NSData*)data
+{
+    if ([data isKindOfClass:[NSData class]]) {
+        
+        return [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    }
+    else
+    {
+        return nil;
+    }
+}
+
 - (NSString*)__ldx_jsonString
 {
     if ([self isKindOfClass:[NSNull class]]) {

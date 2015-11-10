@@ -36,45 +36,7 @@
     
 //    [self DDLog];
     
-    
-//    NSArray *ary = @[@"1"];
-    
-    
-//    NSMutableArray *ay2 = [NSMutableArray arrayWithArray:ary];
-//
-//    [ary safeObjectAtIndex:2];
-//
-//    ay2[1];
-//
-//    NSMutableDictionary *dic = @{@"key":@"value"};
-//    [dic safeSetValue:@"value" key:[ay2 safeObjectAtIndex:10]];
-//
-//
-//    
-//    [ay2 addObject:nil];
-    
-//    NSString *str =@"{\"aps\":{\"content-available\":1,\"sound\":\"default\",\"alert\":{\"body\":\"医生回复您的问题，立刻点击查看\",\"title\":\"【问医生】\"},\"badge\":1},\"payload\":\"{\\\"params\\\":\\\"{\\\\\\\"userId\\\\\\\":\\\\\\\"386\\\\\\\",\\\\\\\"issueId\\\\\\\":\\\\\\\"564\\\\\\\"}\\\",\\\"url\\\":\\\"emb://askdoctordetail\\\"}\"}";
-//    NSString *resultString = [str replaceBackslash];
-//    
-//    [str longLongValue];
-    
-    
-    id dic = @{@"key":@"value",@"new":@[@{@"newKey":@"中国"}]};
-    
-    NSLog(@"str:%@",[dic __ldx_jsonString]);
-    
-    [NSUserDefaults __ldx_safeSetObject:@"" forKey:dic];
-    
-
-    
-    NSString *str = @"123";
-    
-    if ([str regexAllNumbers]) {
-        
-        NSLog(@"2");
-    }
-    
-    return YES;
+        return YES;
 }
 
 - (void)DDLog
