@@ -17,8 +17,6 @@
 #import "CategoryHeaders.h"
 
 
-#import <OneAPM/OneAPM.h>
-
 //#import <CocoaLumberjack/CocoaLumberjack.h>
 
 
@@ -32,7 +30,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [OneAPM startWithApplicationToken:@"D847360619238D4EA0DECA8AD224467E69"];
+
     
 //    [self DDLog];
     
