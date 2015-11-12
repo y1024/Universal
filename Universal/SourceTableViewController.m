@@ -65,7 +65,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
-     cell.textLabel.text = @"reuseIdentifier";
+     cell.textLabel.text = @"方正像素15-2";
+    cell.textLabel.font = [UIFont fontWithName:@"FZXS15--GB1-0" size:17];
     
     return cell;
 }

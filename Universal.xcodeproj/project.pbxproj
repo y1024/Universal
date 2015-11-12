@@ -35,6 +35,7 @@
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
 		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
+		8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF5D261BF43B42003F14EE /* 方正像素15-2.TTF */; };
 		CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */; };
 		CD05BB491B96086500D9B6C9 /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB481B96086500D9B6C9 /* NSData+Extension.m */; };
 		CD05BB4E1B960C7400D9B6C9 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB4D1B960C7400D9B6C9 /* GZIP.m */; };
@@ -106,6 +107,7 @@
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8DEF5D261BF43B42003F14EE /* 方正像素15-2.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正像素15-2.TTF"; sourceTree = "<group>"; };
 		B54E67C32BE8A23181F36C35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD05BB431B96066B00D9B6C9 /* AVCaptureDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+Extension.h"; sourceTree = "<group>"; };
 		CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+Extension.m"; sourceTree = "<group>"; };
@@ -440,6 +442,14 @@
 			path = NSURLCache;
 			sourceTree = "<group>";
 		};
+		8DEF5D251BF43B42003F14EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8DEF5D261BF43B42003F14EE /* 方正像素15-2.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CD05BB421B96065000D9B6C9 /* AVCaptureDevice */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				CD05BB4F1B960CA600D9B6C9 /* OptionalHeaders.h */,
+				8DEF5D251BF43B42003F14EE /* Fonts */,
 				CD05BB621B96113D00D9B6C9 /* BundleFiles */,
 				CD05BB4B1B960C7400D9B6C9 /* GZIP */,
 			);
@@ -643,6 +654,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */,
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
