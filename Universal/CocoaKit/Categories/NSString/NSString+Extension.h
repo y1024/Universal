@@ -119,4 +119,22 @@ extern NSString *const regxAllNumbers;
 
 + (NSString*)QRCodeStringFromImage:(NSString*)imageName;
 
+/**
+ *  字符串 指定宽度 计算高度
+ *
+ *  @param font
+ *  @param w
+ *
+ *  @return
+ */
+- (CGFloat)selfHeightWithFont:(CGFloat)font totalWidth:(CGFloat)w;
+
+/**
+ *  字符串 单行 宽度
+ *
+ *  @param font
+ *
+ *  @return
+ */
+- (CGFloat)selfWidthWithFont:(CGFloat)font;
 @end

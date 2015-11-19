@@ -97,12 +97,17 @@
         
         return NO ;
     }
-    
-    NSString *selfString = [(NSString*)self stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    if ([selfString isEqualToString:@""]) {
+    if ([((NSString*)self)isEqualToString:@"<null>"]) {
         
         return NO;
+    }
+    if ([((NSString*)self)isEqualToString:@"(null)"]) {
+        
+        return NO;
+    }
+    if ([[(NSString*)self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""]) {
+        
+        return NO ;
     }
     else
     {
