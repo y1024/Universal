@@ -293,4 +293,22 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
         return resultString;
     }
 }
+
+- (CGFloat)selfHeightWithFont:(CGFloat)font totalWidth:(CGFloat)w
+{
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(w, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:font], NSFontAttributeName,nil] context:nil];
+    
+    CGSize resultSize = CGSizeMake(CGRectGetWidth(rect)+1, CGRectGetHeight(rect)+1);
+    
+    return  resultSize.height ;
+}
+
+- (CGFloat)selfWidthWithFont:(CGFloat)font
+{
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:font], NSFontAttributeName,nil] context:nil];
+    
+    CGSize resultSize = CGSizeMake(CGRectGetWidth(rect)+1, CGRectGetHeight(rect)+1);
+    
+    return  resultSize.width ;
+}
 @end

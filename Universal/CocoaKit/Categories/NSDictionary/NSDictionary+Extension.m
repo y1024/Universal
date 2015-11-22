@@ -72,5 +72,15 @@
     }
 }
 
+- (id)safeObjectForKey:(NSString*)key
+{
+    if (![key isKindOfClass:[NSString class]]) {
+        return nil;
+    }
+    else
+    {
+        return [self objectForKey:key];
+    }
+}
 
 @end

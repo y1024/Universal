@@ -34,7 +34,20 @@
     
 
     
-
+//    @"6e4e39b8177043d6abe8c39da528f034";
+    
+    
+//    YTKRequest *ytk = [[YTKRequest alloc]init];
+//    ytk.requestUrl = @"https://api.heweather.com/x3/weather?cityid=城市ID&key=你的认证key"
+//    [ytk startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
+//        
+//    } failure:^(YTKBaseRequest *request) {
+//        
+//    }];
+    
+//    NSString *str = @"之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80";
+//    
+//    NSLog(@"%lf",[str selfWidthWithFont:18]);
     
 }
 
@@ -56,7 +69,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
-     cell.textLabel.text = @"reuseIdentifier";
+     cell.textLabel.text = @"方正像素15-2";
+    cell.textLabel.font = [UIFont fontWithName:@"FZXS15--GB1-0" size:17];
     
     return cell;
 }
