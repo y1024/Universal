@@ -12,8 +12,12 @@
 
 #import "NewViewController.h"
 
+#import "RuleViewController.h"
 
-@interface SourceTableViewController ()
+
+
+@interface SourceTableViewController ()<RuleViewControllerRuleChangeDelegate>
+
 
 @property(nonatomic,strong)NewViewController *nextVC;
 
@@ -45,9 +49,9 @@
 //        
 //    }];
     
-//    NSString *str = @"之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80";
-//    
-//    NSLog(@"%lf",[str selfWidthWithFont:18]);
+    NSString *str = @"之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80";
+    
+    NSLog(@"%lf",[str selfWidthWithFont:18]);
     
 }
 
@@ -89,8 +93,21 @@
     }
     else
     {
-        NSLog(@"viewControll:%ld",self.navigationController.viewControllers.count);
+//        NSLog(@"viewControll:%ld",self.navigationController.viewControllers.count);
+        
+        RuleViewController *ruleVC = [[RuleViewController alloc]init];
+        ruleVC.ruleMin = 40;
+        ruleVC.ruleMax  = 100 ;
+        
+        ruleVC.delegate = self;
+        [self.navigationController pushViewController:ruleVC animated:YES];
+        
     }
+}
+
+- (void)ruleDidChange:(CGFloat)current
+{
+    NSLog(@"%s %lf",__FUNCTION__,current);
 }
 
 /*

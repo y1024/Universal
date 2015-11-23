@@ -10,8 +10,6 @@
 
 @interface UIImage (Extension)
 
-
-
 /**
  *  本地读取图片
  *
