@@ -20,10 +20,11 @@
 
 @property(nonatomic,assign)id delegate;
 
-@property(nonatomic,assign)NSInteger ruleMin;
-@property(nonatomic,assign)NSInteger ruleMax;
+@property(nonatomic,assign)CGFloat ruleMin;
+@property(nonatomic,assign)CGFloat ruleMax;
 
 
+- (instancetype)initWithRuleMin:(CGFloat)min ruleMax:(CGFloat)max delegate:(id)delegate;
 
 
 @end

@@ -25,6 +25,18 @@
 
 @implementation RuleViewController
 
+
+- (instancetype)initWithRuleMin:(CGFloat)min ruleMax:(CGFloat)max delegate:(id)delegate
+{
+    self = [super init];
+    if (self) {
+        self.ruleMin = min;
+        self.ruleMax = max;
+        self.delegate = delegate;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
