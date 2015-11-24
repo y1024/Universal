@@ -211,6 +211,12 @@
 		8DE44A381C02E81B0056E782 /* RuleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A311C02E81B0056E782 /* RuleTableViewCellModel.m */; };
 		8DE44A391C02E81B0056E782 /* RuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A331C02E81B0056E782 /* RuleViewController.m */; };
 		8DE44A3A1C02E81B0056E782 /* RuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A341C02E81B0056E782 /* RuleViewController.xib */; };
+		8DEE76311C04A51C009C2FBC /* WeightCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE76291C04A51C009C2FBC /* WeightCollectionFlowLayout.m */; };
+		8DEE76321C04A51C009C2FBC /* WeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE762B1C04A51C009C2FBC /* WeightCollectionViewCell.m */; };
+		8DEE76331C04A51C009C2FBC /* WeightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEE762C1C04A51C009C2FBC /* WeightCollectionViewCell.xib */; };
+		8DEE76341C04A51C009C2FBC /* WeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE762E1C04A51C009C2FBC /* WeightViewController.m */; };
+		8DEE76351C04A51C009C2FBC /* WeightViewController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEE762F1C04A51C009C2FBC /* WeightViewController.xcassets */; };
+		8DEE76361C04A51C009C2FBC /* WeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEE76301C04A51C009C2FBC /* WeightViewController.xib */; };
 		8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF5D261BF43B42003F14EE /* 方正像素15-2.TTF */; };
 		CD05BB451B96066B00D9B6C9 /* AVCaptureDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB441B96066B00D9B6C9 /* AVCaptureDevice+Extension.m */; };
 		CD05BB491B96086500D9B6C9 /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB481B96086500D9B6C9 /* NSData+Extension.m */; };
@@ -630,6 +636,15 @@
 		8DE44A321C02E81B0056E782 /* RuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleViewController.h; sourceTree = "<group>"; };
 		8DE44A331C02E81B0056E782 /* RuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleViewController.m; sourceTree = "<group>"; };
 		8DE44A341C02E81B0056E782 /* RuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleViewController.xib; sourceTree = "<group>"; };
+		8DEE76281C04A51C009C2FBC /* WeightCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCollectionFlowLayout.h; sourceTree = "<group>"; };
+		8DEE76291C04A51C009C2FBC /* WeightCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCollectionFlowLayout.m; sourceTree = "<group>"; };
+		8DEE762A1C04A51C009C2FBC /* WeightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCollectionViewCell.h; sourceTree = "<group>"; };
+		8DEE762B1C04A51C009C2FBC /* WeightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCollectionViewCell.m; sourceTree = "<group>"; };
+		8DEE762C1C04A51C009C2FBC /* WeightCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightCollectionViewCell.xib; sourceTree = "<group>"; };
+		8DEE762D1C04A51C009C2FBC /* WeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightViewController.h; sourceTree = "<group>"; };
+		8DEE762E1C04A51C009C2FBC /* WeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightViewController.m; sourceTree = "<group>"; };
+		8DEE762F1C04A51C009C2FBC /* WeightViewController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WeightViewController.xcassets; sourceTree = "<group>"; };
+		8DEE76301C04A51C009C2FBC /* WeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightViewController.xib; sourceTree = "<group>"; };
 		8DEF5D261BF43B42003F14EE /* 方正像素15-2.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正像素15-2.TTF"; sourceTree = "<group>"; };
 		B54E67C32BE8A23181F36C35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD05BB431B96066B00D9B6C9 /* AVCaptureDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+Extension.h"; sourceTree = "<group>"; };
@@ -1359,6 +1374,22 @@
 			path = RuleViewController;
 			sourceTree = "<group>";
 		};
+		8DEE76271C04A51C009C2FBC /* WeightViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8DEE76281C04A51C009C2FBC /* WeightCollectionFlowLayout.h */,
+				8DEE76291C04A51C009C2FBC /* WeightCollectionFlowLayout.m */,
+				8DEE762A1C04A51C009C2FBC /* WeightCollectionViewCell.h */,
+				8DEE762B1C04A51C009C2FBC /* WeightCollectionViewCell.m */,
+				8DEE762C1C04A51C009C2FBC /* WeightCollectionViewCell.xib */,
+				8DEE762D1C04A51C009C2FBC /* WeightViewController.h */,
+				8DEE762E1C04A51C009C2FBC /* WeightViewController.m */,
+				8DEE762F1C04A51C009C2FBC /* WeightViewController.xcassets */,
+				8DEE76301C04A51C009C2FBC /* WeightViewController.xib */,
+			);
+			path = WeightViewController;
+			sourceTree = "<group>";
+		};
 		8DEF5D251BF43B42003F14EE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1470,6 +1501,7 @@
 		CDB5841E1BDE6996008432A3 /* CocoaView */ = {
 			isa = PBXGroup;
 			children = (
+				8DEE76271C04A51C009C2FBC /* WeightViewController */,
 				8DE44A2B1C02E81B0056E782 /* RuleViewController */,
 				CDB584231BDE6E49008432A3 /* CocoaButton */,
 				CDB5841F1BDE6996008432A3 /* PhoneTextField */,
@@ -1573,8 +1605,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEE76351C04A51C009C2FBC /* WeightViewController.xcassets in Resources */,
 				8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */,
 				8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */,
+				8DEE76331C04A51C009C2FBC /* WeightCollectionViewCell.xib in Resources */,
 				8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */,
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
@@ -1583,6 +1617,7 @@
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
 				8D2ACB201C047361000143B8 /* lookup_soft_elegance_2.png in Resources */,
 				8D2ACB1C1C047361000143B8 /* lookup.png in Resources */,
+				8DEE76361C04A51C009C2FBC /* WeightViewController.xib in Resources */,
 				8DE44A3A1C02E81B0056E782 /* RuleViewController.xib in Resources */,
 				8D2ACB1F1C047361000143B8 /* lookup_soft_elegance_1.png in Resources */,
 				8D2ACB1E1C047361000143B8 /* lookup_miss_etikate.png in Resources */,
@@ -1645,6 +1680,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEE76321C04A51C009C2FBC /* WeightCollectionViewCell.m in Sources */,
 				377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */,
 				8D2ACBAB1C047361000143B8 /* GPUImageThreeInputFilter.m in Sources */,
 				8D2ACB701C047361000143B8 /* GPUImageLuminanceRangeFilter.m in Sources */,
@@ -1722,6 +1758,7 @@
 				8D2ACB9F1C047361000143B8 /* GPUImageSobelEdgeDetectionFilter.m in Sources */,
 				8D2ACB421C047361000143B8 /* GPUImageDirectionalSobelEdgeDetectionFilter.m in Sources */,
 				CDB584221BDE6996008432A3 /* PhoneTextField.m in Sources */,
+				8DEE76341C04A51C009C2FBC /* WeightViewController.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
 				8D2ACB7A1C047361000143B8 /* GPUImageMotionDetector.m in Sources */,
 				37D8C12F1B95B14C0073F1CC /* UIColor+Extension.m in Sources */,
@@ -1743,6 +1780,7 @@
 				8D2ACB981C047361000143B8 /* GPUImageScreenBlendFilter.m in Sources */,
 				8D2ACBAA1C047361000143B8 /* GPUImageTextureOutput.m in Sources */,
 				8D2ACB3E1C047361000143B8 /* GPUImageDarkenBlendFilter.m in Sources */,
+				8DEE76311C04A51C009C2FBC /* WeightCollectionFlowLayout.m in Sources */,
 				8D2ACB581C047361000143B8 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,
 				8D2ACB3D1C047361000143B8 /* GPUImageCrosshatchFilter.m in Sources */,
 				8D2ACB881C047361000143B8 /* GPUImagePixellateFilter.m in Sources */,
