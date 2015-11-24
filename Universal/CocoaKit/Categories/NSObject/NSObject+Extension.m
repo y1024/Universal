@@ -15,12 +15,12 @@
 
 - (NSDictionary*)mjInfo
 {
-    return [self JSONObject];
+    return [self mj_JSONObject];
 }
 
 + (instancetype)initWithMjInfo:(NSDictionary*)info;
 {
-    return [self objectWithKeyValues:info];
+    return [self mj_objectWithKeyValues:info];
 }
 
 - (void)receiveTextFieldChangeNotificationWithObj:(id)obj action:(SEL)sel

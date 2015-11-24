@@ -13,50 +13,50 @@
 
 - (void)addMJHeaderWithTarget:(id)target action:(SEL)action
 {
-     self.header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
+     self.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
     
     [self beginMJRefresh];
 }
 
 - (void)addMJGifHeaderWithTarget:(id)target action:(SEL)aciton
 {
-    self.header = [MJRefreshGifHeader headerWithRefreshingTarget:target refreshingAction:aciton];
+    self.mj_header = [MJRefreshGifHeader headerWithRefreshingTarget:target refreshingAction:aciton];
 }
 
 
 - (void)beginMJRefresh
 {
-    [self.header beginRefreshing];
+    [self.mj_header beginRefreshing];
 }
 
 - (void)endMJRefresh
 {
-    [self.header endRefreshing];
+    [self.mj_header endRefreshing];
 }
 
 - (void)addMJFooterWithTarget:(id)target action:(SEL)_action
 {
-    self.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:_action];
+    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:_action];
 }
 
 - (void)addMJGifFooterWithTarget:(id)target action:(SEL)action
 {
-    self.footer = [MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:action];
+    self.mj_footer = [MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:action];
 }
 
 - (void)endMJLoadMore
 {
-    [self.footer endRefreshing];
+    [self.mj_footer endRefreshing];
 }
 
 - (void)endMJLoadNoMore
 {
-    [self.footer endRefreshingWithNoMoreData];
+    [self.mj_footer endRefreshingWithNoMoreData];
 }
 
 - (void)resetMJFooter
 {
-    [self.footer resetNoMoreData];
+    [self.mj_footer resetNoMoreData];
 }
 
 
