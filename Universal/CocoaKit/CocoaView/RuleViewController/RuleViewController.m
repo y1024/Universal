@@ -70,7 +70,7 @@
     
     CGFloat kRuleMax = _ruleMax;
     
-    for (int i = 0; i <= _mistake; i ++) {
+    for (int i = 0; i < _mistake; i ++) {
         RuleTableViewCellModel *model = [[RuleTableViewCellModel alloc]init];
         model.rule = kRuleMax ;
         

@@ -65,7 +65,7 @@
     
     CGFloat kRuleMin = _valueMin;
     
-    for (int i = 0; i <= _mistake; i ++) {
+    for (int i = 0; i < _mistake; i ++) {
         WeightCollectionViewCellModel *model = [[WeightCollectionViewCellModel alloc]init];
         model.value = kRuleMin ;
         
