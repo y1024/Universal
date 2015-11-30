@@ -135,4 +135,9 @@
     }
 }
 
+- (void)obserCurrentInputModeWithAction:(SEL)action object:(id)obj;
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:action name:UITextInputCurrentInputModeDidChangeNotification object:obj];
+}
+
 @end

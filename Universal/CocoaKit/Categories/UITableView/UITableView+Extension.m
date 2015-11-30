@@ -19,7 +19,7 @@
     if ([response notNullArray]) {
         for (NSDictionary *modelInfo in response) {
             if ([modelInfo isKindOfClass:[NSDictionary class]]) {
-                id  model  = [sourceClass objectWithKeyValues:modelInfo];
+                id  model  = [sourceClass mj_objectWithKeyValues:modelInfo];
                 [source addObject:model];
             }
             [self reloadData];

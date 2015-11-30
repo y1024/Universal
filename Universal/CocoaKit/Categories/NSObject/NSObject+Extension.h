@@ -24,4 +24,19 @@
 - (BOOL)notNullString;
 - (BOOL)notNullDictionary;
 
+/**
+ *  zh-Hans //简体汉字拼音
+    en-US   //英文
+    zh-Hans //简体手写
+    zh-Hans //简体笔画
+    zh-Hant //繁体手写
+    zh-Hant //繁体仓颉
+    zh-Hant //繁体笔画
+    emoji   //表情
+ *
+ *  @param action
+ *  @param obj
+ */
+- (void)obserCurrentInputModeWithAction:(SEL)action object:(id)obj;
+
 @end
