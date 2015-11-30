@@ -22,5 +22,19 @@
 
 + (BOOL)IOS6;
 
+/**
+ *   返回针对与一个应用的唯一ID
+ *
+ *   @return 针对与一个应用的唯一ID
+ */
++ (NSString *)uniqueDeviceIdentifier;
+
+
+/**
+ *   返回设备的唯一ID
+ *
+ *   @return 设备的唯一ID
+ */
++ (NSString *)uniqueGlobalDeviceIdentifier;
 
 @end

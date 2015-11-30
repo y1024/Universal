@@ -137,4 +137,14 @@ extern NSString *const regxAllNumbers;
  *  @return
  */
 - (CGFloat)selfWidthWithFont:(CGFloat)font;
+
+/**
+ *  MD5
+ *
+ *  @return
+ */
+- (NSString *)MD5;
+
++ (NSString *)MD5ByAStr:(NSString *)aSourceStr;
+
 @end

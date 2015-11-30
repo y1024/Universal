@@ -101,6 +101,8 @@
     _valueLabel.text = [NSString stringWithFormat:@"%.1lf",value];
 }
 
+
+
 /*
 #pragma mark - Navigation
 
