@@ -301,7 +301,6 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timer * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.cameraPickerController dismissViewControllerAnimated:YES completion:nil];
      });
-
 }
 
 - (IBAction)finishButtonClick:(id)sender {
