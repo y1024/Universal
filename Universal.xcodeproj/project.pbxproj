@@ -235,6 +235,7 @@
 		CD05BB611B960FF700D9B6C9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05BB601B960FF700D9B6C9 /* UIView+Extension.m */; };
 		CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */; };
 		CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */; };
+		CD5292D61C0DFF93005E2134 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5292D51C0DFF93005E2134 /* WebKit.framework */; };
 		CD8349B31BD10254007E75C2 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8349B21BD10254007E75C2 /* UIControl+Extension.m */; };
 		CD8703BA1BC900700023512D /* SourceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703B91BC900700023512D /* SourceTableViewController.m */; };
 		CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8703BD1BC90D860023512D /* UITableView+Extension.m */; };
@@ -687,6 +688,7 @@
 		CD05BB631B96113D00D9B6C9 /* GPXFileBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GPXFileBundle.bundle; sourceTree = "<group>"; };
 		CD19B46A1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPResponseSerializer+Extension.h"; sourceTree = "<group>"; };
 		CD19B46B1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPResponseSerializer+Extension.m"; sourceTree = "<group>"; };
+		CD5292D51C0DFF93005E2134 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CD8349B11BD10254007E75C2 /* UIControl+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Extension.h"; sourceTree = "<group>"; };
 		CD8349B21BD10254007E75C2 /* UIControl+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Extension.m"; sourceTree = "<group>"; };
 		CD8703B81BC900700023512D /* SourceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceTableViewController.h; sourceTree = "<group>"; };
@@ -714,6 +716,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5292D61C0DFF93005E2134 /* WebKit.framework in Frameworks */,
 				8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */,
 				8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */,
 				8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */,
@@ -728,6 +731,7 @@
 		2D49C922A970DE662FA7C999 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD5292D51C0DFF93005E2134 /* WebKit.framework */,
 				8D8E41D01BF06E9C00ADB607 /* libz.tbd */,
 				8D8E41CE1BF06E9000ADB607 /* CoreData.framework */,
 				8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */,
