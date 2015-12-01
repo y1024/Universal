@@ -13,6 +13,7 @@
 
 @implementation NSObject (Extension)
 
+
 - (NSDictionary*)mjInfo
 {
     return [self mj_JSONObject];

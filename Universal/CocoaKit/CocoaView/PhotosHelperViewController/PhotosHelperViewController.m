@@ -37,6 +37,10 @@
 
 @implementation PhotosHelperViewController
 
+- (void)dealloc
+{
+    NSLog(@"%s",__FUNCTION__);
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -154,8 +158,6 @@
 
     }];
 }
-
-
 - (UIImagePickerController*)buildCameraPickerController
 {
     UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
