@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotosHelperCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcP-aP-ape">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mk4-Mu-xQg">
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_tick2_white" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-tQ-S3h">
+                                <rect key="frame" x="89" y="10" width="24" height="24"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="0Pu-j7-bVM"/>
+                                    <constraint firstAttribute="width" constant="24" id="nmK-rK-7y9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mk4-Mu-xQg" secondAttribute="bottom" id="6Ja-fu-m3p"/>
+                            <constraint firstItem="xhX-tQ-S3h" firstAttribute="top" secondItem="tcP-aP-ape" secondAttribute="top" constant="10" id="HcJ-km-apG"/>
+                            <constraint firstItem="Mk4-Mu-xQg" firstAttribute="leading" secondItem="tcP-aP-ape" secondAttribute="leading" id="Iy4-2g-e3p"/>
+                            <constraint firstAttribute="trailing" secondItem="xhX-tQ-S3h" secondAttribute="trailing" constant="5" id="bGt-76-d3Z"/>
+                            <constraint firstItem="Mk4-Mu-xQg" firstAttribute="top" secondItem="tcP-aP-ape" secondAttribute="top" id="eEE-FW-DWJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Mk4-Mu-xQg" secondAttribute="trailing" id="zPo-po-YEI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tcP-aP-ape" secondAttribute="trailing" id="A9E-dv-1Pi"/>
+                <constraint firstAttribute="bottom" secondItem="tcP-aP-ape" secondAttribute="bottom" id="GzX-pM-qCb"/>
+                <constraint firstItem="tcP-aP-ape" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bgA-yx-J8c"/>
+                <constraint firstItem="tcP-aP-ape" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gTr-8x-fG0"/>
+            </constraints>
+            <size key="customSize" width="259" height="120"/>
+            <connections>
+                <outlet property="photoImageView" destination="Mk4-Mu-xQg" id="bZX-eU-ssM"/>
+                <outlet property="photoSelectedIconImageView" destination="xhX-tQ-S3h" id="pLF-Wy-niI"/>
+            </connections>
+            <point key="canvasLocation" x="534.5" y="294"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_tick2_white" width="24" height="24"/>
+    </resources>
+</document>

@@ -205,6 +205,17 @@
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
 		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
+		8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */; };
+		8DCE9B1E1C0DB408009B5054 /* CameraCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */; };
+		8DCE9B1F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */; };
+		8DCE9B201C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */; };
+		8DCE9B211C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */; };
+		8DCE9B221C0DB408009B5054 /* PhotosHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */; };
+		8DCE9B231C0DB408009B5054 /* PhotosHelperViewController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B161C0DB408009B5054 /* PhotosHelperViewController.xcassets */; };
+		8DCE9B241C0DB408009B5054 /* PhotosHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */; };
+		8DCE9B251C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */; };
+		8DCE9B261C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */; };
+		8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */; };
 		8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */; };
 		8DE44A361C02E81B0056E782 /* RuleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */; };
 		8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2F1C02E81B0056E782 /* RuleTableViewCell.xib */; };
@@ -627,6 +638,23 @@
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8DCE9B0C1C0DB408009B5054 /* CameraCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCollectionViewCell.h; sourceTree = "<group>"; };
+		8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionViewCell.m; sourceTree = "<group>"; };
+		8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraCollectionViewCell.xib; sourceTree = "<group>"; };
+		8DCE9B0F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperCollectionViewCell.h; sourceTree = "<group>"; };
+		8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperCollectionViewCell.m; sourceTree = "<group>"; };
+		8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosHelperCollectionViewCell.xib; sourceTree = "<group>"; };
+		8DCE9B121C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperCollectionViewCellModel.h; sourceTree = "<group>"; };
+		8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperCollectionViewCellModel.m; sourceTree = "<group>"; };
+		8DCE9B141C0DB408009B5054 /* PhotosHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperViewController.h; sourceTree = "<group>"; };
+		8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperViewController.m; sourceTree = "<group>"; };
+		8DCE9B161C0DB408009B5054 /* PhotosHelperViewController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PhotosHelperViewController.xcassets; sourceTree = "<group>"; };
+		8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosHelperViewController.xib; sourceTree = "<group>"; };
+		8DCE9B181C0DB408009B5054 /* SelectedPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		8DCE9B1B1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCellLayout.h; sourceTree = "<group>"; };
+		8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCellLayout.m; sourceTree = "<group>"; };
 		8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RuleImages.xcassets; sourceTree = "<group>"; };
 		8DE44A2D1C02E81B0056E782 /* RuleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleTableViewCell.h; sourceTree = "<group>"; };
 		8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleTableViewCell.m; sourceTree = "<group>"; };
@@ -1358,6 +1386,30 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
+		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8DCE9B0C1C0DB408009B5054 /* CameraCollectionViewCell.h */,
+				8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */,
+				8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */,
+				8DCE9B0F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.h */,
+				8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */,
+				8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */,
+				8DCE9B121C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.h */,
+				8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */,
+				8DCE9B141C0DB408009B5054 /* PhotosHelperViewController.h */,
+				8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */,
+				8DCE9B161C0DB408009B5054 /* PhotosHelperViewController.xcassets */,
+				8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */,
+				8DCE9B181C0DB408009B5054 /* SelectedPhotoCollectionViewCell.h */,
+				8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */,
+				8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */,
+				8DCE9B1B1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.h */,
+				8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */,
+			);
+			path = PhotosHelperViewController;
+			sourceTree = "<group>";
+		};
 		8DE44A2B1C02E81B0056E782 /* RuleViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1501,6 +1553,7 @@
 		CDB5841E1BDE6996008432A3 /* CocoaView */ = {
 			isa = PBXGroup;
 			children = (
+				8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */,
 				8DEE76271C04A51C009C2FBC /* WeightViewController */,
 				8DE44A2B1C02E81B0056E782 /* RuleViewController */,
 				CDB584231BDE6E49008432A3 /* CocoaButton */,
@@ -1609,7 +1662,10 @@
 				8DEE76351C04A51C009C2FBC /* WeightViewController.xcassets in Resources */,
 				8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */,
 				8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */,
+				8DCE9B231C0DB408009B5054 /* PhotosHelperViewController.xcassets in Resources */,
+				8DCE9B201C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib in Resources */,
 				8DEE76331C04A51C009C2FBC /* WeightCollectionViewCell.xib in Resources */,
+				8DCE9B261C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib in Resources */,
 				8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */,
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
@@ -1617,10 +1673,12 @@
 				8D2ACBC01C047361000143B8 /* Info.plist in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
 				8D2ACB201C047361000143B8 /* lookup_soft_elegance_2.png in Resources */,
+				8DCE9B1E1C0DB408009B5054 /* CameraCollectionViewCell.xib in Resources */,
 				8D2ACB1C1C047361000143B8 /* lookup.png in Resources */,
 				8DEE76361C04A51C009C2FBC /* WeightViewController.xib in Resources */,
 				8DE44A3A1C02E81B0056E782 /* RuleViewController.xib in Resources */,
 				8D2ACB1F1C047361000143B8 /* lookup_soft_elegance_1.png in Resources */,
+				8DCE9B241C0DB408009B5054 /* PhotosHelperViewController.xib in Resources */,
 				8D2ACB1E1C047361000143B8 /* lookup_miss_etikate.png in Resources */,
 				37AD9BDE1B943E1400F1D180 /* Images.xcassets in Resources */,
 			);
@@ -1724,6 +1782,7 @@
 				8D2ACBA51C047361000143B8 /* GPUImageStillCamera.m in Sources */,
 				8D2ACB5A1C047361000143B8 /* GPUImageHighlightShadowFilter.m in Sources */,
 				8D2ACB571C047361000143B8 /* GPUImageHardLightBlendFilter.m in Sources */,
+				8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */,
 				8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */,
 				CDB5841D1BDE3278008432A3 /* NewViewController.m in Sources */,
 				CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */,
@@ -1753,6 +1812,7 @@
 				8D2ACB4E1C047361000143B8 /* GPUImageFramebuffer.m in Sources */,
 				8D2ACB411C047361000143B8 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
 				8D2ACBBC1C047361000143B8 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
+				8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */,
 				8D2ACB6C1C047361000143B8 /* GPUImageLineGenerator.m in Sources */,
 				8D2ACB551C047361000143B8 /* GPUImageGrayscaleFilter.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
@@ -1831,6 +1891,7 @@
 				8D2ACBB21C047361000143B8 /* GPUImageTransformFilter.m in Sources */,
 				8D2ACBB31C047361000143B8 /* GPUImageTwoInputCrossTextureSamplingFilter.m in Sources */,
 				8D2ACB891C047361000143B8 /* GPUImagePixellatePositionFilter.m in Sources */,
+				8DCE9B1F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.m in Sources */,
 				8D2ACB371C047361000143B8 /* GPUImageColorInvertFilter.m in Sources */,
 				8D2ACB861C047361000143B8 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				8D2ACBB41C047361000143B8 /* GPUImageTwoInputFilter.m in Sources */,
@@ -1841,6 +1902,7 @@
 				8D2ACB751C047361000143B8 /* GPUImageMedianFilter.m in Sources */,
 				8D2ACBA11C047361000143B8 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				8D2ACBAC1C047361000143B8 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
+				8DCE9B211C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m in Sources */,
 				8D2ACB871C047361000143B8 /* GPUImagePinchDistortionFilter.m in Sources */,
 				37AD9BD61B943E1400F1D180 /* AppDelegate.m in Sources */,
 				CD8703BA1BC900700023512D /* SourceTableViewController.m in Sources */,
@@ -1851,6 +1913,7 @@
 				8D2ACB271C047361000143B8 /* GPUImageAmatorkaFilter.m in Sources */,
 				8D2ACBC11C047361000143B8 /* GPUImageContext.m in Sources */,
 				8D2ACB611C047361000143B8 /* GPUImageHueBlendFilter.m in Sources */,
+				8DCE9B251C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m in Sources */,
 				8D2ACB801C047361000143B8 /* GPUImageNormalBlendFilter.m in Sources */,
 				8D2ACB4C1C047361000143B8 /* GPUImageFilterGroup.m in Sources */,
 				8D2ACB681C047361000143B8 /* GPUImageLaplacianFilter.m in Sources */,
@@ -1883,6 +1946,7 @@
 				8D2ACBB01C047361000143B8 /* GPUImageToneCurveFilter.m in Sources */,
 				8D2ACB721C047361000143B8 /* GPUImageLuminosity.m in Sources */,
 				37D8C1231B959EAF0073F1CC /* NSString+Extension.m in Sources */,
+				8DCE9B221C0DB408009B5054 /* PhotosHelperViewController.m in Sources */,
 				8D2ACB961C047361000143B8 /* GPUImageSaturationBlendFilter.m in Sources */,
 				8D2ACB261C047361000143B8 /* GPUImageAlphaBlendFilter.m in Sources */,
 				8D2ACB2D1C047361000143B8 /* GPUImageBuffer.m in Sources */,

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CameraCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zQ-Hj-myv">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_doctor_photo_white" translatesAutoresizingMaskIntoConstraints="NO" id="NWS-qk-jeo">
+                                <rect key="frame" x="39" y="31.5" width="40" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ZpI-jl-AJm"/>
+                                    <constraint firstAttribute="width" constant="40" id="bGa-BX-sJL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍摄照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Do-pi-fs4">
+                                <rect key="frame" x="25" y="77" width="68" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.79607843137254897" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Do-pi-fs4" firstAttribute="centerX" secondItem="NWS-qk-jeo" secondAttribute="centerX" id="Tay-I0-EyO"/>
+                            <constraint firstItem="NWS-qk-jeo" firstAttribute="centerX" secondItem="3zQ-Hj-myv" secondAttribute="centerX" id="VnV-Gj-p1l"/>
+                            <constraint firstItem="7Do-pi-fs4" firstAttribute="top" secondItem="NWS-qk-jeo" secondAttribute="bottom" constant="10" id="br7-er-D4m"/>
+                            <constraint firstItem="NWS-qk-jeo" firstAttribute="centerY" secondItem="3zQ-Hj-myv" secondAttribute="centerY" constant="-10" id="vrd-3L-Glc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3zQ-Hj-myv" secondAttribute="bottom" id="9q3-e8-IEo"/>
+                <constraint firstAttribute="trailing" secondItem="3zQ-Hj-myv" secondAttribute="trailing" id="atx-QX-vjt"/>
+                <constraint firstItem="3zQ-Hj-myv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bNZ-6P-ov8"/>
+                <constraint firstItem="3zQ-Hj-myv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ev0-Wc-iLM"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_doctor_photo_white" width="41" height="36"/>
+    </resources>
+</document>

@@ -14,6 +14,9 @@
 
 #import "RuleViewController.h"
 
+#import "PhotosHelperViewController.h"
+
+
 
 
 @interface SourceTableViewController ()<RuleViewControllerRuleChangeDelegate>
@@ -95,9 +98,15 @@
     {
 //        NSLog(@"viewControll:%ld",self.navigationController.viewControllers.count);
         
-        RuleViewController *ruleVC = [[RuleViewController alloc]init];
-        ruleVC.ruleMin = 40;
-        ruleVC.ruleMax  = 100 ;
+//        RuleViewController *ruleVC = [[RuleViewController alloc]init];
+//        ruleVC.ruleMin = 40;
+//        ruleVC.ruleMax  = 100 ;
+//        
+//        ruleVC.delegate = self;
+//        [self.navigationController pushViewController:ruleVC animated:YES];
+        
+        PhotosHelperViewController *ruleVC = [[PhotosHelperViewController alloc]init];
+        ruleVC.selectMax = 5;
         
         ruleVC.delegate = self;
         [self.navigationController pushViewController:ruleVC animated:YES];
