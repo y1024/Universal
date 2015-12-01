@@ -95,6 +95,9 @@
                 <constraint firstItem="KgZ-hP-9JW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lh9-lh-idc"/>
                 <constraint firstAttribute="bottom" secondItem="KgZ-hP-9JW" secondAttribute="bottom" id="mJv-Ah-yL9"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
         </view>
     </objects>
     <resources>

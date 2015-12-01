@@ -1389,6 +1389,9 @@
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8DCE9B141C0DB408009B5054 /* PhotosHelperViewController.h */,
+				8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */,
+				8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */,
 				8DCE9B0C1C0DB408009B5054 /* CameraCollectionViewCell.h */,
 				8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */,
 				8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */,
@@ -1397,10 +1400,7 @@
 				8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */,
 				8DCE9B121C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.h */,
 				8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */,
-				8DCE9B141C0DB408009B5054 /* PhotosHelperViewController.h */,
-				8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */,
 				8DCE9B161C0DB408009B5054 /* PhotosHelperViewController.xcassets */,
-				8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */,
 				8DCE9B181C0DB408009B5054 /* SelectedPhotoCollectionViewCell.h */,
 				8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */,
 				8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */,

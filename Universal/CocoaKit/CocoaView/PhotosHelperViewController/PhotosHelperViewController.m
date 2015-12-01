@@ -32,10 +32,6 @@
 
 @property(nonatomic,assign)NSInteger photosTotalCount;
 
-/**
- *  自动刷新
- */
-@property(nonatomic,assign)BOOL autoRefreshSource;
 
 @end
 
@@ -45,9 +41,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    if (_autoRefreshSource == YES) {
-        [self readALAssetsLibrary];
-    }
 }
 
 - (void)viewDidLoad {
@@ -57,7 +50,6 @@
         _selectMax = 3 ;
     }
     self.cameraPickerController = [self buildCameraPickerController];
-    _autoRefreshSource = NO;
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"CameraCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CameraCollectionViewCell"];
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"PhotosHelperCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PhotosHelperCollectionViewCell"];
     [_selectedCollectionView registerNib:[UINib nibWithNibName:@"SelectedPhotoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"SelectedPhotoCollectionViewCell"];
@@ -150,34 +142,16 @@
                     PhotosHelperCollectionViewCellModel *model = [[PhotosHelperCollectionViewCellModel alloc]init];
                     model.image = image;
                     model.selected = NO;
-                    
-                    NSLog(@"stop:%d",*stop);
-                    
-                    
-                    if (_autoRefreshSource == YES) {
-                        *stop = YES;
-                        model.selected = YES;
-                        [_selectedArray addObject:model];
-                        [_sourceArray insertObject:model atIndex:0];
-                        [self reloadCollectionView];
-                        
-                        _finishSeletedButton.titleLabel.text = [NSString stringWithFormat:@"完成(%ld/%ld)",_selectedArray.count,_selectMax];
-                        
-                    }
-                    else
-                    {
-                        [_sourceArray addObject:model];
-                    }
+                    [_sourceArray addObject:model];
                 }
-            }
-            if (index == 0) {
-                [self reloadCollectionView];
+                  if (index == 0) {
+                    [self reloadCollectionView];
+                }
             }
           }];
 
     } failureBlock:^(NSError *error) {
 
-        
     }];
 }
 
@@ -202,9 +176,7 @@
 {
     
     if (collectionView == _sourceCollectionView) {
-        
-        _autoRefreshSource = NO;
-        
+
         UICollectionViewCell *cell = [self __collectionView:collectionView cellWithIndex:indexPath];
         if ([cell isKindOfClass:[CameraCollectionViewCell class]]) {
             
@@ -304,9 +276,16 @@
     dispatch_sync(dispatch_get_global_queue(0, 0), ^{
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     });
-    _autoRefreshSource = YES;
     
-    [self dismissCameraPickerViewControllerWithDelay:2.0];
+    model.selected = YES;
+    [_selectedArray addObject:model];
+    [_sourceArray insertObject:model atIndex:0];
+    [self reloadCollectionView];
+    
+    _finishSeletedButton.titleLabel.text = [NSString stringWithFormat:@"完成(%ld/%ld)",_selectedArray.count,_selectMax];
+    
+    
+    [self dismissCameraPickerViewControllerWithDelay:0];
     
 }
 
