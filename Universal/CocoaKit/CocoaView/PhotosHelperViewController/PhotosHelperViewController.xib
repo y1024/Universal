@@ -44,7 +44,7 @@
                                 <constraint firstAttribute="width" constant="90" id="34z-WS-jBS"/>
                                 <constraint firstAttribute="height" constant="30" id="4hX-hz-apc"/>
                             </constraints>
-                            <state key="normal" title="完成(0/3)" backgroundImage="BTN_Article_orange"/>
+                            <state key="normal" backgroundImage="BTN_Article_orange"/>
                             <connections>
                                 <action selector="finishButtonClick:" destination="-1" eventType="touchUpInside" id="Mb6-bD-Zoh"/>
                             </connections>
@@ -55,20 +55,14 @@
                     <constraints>
                         <constraint firstItem="lKw-KQ-P3M" firstAttribute="leading" secondItem="0I8-3z-tc9" secondAttribute="trailing" id="2iw-2N-2AG"/>
                         <constraint firstItem="lKw-KQ-P3M" firstAttribute="centerY" secondItem="KgZ-hP-9JW" secondAttribute="centerY" id="8Hj-jF-3aV"/>
-                        <constraint firstAttribute="trailing" secondItem="0I8-3z-tc9" secondAttribute="trailing" constant="200" id="Fsv-bn-dKX"/>
                         <constraint firstAttribute="trailing" secondItem="lKw-KQ-P3M" secondAttribute="trailing" constant="10" id="Ppu-4s-caL"/>
                         <constraint firstAttribute="bottom" secondItem="0I8-3z-tc9" secondAttribute="bottom" id="eEc-aw-tTJ"/>
                         <constraint firstItem="0I8-3z-tc9" firstAttribute="leading" secondItem="KgZ-hP-9JW" secondAttribute="leading" id="hwd-JX-Ipg"/>
                         <constraint firstItem="0I8-3z-tc9" firstAttribute="top" secondItem="KgZ-hP-9JW" secondAttribute="top" id="lUy-AH-VAf"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Fsv-bn-dKX"/>
-                        </mask>
-                    </variation>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YGm-mV-hBv">
-                    <rect key="frame" x="0.0" y="64" width="600" height="486"/>
+                    <rect key="frame" x="0.0" y="69" width="600" height="481"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="rWq-Mb-cuQ">
@@ -89,7 +83,7 @@
                 <constraint firstItem="YGm-mV-hBv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mba-Me-HFM"/>
                 <constraint firstItem="KgZ-hP-9JW" firstAttribute="top" secondItem="YGm-mV-hBv" secondAttribute="bottom" id="QUg-hc-6YS"/>
                 <constraint firstAttribute="trailing" secondItem="KgZ-hP-9JW" secondAttribute="trailing" id="RNY-Hf-AWK"/>
-                <constraint firstItem="YGm-mV-hBv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Z5R-wu-bat"/>
+                <constraint firstItem="YGm-mV-hBv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="69" id="Z5R-wu-bat"/>
                 <constraint firstAttribute="trailing" secondItem="YGm-mV-hBv" secondAttribute="trailing" id="cLM-H9-PKy"/>
                 <constraint firstAttribute="bottom" secondItem="YGm-mV-hBv" secondAttribute="bottom" constant="50" id="i2s-hK-GZb"/>
                 <constraint firstItem="KgZ-hP-9JW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lh9-lh-idc"/>

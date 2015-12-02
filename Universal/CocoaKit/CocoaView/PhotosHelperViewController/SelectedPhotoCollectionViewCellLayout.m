@@ -8,7 +8,7 @@
 
 #import "SelectedPhotoCollectionViewCellLayout.h"
 
-#define kWeightCollectionCellWidth 50
+#define kSelectedPhotoCollectionViewCellLWidth 50
 
 @implementation SelectedPhotoCollectionViewCellLayout
 
@@ -31,7 +31,7 @@
         for (int itemJ = 0; itemJ < items; itemJ++){
             NSIndexPath* indexPath = [NSIndexPath indexPathForItem:itemJ inSection:sectionI];
             UICollectionViewLayoutAttributes* layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-            layoutAttributes.frame = CGRectMake(kWeightCollectionCellWidth*itemJ, 0, kWeightCollectionCellWidth, kWeightCollectionCellWidth);
+            layoutAttributes.frame = CGRectMake(kSelectedPhotoCollectionViewCellLWidth*itemJ,0, kSelectedPhotoCollectionViewCellLWidth, kSelectedPhotoCollectionViewCellLWidth);
             [_allLayoutAttributesMutableArray addObject:layoutAttributes];
         }
     }
@@ -41,7 +41,7 @@
 {
     NSInteger totalCount = _allLayoutAttributesMutableArray.count;
     
-    return CGSizeMake(totalCount*kWeightCollectionCellWidth, CGRectGetHeight(self.collectionView.bounds));
+    return CGSizeMake(totalCount*kSelectedPhotoCollectionViewCellLWidth, CGRectGetHeight(self.collectionView.bounds));
 }
 
 - (NSArray* )layoutAttributesForElementsInRect:(CGRect)rect {

@@ -22,7 +22,6 @@
 
 @property(nonatomic,strong) NSMutableArray  *sourceArray;
 
-@property(nonatomic,strong) NSMutableArray  *selectedArray;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *sourceCollectionView;
 
@@ -32,10 +31,17 @@
 
 @property(nonatomic,assign)NSInteger photosTotalCount;
 
+/**
+ *  拍照存入本地后 重新刷新数据源
+ */
+@property(nonatomic,assign)BOOL autoRefreshSource;
+
 
 @end
 
 @implementation PhotosHelperViewController
+
+
 
 - (void)dealloc
 {
@@ -45,6 +51,11 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    if (_autoRefreshSource == YES) {
+        [self readALAssetsLibrary];
+    }
+    
 }
 
 - (void)viewDidLoad {
@@ -53,6 +64,10 @@
     if (_selectMax == 0) {
         _selectMax = 3 ;
     }
+    [self defaultNaviBarShowTitle:@"选择图片"];
+    
+    _autoRefreshSource = NO;
+    
     self.cameraPickerController = [self buildCameraPickerController];
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"CameraCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CameraCollectionViewCell"];
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"PhotosHelperCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PhotosHelperCollectionViewCell"];
@@ -62,9 +77,9 @@
     _selectedCollectionView.collectionViewLayout = [[SelectedPhotoCollectionViewCellLayout alloc]init];
 
     _sourceArray = [NSMutableArray array];
-    _selectedArray = [NSMutableArray array];
     
     [self readALAssetsLibrary];
+    [self buildFinishButtonTitle];
     
 }
 
@@ -80,7 +95,7 @@
     }
     else if(collectionView == _selectedCollectionView)
     {
-        return _selectedArray.count;
+        return _hasSelectedPhotosArray.count;
     }
     else
     {
@@ -108,7 +123,7 @@
     {
         SelectedPhotoCollectionViewCell *cell = (SelectedPhotoCollectionViewCell*)[self __collectionView:_selectedCollectionView cellWithIndex:indexPath];
         temCell = cell;
-        cell.model = _selectedArray[indexPath.row];
+        cell.model = _hasSelectedPhotosArray[indexPath.row];
     }
     else
     {
@@ -136,17 +151,50 @@
 - (void)readALAssetsLibrary
 {
      ALAssetsLibrary *assetsLibrary=[[ALAssetsLibrary alloc]init];
-    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         
         [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
             UIImage *image=[UIImage imageWithCGImage:result.thumbnail];
             if (image) {
-                
+
                 @autoreleasepool {
+                    
                     PhotosHelperCollectionViewCellModel *model = [[PhotosHelperCollectionViewCellModel alloc]init];
                     model.image = image;
-                    model.selected = NO;
-                    [_sourceArray addObject:model];
+                    model.localURLString = ((NSURL*)[result valueForProperty:ALAssetPropertyAssetURL]).absoluteString;
+                    
+                    if (_autoRefreshSource == YES) {
+                        
+                        *stop = YES;
+                        model.selected = YES;
+                        
+                        [_hasSelectedPhotosArray addObject:model];
+                        [_sourceArray insertObject:model atIndex:0];
+                        [self reloadCollectionView];
+                        [self buildFinishButtonTitle];
+                        
+                        if ([_delegate respondsToSelector:@selector(didSelectedImageArray:)]) {
+                            [_delegate didSelectedImageArray:_hasSelectedPhotosArray];
+                        }
+                    }
+                    else
+                    {
+                        for (PhotosHelperCollectionViewCellModel *hasSelectedModel in _hasSelectedPhotosArray) {
+                            if ([model.localURLString isEqualToString:hasSelectedModel.localURLString]) {
+                                model = hasSelectedModel;
+                                model.selected = YES;
+                                
+                                break ;
+                            }
+                            
+                            else
+                            {
+                                model.selected = NO;
+                            }
+                        }
+                        
+                        [_sourceArray addObject:model];
+                    }
                 }
                   if (index == 0) {
                     [self reloadCollectionView];
@@ -170,7 +218,6 @@
     imgPickerController.sourceType = sourceType;
     
     return imgPickerController;
-
 }
 
 
@@ -178,13 +225,13 @@
 {
     
     if (collectionView == _sourceCollectionView) {
-
+        _autoRefreshSource = NO;
         UICollectionViewCell *cell = [self __collectionView:collectionView cellWithIndex:indexPath];
         if ([cell isKindOfClass:[CameraCollectionViewCell class]]) {
             
             if ([self beyondLimted]) {
                 
-                NSLog(@"当前已经选择%ld张,最大可以选择%ld张",_selectedArray.count,_selectMax);
+                NSLog(@"当前已经选择%ld张,最大可以选择%ld张",_hasSelectedPhotosArray.count,_selectMax);
                 
                 return ;
             }
@@ -196,28 +243,27 @@
         else
         {
             PhotosHelperCollectionViewCellModel *model = _sourceArray[indexPath.row - 1];
-            if ([_selectedArray containsObject:model]) {
+            if ([self source:_hasSelectedPhotosArray isContainPhotosHelperCollectionViewCellModel:model]) {
                 model.selected = !model.selected ;
                 if (model.selected == NO) {
-                    [_selectedArray removeObject:model];
+                    [_hasSelectedPhotosArray removeObject:model];
                 }
             }
             else
             {
                 if ([self beyondLimted]) {
                     
-                    NSLog(@"当前已经选择%ld张,最大可以选择%ld张",_selectedArray.count,_selectMax);
+                    NSLog(@"当前已经选择%ld张,最大可以选择%ld张",_hasSelectedPhotosArray.count,_selectMax);
                     
                     return ;
                 }
                 else
                 {   model.selected = !model.selected ;
-                    [_selectedArray addObject:model];
+                    [_hasSelectedPhotosArray addObject:model];
                 }
             }
             [self reloadCollectionView];
-            
-            _finishSeletedButton.titleLabel.text = [NSString stringWithFormat:@"完成(%ld/%ld)",_selectedArray.count,_selectMax];
+            [self buildFinishButtonTitle];
         }
     }
     else
@@ -237,7 +283,7 @@
 
 - (BOOL)beyondLimted
 {
-    if (_selectedArray.count >= _selectMax) {
+    if (_hasSelectedPhotosArray.count >= _selectMax) {
         
         return YES;
     }
@@ -272,22 +318,11 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
-    PhotosHelperCollectionViewCellModel *model = [[PhotosHelperCollectionViewCellModel alloc]init];
-    model.image = image;
- 
     dispatch_sync(dispatch_get_global_queue(0, 0), ^{
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     });
-    
-    model.selected = YES;
-    [_selectedArray addObject:model];
-    [_sourceArray insertObject:model atIndex:0];
-    [self reloadCollectionView];
-    
-    _finishSeletedButton.titleLabel.text = [NSString stringWithFormat:@"完成(%ld/%ld)",_selectedArray.count,_selectMax];
-    
-    
-    [self dismissCameraPickerViewControllerWithDelay:0];
+     _autoRefreshSource = YES;
+    [self dismissCameraPickerViewControllerWithDelay:3];
     
 }
 
@@ -303,10 +338,37 @@
      });
 }
 
-- (IBAction)finishButtonClick:(id)sender {
+- (IBAction)finishButtonClick:(UIButton*)sender {
+
     if ([_delegate respondsToSelector:@selector(didSelectedImageArray:)]) {
-        [_delegate didSelectedImageArray:_selectedArray];
+        [_delegate didSelectedImageArray:_hasSelectedPhotosArray];
     }
+     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)buildFinishButtonTitle
+{
+    NSString *titleString = [NSString stringWithFormat:@"完成(%ld/%ld)",_hasSelectedPhotosArray.count,_selectMax];
+    
+    [_finishSeletedButton setTitle:titleString forState:normal];
+}
+
+- (BOOL)source:(NSMutableArray*)source isContainPhotosHelperCollectionViewCellModel:(PhotosHelperCollectionViewCellModel*)model
+{
+    BOOL flag = NO;
+    
+    for (PhotosHelperCollectionViewCellModel *exitModel in source) {
+        if ([exitModel.localURLString isEqualToString:model.localURLString]) {
+            flag = YES;
+            
+            break ;
+        }
+        else
+        {
+            flag = NO;
+        }
+    }
+    return flag;
 }
 
 @end

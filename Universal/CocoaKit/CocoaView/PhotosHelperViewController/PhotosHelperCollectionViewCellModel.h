@@ -1,4 +1,4 @@
-//
+
 //  PhotosHelperCollectionViewCellModel.h
 //  Demo
 //
@@ -17,5 +17,7 @@
 @property(nonatomic,strong)UIImage *image;
 
 @property(nonatomic,assign)BOOL    selected;
+
+@property(nonatomic,strong)NSString *localURLString;
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotosHelperCollectionViewCellModel.h"
+#import "JCNaviSubViewController.h"
 
 @protocol PhotosHelperViewControllerDelegate <NSObject>
 
@@ -17,7 +18,7 @@
 @end
 
 
-@interface PhotosHelperViewController : UIViewController
+@interface PhotosHelperViewController : JCNaviSubViewController
 
 /**
  *  支持最多选取几张
@@ -26,7 +27,9 @@
 
 
 @property(nonatomic,assign)id delegate;
-
-
+/**
+ *  已选择
+ */
+@property(nonatomic,strong)NSMutableArray *hasSelectedPhotosArray;
 
 @end
