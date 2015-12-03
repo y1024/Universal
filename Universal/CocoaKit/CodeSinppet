@@ -2,5 +2,15 @@
 
 
 
+/**
+*  <#Description#>
+*/
 @property(nonatomic,assign)<#(type)#>               *<#(name)#>;
+
+#define <#macro#>  <#macro#>
+
+#pragma mark <#(注释内容)#>
+/**
+*  <#Description#>
+*/
 @property(nonatomic,strong)<#(type)#>               *<#(name)#>;
