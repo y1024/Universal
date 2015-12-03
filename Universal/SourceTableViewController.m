@@ -21,9 +21,8 @@
 
 @interface SourceTableViewController ()<RuleViewControllerRuleChangeDelegate>
 
-
-
 @property(nonatomic,strong)NewViewController *nextVC;
+
 
 @end
 

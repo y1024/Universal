@@ -1,0 +1,6 @@
+
+
+
+
+@property(nonatomic,assign)<#(type)#>               *<#(name)#>;
+@property(nonatomic,strong)<#(type)#>               *<#(name)#>;
