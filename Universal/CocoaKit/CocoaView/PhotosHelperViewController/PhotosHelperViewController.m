@@ -31,6 +31,7 @@
 
 @property(nonatomic,assign)NSInteger photosTotalCount;
 
+
 /**
  *  拍照存入本地后 重新刷新数据源
  */
@@ -64,7 +65,6 @@
     if (_selectMax == 0) {
         _selectMax = 3 ;
     }
-    [self defaultNaviBarShowTitle:@"选择图片"];
     
     _autoRefreshSource = NO;
     
