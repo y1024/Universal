@@ -216,6 +216,7 @@
 		8DCE9B251C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */; };
 		8DCE9B261C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */; };
 		8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */; };
+		8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3960A1C102CB7006662FC /* CodeSinppet */; };
 		8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */; };
 		8DE44A361C02E81B0056E782 /* RuleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */; };
 		8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2F1C02E81B0056E782 /* RuleTableViewCell.xib */; };
@@ -656,6 +657,7 @@
 		8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DCE9B1B1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCellLayout.h; sourceTree = "<group>"; };
 		8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCellLayout.m; sourceTree = "<group>"; };
+		8DD3960A1C102CB7006662FC /* CodeSinppet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeSinppet; sourceTree = "<group>"; };
 		8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RuleImages.xcassets; sourceTree = "<group>"; };
 		8DE44A2D1C02E81B0056E782 /* RuleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleTableViewCell.h; sourceTree = "<group>"; };
 		8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleTableViewCell.m; sourceTree = "<group>"; };
@@ -785,6 +787,7 @@
 				CD05BB4A1B960C7400D9B6C9 /* Optional */,
 				377C11151B95943800FD4EB6 /* Categories */,
 				377C11121B958FE700FD4EB6 /* PodHeaders */,
+				8DD3960A1C102CB7006662FC /* CodeSinppet */,
 			);
 			path = CocoaKit;
 			sourceTree = "<group>";
@@ -1675,6 +1678,7 @@
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
 				8D2ACB1D1C047361000143B8 /* lookup_amatorka.png in Resources */,
 				8D2ACBC01C047361000143B8 /* Info.plist in Resources */,
+				8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
 				8D2ACB201C047361000143B8 /* lookup_soft_elegance_2.png in Resources */,
 				8DCE9B1E1C0DB408009B5054 /* CameraCollectionViewCell.xib in Resources */,

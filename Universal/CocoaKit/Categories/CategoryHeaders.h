@@ -35,5 +35,12 @@
 #import "UIControl+Extension.h"
 #import "NSMutableDictionary+Extension.h"
 
+#define	prop_readonly( type, name )		property (nonatomic, readonly) type name;
+#define	prop_assign( type, name )		property (nonatomic, assign) type name;
+#define	prop_strong( type, name )		property (nonatomic, strong) type name;
+#define	prop_weak( type, name )			property (nonatomic, weak) type name;
+#define	prop_copy( type, name )			property (nonatomic, copy) type name;
+#define	prop_unsafe( type, name )		property (nonatomic, unsafe_unretained) type name;
+
 
 
