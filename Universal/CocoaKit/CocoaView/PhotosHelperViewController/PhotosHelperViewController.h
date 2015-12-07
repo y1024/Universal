@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotosHelperCollectionViewCellModel.h"
-#import "JCNaviSubViewController.h"
+
 
 @protocol PhotosHelperViewControllerDelegate <NSObject>
 
@@ -18,7 +18,7 @@
 @end
 
 
-@interface PhotosHelperViewController : JCNaviSubViewController
+@interface PhotosHelperViewController : UIViewController
 
 /**
  *  支持最多选取几张
