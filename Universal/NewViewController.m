@@ -30,9 +30,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor clearColor];
+    
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor redColor];
+//    self.view.backgroundColor = [UIColor redColor];
     
 //  NSTimer *timer =  [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(testTimer) userInfo:nil repeats:NO];
 ////    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -59,29 +61,8 @@
 //    
 //    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(repeatInfo:) userInfo:webView repeats:YES];
     
-    NSString *urlString = @"http://img5.imgtn.bdimg.com/it/u=3087425606,3966262399&fm=21&gp=0.jpg";
+
     
-    UIImageView *img = [[UIImageView alloc]init];
-    [self.view addSubview:img];
-    [img placeHolderImage:@"" urlImage:urlString];
-    img.frame = CGRectMake(0, 0, 100, 100);
-    
-    
-}
-- (void)repeatInfo:(NSTimer*)timer
-{
-    UIWebView *web = timer.userInfo;
-    
-    int a = arc4random()%2;
-    
-    NSArray *ay = @[@"http://www.163.com",@"http://www.baidu.com",@"http://www.qq.com"];
-    
-    
-    [web loadURL:ay[a]];
-}
-- (void)testTimer
-{
-//    NSLog(@"testTimer");
     
 }
 

@@ -205,6 +205,8 @@
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
 		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
+		8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */; };
+		8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B02E1C12F98000CD720D /* ReplyViewController.m */; };
 		8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */; };
 		8DCE9B1E1C0DB408009B5054 /* CameraCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */; };
 		8DCE9B1F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */; };
@@ -640,6 +642,9 @@
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplyViewController.xib; sourceTree = "<group>"; };
+		8DC6B02E1C12F98000CD720D /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
+		8DC6B02F1C12F98000CD720D /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
 		8DCE9B0C1C0DB408009B5054 /* CameraCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCollectionViewCell.h; sourceTree = "<group>"; };
 		8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionViewCell.m; sourceTree = "<group>"; };
 		8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -917,6 +922,9 @@
 				CD8703B91BC900700023512D /* SourceTableViewController.m */,
 				CDB5841B1BDE3278008432A3 /* NewViewController.h */,
 				CDB5841C1BDE3278008432A3 /* NewViewController.m */,
+				8DC6B02E1C12F98000CD720D /* ReplyViewController.m */,
+				8DC6B02F1C12F98000CD720D /* ReplyViewController.h */,
+				8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */,
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
@@ -1677,6 +1685,7 @@
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
 				8D2ACB1D1C047361000143B8 /* lookup_amatorka.png in Resources */,
+				8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */,
 				8D2ACBC01C047361000143B8 /* Info.plist in Resources */,
 				8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
@@ -1847,6 +1856,7 @@
 				8D2ACBB61C047361000143B8 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
 				8D2ACB7E1C047361000143B8 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
 				8D2ACB3B1C047361000143B8 /* GPUImageCropFilter.m in Sources */,
+				8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */,
 				8D2ACB9C1C047361000143B8 /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */,
 				8D2ACB321C047361000143B8 /* GPUImageChromaKeyFilter.m in Sources */,
 				8D2ACB481C047361000143B8 /* GPUImageExposureFilter.m in Sources */,

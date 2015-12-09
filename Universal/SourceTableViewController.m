@@ -8,13 +8,16 @@
 
 #import "SourceTableViewController.h"
 
-#import "PodHeaders.h"
+//#import "PodHeaders.h"
 
 #import "NewViewController.h"
 
 #import "RuleViewController.h"
 
 #import "PhotosHelperViewController.h"
+
+#import "ReplyViewController.h"
+
 
 
 
@@ -53,9 +56,9 @@
 //        
 //    }];
     
-    NSString *str = @"之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80";
-    
-    NSLog(@"%lf",[str selfWidthWithFont:18]);
+//    NSString *str = @"之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80之前我们不是使用M80";
+//    
+//    NSLog(@"%lf",[str selfWidthWithFont:18]);
     
 }
 
@@ -89,11 +92,16 @@
     
     if (indexPath.row ==1){
         if (!self.nextVC) {
-            NewViewController *newVC = [[NewViewController alloc]init];
-            self.nextVC = newVC;
+            ReplyViewController *newVC = [[ReplyViewController alloc]init];
+//            self.nextVC = newVC;
+            [self.view addSubview:newVC.view];
+             [self addChildViewController:newVC];
         }
+       
+//        [self.view addSubview:_nextVC.view];
+//        [self presentViewController:_nextVC animated:YES completion:nil];
 
-        [self.navigationController pushViewController:_nextVC animated:YES];
+//        [self.navigationController pushViewController:_nextVC animated:YES];
     }
     else
     {
