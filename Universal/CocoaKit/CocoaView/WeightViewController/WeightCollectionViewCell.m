@@ -11,7 +11,14 @@
 
 @implementation WeightCollectionViewCellModel
 
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.value = [NSNumber numberWithFloat:0.0];
+    }
+    return self;
+}
 
 @end
 
@@ -23,13 +30,19 @@
 
 - (void)configCell:(WeightCollectionViewCellModel*)model
 {
-    self.cellState = [self stateWithNumber:model.value];
-    self.valueLabel.text = [NSString stringWithFormat:@"%.0lf",model.value];
+ 
+    self.cellState = [self stateWithNumber:[model.value floatValue]];
+
+    self.valueLabel.text = [NSString stringWithFormat:@"%@",model.value];
 }
 
 - (WeightCollectionViewCellWightViewState)stateWithNumber:(CGFloat)number
 {
-    NSInteger tenMltiple = number * 10 ;
+    NSNumber *numberVaule = [NSNumber numberWithFloat:number * 10];
+    
+    NSInteger tenMltiple = [numberVaule integerValue];
+    
+       NSLog(@"number:%@",[NSNumber numberWithFloat:number * 10]);
     if (tenMltiple % 10 == 0) {
         
         return WeightCollectionViewCellWightViewStateLong;
@@ -37,6 +50,7 @@
     else
     {
         if (tenMltiple % 5 == 0) {
+            
             return WeightCollectionViewCellWightViewStateMiddle;
         }
         else

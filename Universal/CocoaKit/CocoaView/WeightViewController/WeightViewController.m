@@ -25,13 +25,37 @@
 
 - (instancetype)initWithValueMin:(CGFloat)min ruleMax:(CGFloat)max delegate:(id)delegate
 {
+    return [self initWithValueMin:min ruleMax:max defaultValue:min delegate:delegate];
+}
+
+- (instancetype)initWithValueMin:(CGFloat)min ruleMax:(CGFloat)max defaultValue:(CGFloat)defaulValue delegate:(id)delegate
+{
     self = [super init];
     if (self) {
         self.delegate = delegate;
         self.valueMin = min;
         self.valueMax = max;
+        self.defaulValue = defaulValue;
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    UIEdgeInsets inset = UIEdgeInsetsMake(0, kCollectionViewContentLeftOffset, 0, kCollectionViewContentLeftOffset);
+    _weightCollectionView.contentInset = inset;
+    
+    CGFloat vaule = -kCollectionViewContentLeftOffset + (_defaulValue - _valueMin)*200;
+    _weightCollectionView.contentOffset = CGPointMake(vaule, 0);
+
 }
 
 - (void)viewDidLoad {
@@ -45,9 +69,7 @@
     CGRectGetWidth([UIApplication sharedApplication].keyWindow.bounds);
     
     
-    UIEdgeInsets inset = UIEdgeInsetsMake(0, kCollectionViewContentLeftOffset, 0, 100);
-    _weightCollectionView.contentInset = inset;
-    _weightCollectionView.contentOffset = CGPointMake(-inset.left, 0);
+
 }
 
 - (void)configSource
@@ -61,18 +83,21 @@
     if (_valueMin >= _valueMax) {
         _valueMax = _valueMin + 10 ;
     }
-    _mistake = ((NSInteger)(_valueMax - _valueMin) * 10);
+    _mistake = ((NSInteger)(_valueMax *10 - _valueMin *10)) + 1;
     
     CGFloat kRuleMin = _valueMin;
     
     for (int i = 0; i < _mistake; i ++) {
-        WeightCollectionViewCellModel *model = [[WeightCollectionViewCellModel alloc]init];
-        model.value = kRuleMin ;
         
-        kRuleMin += 0.1;
+        @autoreleasepool {
+            WeightCollectionViewCellModel *model = [[WeightCollectionViewCellModel alloc]init];
+            model.value = [NSNumber numberWithFloat:kRuleMin] ;
+            kRuleMin += 0.1;
+            [_sourceArray addObject:model];
+        }
 
-        [_sourceArray addObject:model];
     }
+    [_weightCollectionView reloadData];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -83,7 +108,12 @@
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     WeightCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WeightCollectionViewCell" forIndexPath:indexPath];
-    [cell configCell:_sourceArray[indexPath.item]];
+    
+    WeightCollectionViewCellModel *model = _sourceArray[indexPath.item];
+    
+    [cell configCell:model];
+    
+    
     return cell ;
 }
 
@@ -94,12 +124,15 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-//    CGFloat screenHeight = CGRectGetHeight([UIApplication sharedApplication].keyWindow.bounds);
     CGFloat offset =  scrollView.contentOffset.x + kCollectionViewContentLeftOffset;
-    CGFloat value = _valueMin +  offset*0.1/20;
-    
+    CGFloat value = _valueMin +  offset/200;
     _valueLabel.text = [NSString stringWithFormat:@"%.1lf",value];
+    
+    if ([_delegate respondsToSelector:@selector(valueDidChange:)]) {
+        [_delegate valueDidChange:value];
+    }
 }
+
 
 
 

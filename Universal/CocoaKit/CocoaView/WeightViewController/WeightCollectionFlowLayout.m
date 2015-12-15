@@ -39,7 +39,7 @@
 
 - (CGSize)collectionViewContentSize
 {
-    NSInteger totalCount = _allLayoutAttributesMutableArray.count + 2;
+    NSInteger totalCount = _allLayoutAttributesMutableArray.count - 1;
     
     return CGSizeMake(totalCount*kWeightCollectionCellWidth, CGRectGetHeight(self.collectionView.bounds));
 }

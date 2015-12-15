@@ -11,7 +11,7 @@
 
 @interface WeightCollectionViewCellModel : NSObject
 
-@property(nonatomic,assign)CGFloat value;
+@property(nonatomic,strong)NSNumber *value;
 
 
 @end

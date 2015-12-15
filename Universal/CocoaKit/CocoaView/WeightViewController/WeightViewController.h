@@ -21,7 +21,10 @@
 
 @property(nonatomic,assign)CGFloat valueMin;
 @property(nonatomic,assign)CGFloat valueMax;
+@property(nonatomic,assign)CGFloat defaulValue;
 
 - (instancetype)initWithValueMin:(CGFloat)min ruleMax:(CGFloat)max delegate:(id)delegate;
+
+- (instancetype)initWithValueMin:(CGFloat)min ruleMax:(CGFloat)max defaultValue:(CGFloat)defaulValue delegate:(id)delegate;
 
 @end
