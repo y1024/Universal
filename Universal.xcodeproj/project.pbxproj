@@ -201,6 +201,7 @@
 		8D2ACBC31C047361000143B8 /* GPUImagePicture+TextureSubimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB171C047361000143B8 /* GPUImagePicture+TextureSubimage.m */; };
 		8D2ACBC41C047361000143B8 /* GPUImagePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB191C047361000143B8 /* GPUImagePicture.m */; };
 		8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB1B1C047361000143B8 /* GPUImageView.m */; };
+		8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C95E91C2323E100F68262 /* TTTextView.m */; };
 		8D8E41CB1BF06E7F00ADB607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */; };
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
@@ -638,6 +639,8 @@
 		8D2ACB191C047361000143B8 /* GPUImagePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImagePicture.m; sourceTree = "<group>"; };
 		8D2ACB1A1C047361000143B8 /* GPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageView.h; sourceTree = "<group>"; };
 		8D2ACB1B1C047361000143B8 /* GPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageView.m; sourceTree = "<group>"; };
+		8D4C95E81C2323E100F68262 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
+		8D4C95E91C2323E100F68262 /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextView.m; sourceTree = "<group>"; };
 		8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -1401,6 +1404,15 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
+		8D4C95E71C2323E100F68262 /* TTTextView */ = {
+			isa = PBXGroup;
+			children = (
+				8D4C95E81C2323E100F68262 /* TTTextView.h */,
+				8D4C95E91C2323E100F68262 /* TTTextView.m */,
+			);
+			path = TTTextView;
+			sourceTree = "<group>";
+		};
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1568,6 +1580,7 @@
 		CDB5841E1BDE6996008432A3 /* CocoaView */ = {
 			isa = PBXGroup;
 			children = (
+				8D4C95E71C2323E100F68262 /* TTTextView */,
 				8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */,
 				8DEE76271C04A51C009C2FBC /* WeightViewController */,
 				8DE44A2B1C02E81B0056E782 /* RuleViewController */,
@@ -1801,6 +1814,7 @@
 				8D2ACB571C047361000143B8 /* GPUImageHardLightBlendFilter.m in Sources */,
 				8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */,
 				8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */,
+				8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */,
 				CDB5841D1BDE3278008432A3 /* NewViewController.m in Sources */,
 				CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */,
 				8D2ACB2A1C047361000143B8 /* GPUImageBilateralFilter.m in Sources */,

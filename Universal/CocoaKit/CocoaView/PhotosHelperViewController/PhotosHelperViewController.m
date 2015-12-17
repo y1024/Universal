@@ -68,6 +68,8 @@
     
     _autoRefreshSource = NO;
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     self.cameraPickerController = [self buildCameraPickerController];
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"CameraCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CameraCollectionViewCell"];
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"PhotosHelperCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PhotosHelperCollectionViewCell"];
@@ -231,7 +233,7 @@
             
             if ([self beyondLimted]) {
                 
-                NSLog(@"当前已经选择%ld张,最大可以选择%ld张",_hasSelectedPhotosArray.count,_selectMax);
+                NSLog(@"当前已经选择%ld张,最大可以选择%ld张",(unsigned long)_hasSelectedPhotosArray.count,(long)_selectMax);
                 
                 return ;
             }
@@ -253,7 +255,7 @@
             {
                 if ([self beyondLimted]) {
                     
-                    NSLog(@"当前已经选择%ld张,最大可以选择%ld张",_hasSelectedPhotosArray.count,_selectMax);
+                    NSLog(@"当前已经选择%ld张,最大可以选择(long)(long)%ld张",(unsigned long)_hasSelectedPhotosArray.count,(long)_selectMax);
                     
                     return ;
                 }
@@ -348,7 +350,7 @@
 
 - (void)buildFinishButtonTitle
 {
-    NSString *titleString = [NSString stringWithFormat:@"完成(%ld/%ld)",_hasSelectedPhotosArray.count,_selectMax];
+    NSString *titleString = [NSString stringWithFormat:@"完成(%ld/%ld)",(unsigned long)_hasSelectedPhotosArray.count,(long)_selectMax];
     
     [_finishSeletedButton setTitle:titleString forState:normal];
 }

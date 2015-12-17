@@ -98,7 +98,7 @@
         
         return NO ;
     }
-    if ([((NSString*)self)isEqualToString:@"<null>"]) {
+    if ([@"<null>" isEqualToString:(NSString*)self]) {
         
         return NO;
     }
