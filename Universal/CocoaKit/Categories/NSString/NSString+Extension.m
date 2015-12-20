@@ -13,6 +13,7 @@
 #import <CommonCrypto/CommonDigest.h>
 
 
+
 NSString *const soundAlert              = @"\a";
 NSString *const backspace               = @"\b";
 NSString *const formFeed                = @"\f";
@@ -24,6 +25,8 @@ NSString *const backslash               = @"\\";
 NSString *const doubleQuotationMarks    = @"\"";
 NSString *const SingleQuotes            = @"\'";
 NSString *const regxAllNumbers          = @"^[0-9]+$";
+
+static NSString *urlExpression = @"((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9\\.\\-]+|(?:www\\.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9\\.\\-]+)((:[0-9]+)?)((?:\\/[\\+~%\\/\\.\\w\\-]*)?\\??(?:[\\-\\+=&;%@\\.\\w]*)#?(?:[\\.\\!\\/\\\\\\w]*))?)";
 
 @implementation NSString (Extension)
 
@@ -152,6 +155,31 @@ NSString *const regxAllNumbers          = @"^[0-9]+$";
     NSString *UUID = [[UIDevice currentDevice].identifierForVendor UUIDString];
     
     return UUID;
+}
+
+- (NSString *)htmlString;
+{
+  __block  NSString *htmlString = [NSString stringWithString:self];
+    if ([self notNullString])
+    {
+        NSRegularExpression *urlRegex = [NSRegularExpression regularExpressionWithPattern:urlExpression
+                                                                                  options:NSRegularExpressionCaseInsensitive
+                                                                                    error:nil];
+        NSMutableArray *textArray = [NSMutableArray array];
+        [urlRegex enumerateMatchesInString:htmlString
+                                   options:0
+                                     range:NSMakeRange(0, [htmlString length])
+                                usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+                                    NSRange range = result.range;
+                                    NSString *text = [htmlString substringWithRange:range];
+                                    [textArray addObject:text];
+                                }];
+        for (NSString *text in textArray) {
+            NSString *hrefString = [NSString stringWithFormat:@"<a href='%@'>%@</a>",text,text];
+            htmlString = [htmlString stringByReplacingOccurrencesOfString:text withString:hrefString];
+        }
+    }
+    return htmlString;
 }
 
 + (NSString*)timestamp

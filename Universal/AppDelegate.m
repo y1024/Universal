@@ -31,6 +31,7 @@
     // Override point for customization after application launch.
     
 
+    NSLog(@"%@",[@"www.baidu.com 哈哈 www.163.com" htmlString]);
     
 //    [self DDLog];
     

@@ -30,6 +30,8 @@ extern NSString *const regxAllNumbers;
 
 - (NSString*)utf8;
 
+- (NSString *)htmlString;
+
 /**
  *  汉语转拼音 带空格
  *
