@@ -175,8 +175,16 @@ static NSString *urlExpression = @"((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\
                                     [textArray addObject:text];
                                 }];
         for (NSString *text in textArray) {
-            NSString *hrefString = [NSString stringWithFormat:@"<a href='%@'>%@</a>",text,text];
-            htmlString = [htmlString stringByReplacingOccurrencesOfString:text withString:hrefString];
+            if (![text hasPrefix:@"http://"]) {
+                NSString *hrefString = [NSString stringWithFormat:@"<a href='http://%@'>%@</a>",text,text];
+                htmlString = [htmlString stringByReplacingOccurrencesOfString:text withString:hrefString];
+            }
+            else
+            {
+                NSString *hrefString = [NSString stringWithFormat:@"<a href='%@'>%@</a>",text,text];
+                htmlString = [htmlString stringByReplacingOccurrencesOfString:text withString:hrefString];
+            }
+
         }
     }
     return htmlString;
