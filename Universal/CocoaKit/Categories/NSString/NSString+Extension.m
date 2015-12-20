@@ -159,12 +159,14 @@ static NSString *urlExpression = @"((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\
 
 - (NSString *)htmlString;
 {
-  __block  NSString *htmlString = [NSString stringWithString:self];
+    __block  NSString *htmlString = [NSString stringWithString:self];
     if ([self notNullString])
     {
         NSRegularExpression *urlRegex = [NSRegularExpression regularExpressionWithPattern:urlExpression
                                                                                   options:NSRegularExpressionCaseInsensitive
                                                                                     error:nil];
+        NSString *httpHeader = @"http://";
+        NSString *hrefHeader = @"<a href='";
         NSMutableArray *textArray = [NSMutableArray array];
         [urlRegex enumerateMatchesInString:htmlString
                                    options:0
@@ -172,11 +174,25 @@ static NSString *urlExpression = @"((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\
                                 usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                                     NSRange range = result.range;
                                     NSString *text = [htmlString substringWithRange:range];
-                                    [textArray addObject:text];
+                                 
+                                    NSString *hrefString = nil;
+                                    if ([text hasPrefix:httpHeader]) {
+                                        hrefString = [htmlString substringWithRange:NSMakeRange(range.location - httpHeader.length - hrefHeader.length ,hrefHeader.length)];
+                                    }
+                                    else
+                                    {
+                                        hrefString = [htmlString substringWithRange:NSMakeRange(range.location - hrefHeader.length, hrefHeader.length)];
+                                    }
+                                    
+                                    if (![hrefString isContainsString:hrefHeader]) {
+                            
+                                        [textArray addObject:text];
+                                    }
+
                                 }];
         for (NSString *text in textArray) {
-            if (![text hasPrefix:@"http://"]) {
-                NSString *hrefString = [NSString stringWithFormat:@"<a href='http://%@'>%@</a>",text,text];
+            if (![text hasPrefix:httpHeader]) {
+                NSString *hrefString = [NSString stringWithFormat:@"<a href='%@%@'>%@</a>",httpHeader,text,text];
                 htmlString = [htmlString stringByReplacingOccurrencesOfString:text withString:hrefString];
             }
             else
