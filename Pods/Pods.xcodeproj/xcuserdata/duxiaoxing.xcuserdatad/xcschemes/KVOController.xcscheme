@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DE6A8EE7E4F97CD017BD1AA0'
+               BlueprintIdentifier = '0A6DBA82CAD27CE9AD6DBA8C'
                BlueprintName = 'KVOController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libKVOController.a'>
