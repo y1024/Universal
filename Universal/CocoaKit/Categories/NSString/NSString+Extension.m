@@ -174,20 +174,20 @@ static NSString *urlExpression = @"((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\
                                 usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                                     NSRange range = result.range;
                                     NSString *text = [htmlString substringWithRange:range];
-                                 
+                                    NSLog(@"text:%@",text);
                                     NSString *hrefString = nil;
-                                    if ([text hasPrefix:httpHeader]) {
-                                        hrefString = [htmlString substringWithRange:NSMakeRange(range.location - httpHeader.length - hrefHeader.length ,hrefHeader.length)];
-                                    }
-                                    else
-                                    {
-                                        hrefString = [htmlString substringWithRange:NSMakeRange(range.location - hrefHeader.length, hrefHeader.length)];
-                                    }
-                                    
-                                    if (![hrefString isContainsString:hrefHeader]) {
+//                                    if ([text hasPrefix:hrefHeader]) {
+//                                        hrefString = [htmlString substringWithRange:NSMakeRange(range.location - hrefHeader.length ,hrefHeader.length)];
+//                                    }
+//                                    else
+//                                    {
+//                                        hrefString = [htmlString substringWithRange:NSMakeRange(range.location - hrefHeader.length, hrefHeader.length)];
+//                                    }
+//                                    
+//                                    if (![hrefString isContainsString:hrefHeader]) {
                             
                                         [textArray addObject:text];
-                                    }
+//                                    }
 
                                 }];
         for (NSString *text in textArray) {

@@ -202,6 +202,10 @@
 		8D2ACBC41C047361000143B8 /* GPUImagePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB191C047361000143B8 /* GPUImagePicture.m */; };
 		8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB1B1C047361000143B8 /* GPUImageView.m */; };
 		8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C95E91C2323E100F68262 /* TTTextView.m */; };
+		8D65C90D1C2BCD3100868FB5 /* AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9051C2BCD3100868FB5 /* AttributedLabelAttachment.m */; };
+		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
+		8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */; };
+		8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */; };
 		8D8E41CB1BF06E7F00ADB607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */; };
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
@@ -641,6 +645,15 @@
 		8D2ACB1B1C047361000143B8 /* GPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageView.m; sourceTree = "<group>"; };
 		8D4C95E81C2323E100F68262 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
 		8D4C95E91C2323E100F68262 /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextView.m; sourceTree = "<group>"; };
+		8D65C9041C2BCD3100868FB5 /* AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabelAttachment.h; sourceTree = "<group>"; };
+		8D65C9051C2BCD3100868FB5 /* AttributedLabelAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedLabelAttachment.m; sourceTree = "<group>"; };
+		8D65C9061C2BCD3100868FB5 /* AttributedLabelURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabelURL.h; sourceTree = "<group>"; };
+		8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedLabelURL.m; sourceTree = "<group>"; };
+		8D65C9081C2BCD3100868FB5 /* CoreTextDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextDisplayView.h; sourceTree = "<group>"; };
+		8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextDisplayView.m; sourceTree = "<group>"; };
+		8D65C90A1C2BCD3100868FB5 /* CoreTextHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextHeaders.h; sourceTree = "<group>"; };
+		8D65C90B1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CoreText.h"; sourceTree = "<group>"; };
+		8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CoreText.m"; sourceTree = "<group>"; };
 		8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -812,6 +825,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				8D65C9031C2BCD3100868FB5 /* CoreTextDisplayView */,
 				CDA128301BD5DE8100D7B22D /* NSMutableDictionary */,
 				CD8349B01BD10254007E75C2 /* UIControl */,
 				CDAA0BAB1BD0A75800A728D4 /* NSMutableArray */,
@@ -1413,6 +1427,22 @@
 			path = TTTextView;
 			sourceTree = "<group>";
 		};
+		8D65C9031C2BCD3100868FB5 /* CoreTextDisplayView */ = {
+			isa = PBXGroup;
+			children = (
+				8D65C9081C2BCD3100868FB5 /* CoreTextDisplayView.h */,
+				8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */,
+				8D65C9041C2BCD3100868FB5 /* AttributedLabelAttachment.h */,
+				8D65C9051C2BCD3100868FB5 /* AttributedLabelAttachment.m */,
+				8D65C9061C2BCD3100868FB5 /* AttributedLabelURL.h */,
+				8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */,
+				8D65C90B1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.h */,
+				8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */,
+				8D65C90A1C2BCD3100868FB5 /* CoreTextHeaders.h */,
+			);
+			path = CoreTextDisplayView;
+			sourceTree = "<group>";
+		};
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1791,6 +1821,7 @@
 				8D2ACB2F1C047361000143B8 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				8D2ACB291C047361000143B8 /* GPUImageAverageLuminanceThresholdFilter.m in Sources */,
 				37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */,
+				8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */,
 				8D2ACBA31C047361000143B8 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				8D2ACBC21C047361000143B8 /* GPUImageMovieWriter.m in Sources */,
 				8D2ACBA01C047361000143B8 /* GPUImageSoftEleganceFilter.m in Sources */,
@@ -1799,6 +1830,7 @@
 				8D2ACBAD1C047361000143B8 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				8D2ACB361C047361000143B8 /* GPUImageColorDodgeBlendFilter.m in Sources */,
 				8D2ACB651C047361000143B8 /* GPUImageKuwaharaFilter.m in Sources */,
+				8D65C90D1C2BCD3100868FB5 /* AttributedLabelAttachment.m in Sources */,
 				8D2ACBC31C047361000143B8 /* GPUImagePicture+TextureSubimage.m in Sources */,
 				CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */,
 				8D2ACB2B1C047361000143B8 /* GPUImageBoxBlurFilter.m in Sources */,
@@ -1839,6 +1871,7 @@
 				8D2ACB9B1C047361000143B8 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
 				8D2ACB501C047361000143B8 /* GPUImageGammaFilter.m in Sources */,
 				8D2ACB521C047361000143B8 /* GPUImageGaussianBlurPositionFilter.m in Sources */,
+				8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */,
 				8D2ACBAF1C047361000143B8 /* GPUImageTiltShiftFilter.m in Sources */,
 				8D2ACB4E1C047361000143B8 /* GPUImageFramebuffer.m in Sources */,
 				8D2ACB411C047361000143B8 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
@@ -1995,6 +2028,7 @@
 				8D2ACB461C047361000143B8 /* GPUImageErosionFilter.m in Sources */,
 				8D2ACBB81C047361000143B8 /* GPUImageUnsharpMaskFilter.m in Sources */,
 				8D2ACB391C047361000143B8 /* GPUImageColorPackingFilter.m in Sources */,
+				8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,8 @@
 #import "NSMutableArray+Extension.h"
 #import "UIControl+Extension.h"
 #import "NSMutableDictionary+Extension.h"
+#import "NSMutableAttributedString+CoreText.h"
+
 
 #define	prop_readonly( type, name )		property (nonatomic, readonly) type name;
 #define	prop_assign( type, name )		property (nonatomic, assign) type name;
