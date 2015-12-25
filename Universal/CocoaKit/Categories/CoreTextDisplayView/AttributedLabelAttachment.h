@@ -13,9 +13,11 @@
 #import <UIKit/UIKit.h>
 
 
+/**
+ *  增加图片
+ */
+
 @interface AttributedLabelAttachment : NSObject
-
-
 
 void deallocCallback(void* ref);
 CGFloat ascentCallback(void *ref);

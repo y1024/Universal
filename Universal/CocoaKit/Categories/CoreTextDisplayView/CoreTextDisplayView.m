@@ -11,7 +11,7 @@
 #import "AttributedLabelURL.h"
 #import "NSMutableAttributedString+CoreText.h"
 #import "AttributedLabelAttachment.h"
-#import "UIDevice+Extension.h"
+
 
 
 static NSString* const kEllipsesCharacter = @"\u2026";
@@ -587,7 +587,10 @@ static dispatch_queue_t get_attributed_label_parse_queue() \
     //1.需要加上额外的一部分size,有些情况下计算出来的像素点并不是那么精准
     //2.ios7的CTFramesetterSuggestFrameSizeWithConstraints方法比较残,需要多加一部分height
     //3.ios7多行中如果首行带有很多空格，会导致返回的suggestionWidth远小于真是width,那么多行情况下就是用传入的width
-    if ([UIDevice IOS7])
+    
+    CGFloat systemVersion =  [[UIDevice currentDevice].systemVersion floatValue];
+    
+    if (systemVersion < 8.0)
     {
         if (newSize.height < _fontHeight * 2)   //单行
         {

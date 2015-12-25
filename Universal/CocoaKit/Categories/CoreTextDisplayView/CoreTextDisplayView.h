@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CoreTextHeaders.h"
+#import "NSMutableAttributedString+CoreText.h"
+
+@class AttributedLabelURL;
+
+/**
+ *  负责展示
+ */
 
 @interface CoreTextDisplayView : UIView
 
@@ -61,6 +68,7 @@
              forRange: (NSRange)range
             linkColor: (UIColor *)color;
 
+- (void)addAutoDetectedLink: (AttributedLabelURL *)link;
 
 //大小
 - (CGSize)sizeThatFits:(CGSize)size;

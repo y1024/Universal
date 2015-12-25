@@ -11,6 +11,9 @@
 #import "CoreTextHeaders.h"
 
 
+/**
+ *  增加链接
+ */
 
 @interface AttributedLabelURL : NSObject
 
@@ -26,5 +29,18 @@
 + (NSArray *)detectLinks: (NSString *)plainText;
 
 //+ (void)setCustomDetectMethod:(AttributedLabelURLBlock*)block;
+
+
+/**
+ *  检测 url 生成 AttributedLabelURL 单一 html
+ *
+ *  @param htmlString <#htmlString description#>
+ *
+ *  @return <#return value description#>
+ */
++ (AttributedLabelURL*)mutableAttributeStringWithHtmlString:(NSString*)htmlString;
+
++ (AttributedLabelURL*)mutableAttributeStringWithFullString:(NSString *)fullString;
+
 
 @end

@@ -27,7 +27,6 @@
                      value:(id)color.CGColor
                      range:range];
     }
-    
 }
 
 

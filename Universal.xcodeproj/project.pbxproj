@@ -31,6 +31,9 @@
 		37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */; };
 		37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */; };
 		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
+		8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567B1C2D28DA0095913F /* HTMLNode.m */; };
+		8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567D1C2D28DA0095913F /* HTMLParser.m */; };
+		8D1456811C2D29C00095913F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1456801C2D29C00095913F /* libxml2.tbd */; };
 		8D2ACB1C1C047361000143B8 /* lookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AC9C71C047360000143B8 /* lookup.png */; };
 		8D2ACB1D1C047361000143B8 /* lookup_amatorka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AC9C81C047360000143B8 /* lookup_amatorka.png */; };
 		8D2ACB1E1C047361000143B8 /* lookup_miss_etikate.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AC9C91C047360000143B8 /* lookup_miss_etikate.png */; };
@@ -305,6 +308,11 @@
 		37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+Extension.m"; sourceTree = "<group>"; };
 		387FC035A8EBA73BB6238623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		77D685AB5BD7E49DCCFC6944 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8D14567A1C2D28DA0095913F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		8D14567B1C2D28DA0095913F /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		8D14567C1C2D28DA0095913F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		8D14567D1C2D28DA0095913F /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		8D1456801C2D29C00095913F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		8D2AC9C71C047360000143B8 /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
 		8D2AC9C81C047360000143B8 /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
 		8D2AC9C91C047360000143B8 /* lookup_miss_etikate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_miss_etikate.png; sourceTree = "<group>"; };
@@ -739,6 +747,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1456811C2D29C00095913F /* libxml2.tbd in Frameworks */,
 				CD5292D61C0DFF93005E2134 /* WebKit.framework in Frameworks */,
 				8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */,
 				8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */,
@@ -754,6 +763,7 @@
 		2D49C922A970DE662FA7C999 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D1456801C2D29C00095913F /* libxml2.tbd */,
 				CD5292D51C0DFF93005E2134 /* WebKit.framework */,
 				8D8E41D01BF06E9C00ADB607 /* libz.tbd */,
 				8D8E41CE1BF06E9000ADB607 /* CoreData.framework */,
@@ -1039,6 +1049,17 @@
 				37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */,
 			);
 			path = NSURLCache;
+			sourceTree = "<group>";
+		};
+		8D1456791C2D28DA0095913F /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				8D14567A1C2D28DA0095913F /* HTMLNode.h */,
+				8D14567B1C2D28DA0095913F /* HTMLNode.m */,
+				8D14567C1C2D28DA0095913F /* HTMLParser.h */,
+				8D14567D1C2D28DA0095913F /* HTMLParser.m */,
+			);
+			path = HTMLParser;
 			sourceTree = "<group>";
 		};
 		8D2AC9C51C047360000143B8 /* GPUImage */ = {
@@ -1430,6 +1451,7 @@
 		8D65C9031C2BCD3100868FB5 /* CoreTextDisplayView */ = {
 			isa = PBXGroup;
 			children = (
+				8D1456791C2D28DA0095913F /* HTMLParser */,
 				8D65C9081C2BCD3100868FB5 /* CoreTextDisplayView.h */,
 				8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */,
 				8D65C9041C2BCD3100868FB5 /* AttributedLabelAttachment.h */,
@@ -1840,6 +1862,7 @@
 				8D2ACB341C047361000143B8 /* GPUImageColorBlendFilter.m in Sources */,
 				376DBB031B96A4A6008A84B7 /* UIScrollView+Extension.m in Sources */,
 				8D2ACB9E1C047361000143B8 /* GPUImageSmoothToonFilter.m in Sources */,
+				8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */,
 				8D2ACB6B1C047361000143B8 /* GPUImageLinearBurnBlendFilter.m in Sources */,
 				8D2ACBA51C047361000143B8 /* GPUImageStillCamera.m in Sources */,
 				8D2ACB5A1C047361000143B8 /* GPUImageHighlightShadowFilter.m in Sources */,
@@ -1946,6 +1969,7 @@
 				CD8349B31BD10254007E75C2 /* UIControl+Extension.m in Sources */,
 				8D2ACB951C047361000143B8 /* GPUImageRGBOpeningFilter.m in Sources */,
 				8D2ACB4F1C047361000143B8 /* GPUImageFramebufferCache.m in Sources */,
+				8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */,
 				8D2ACB381C047361000143B8 /* GPUImageColorMatrixFilter.m in Sources */,
 				8D2ACBBE1C047361000143B8 /* GPUImageXYDerivativeFilter.m in Sources */,
 				377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */,
@@ -2092,6 +2116,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2131,6 +2156,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
