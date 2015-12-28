@@ -209,6 +209,10 @@
 		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
 		8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */; };
 		8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */; };
+		8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */; };
+		8D721EA81C30D86F0055EB20 /* CollectionCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */; };
+		8D721EAE1C30D8C70055EB20 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAB1C30D8C70055EB20 /* Cell.m */; };
+		8D721EAF1C30D8C70055EB20 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAD1C30D8C70055EB20 /* CircleLayout.m */; };
 		8D8E41CB1BF06E7F00ADB607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */; };
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
@@ -662,6 +666,13 @@
 		8D65C90A1C2BCD3100868FB5 /* CoreTextHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextHeaders.h; sourceTree = "<group>"; };
 		8D65C90B1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CoreText.h"; sourceTree = "<group>"; };
 		8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CoreText.m"; sourceTree = "<group>"; };
+		8D721EA41C30D86F0055EB20 /* CollectionCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCircleViewController.h; sourceTree = "<group>"; };
+		8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCircleViewController.m; sourceTree = "<group>"; };
+		8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCircleViewController.xib; sourceTree = "<group>"; };
+		8D721EAA1C30D8C70055EB20 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		8D721EAB1C30D8C70055EB20 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		8D721EAC1C30D8C70055EB20 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		8D721EAD1C30D8C70055EB20 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -952,6 +963,9 @@
 				8DC6B02E1C12F98000CD720D /* ReplyViewController.m */,
 				8DC6B02F1C12F98000CD720D /* ReplyViewController.h */,
 				8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */,
+				8D721EA41C30D86F0055EB20 /* CollectionCircleViewController.h */,
+				8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */,
+				8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */,
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
@@ -1465,6 +1479,17 @@
 			path = CoreTextDisplayView;
 			sourceTree = "<group>";
 		};
+		8D721EA91C30D8C70055EB20 /* CollectionCircleLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8D721EAA1C30D8C70055EB20 /* Cell.h */,
+				8D721EAB1C30D8C70055EB20 /* Cell.m */,
+				8D721EAC1C30D8C70055EB20 /* CircleLayout.h */,
+				8D721EAD1C30D8C70055EB20 /* CircleLayout.m */,
+			);
+			path = CollectionCircleLayout;
+			sourceTree = "<group>";
+		};
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1632,6 +1657,7 @@
 		CDB5841E1BDE6996008432A3 /* CocoaView */ = {
 			isa = PBXGroup;
 			children = (
+				8D721EA91C30D8C70055EB20 /* CollectionCircleLayout */,
 				8D4C95E71C2323E100F68262 /* TTTextView */,
 				8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */,
 				8DEE76271C04A51C009C2FBC /* WeightViewController */,
@@ -1740,6 +1766,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEE76351C04A51C009C2FBC /* WeightViewController.xcassets in Resources */,
+				8D721EA81C30D86F0055EB20 /* CollectionCircleViewController.xib in Resources */,
 				8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */,
 				8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */,
 				8DCE9B231C0DB408009B5054 /* PhotosHelperViewController.xcassets in Resources */,
@@ -1838,6 +1865,7 @@
 				377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */,
 				8D2ACBAB1C047361000143B8 /* GPUImageThreeInputFilter.m in Sources */,
 				8D2ACB701C047361000143B8 /* GPUImageLuminanceRangeFilter.m in Sources */,
+				8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */,
 				8D2ACB2E1C047361000143B8 /* GPUImageBulgeDistortionFilter.m in Sources */,
 				8D2ACBA91C047361000143B8 /* GPUImageTextureInput.m in Sources */,
 				8D2ACB2F1C047361000143B8 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
@@ -1846,6 +1874,7 @@
 				8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */,
 				8D2ACBA31C047361000143B8 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				8D2ACBC21C047361000143B8 /* GPUImageMovieWriter.m in Sources */,
+				8D721EAE1C30D8C70055EB20 /* Cell.m in Sources */,
 				8D2ACBA01C047361000143B8 /* GPUImageSoftEleganceFilter.m in Sources */,
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				8D2ACBBD1C047361000143B8 /* GPUImageWhiteBalanceFilter.m in Sources */,
@@ -1927,6 +1956,7 @@
 				8D2ACB7E1C047361000143B8 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
 				8D2ACB3B1C047361000143B8 /* GPUImageCropFilter.m in Sources */,
 				8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */,
+				8D721EAF1C30D8C70055EB20 /* CircleLayout.m in Sources */,
 				8D2ACB9C1C047361000143B8 /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */,
 				8D2ACB321C047361000143B8 /* GPUImageChromaKeyFilter.m in Sources */,
 				8D2ACB481C047361000143B8 /* GPUImageExposureFilter.m in Sources */,

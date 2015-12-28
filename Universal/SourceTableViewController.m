@@ -17,6 +17,7 @@
 #import "PhotosHelperViewController.h"
 
 #import "ReplyViewController.h"
+#import "CollectionCircleViewController.h"
 
 
 
@@ -91,12 +92,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.row ==1){
-        if (!self.nextVC) {
-            ReplyViewController *newVC = [[ReplyViewController alloc]init];
-//            self.nextVC = newVC;
-            [self.view addSubview:newVC.view];
-             [self addChildViewController:newVC];
-        }
+//        if (!self.nextVC) {
+//            ReplyViewController *newVC = [[ReplyViewController alloc]init];
+////            self.nextVC = newVC;
+//            [self.view addSubview:newVC.view];
+//             [self addChildViewController:newVC];
+//        }
+        CollectionCircleViewController *circleVC = [[CollectionCircleViewController alloc]init];
+        circleVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:circleVC animated:YES];
+        
        
 //        [self.view addSubview:_nextVC.view];
 //        [self presentViewController:_nextVC animated:YES completion:nil];

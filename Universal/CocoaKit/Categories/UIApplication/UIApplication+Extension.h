@@ -27,7 +27,7 @@
 
 + (void)endEditing;
 
-#warning 
+#warning plist文件 Application supports iTunes file sharing  = @"YES" 上架去掉
 
 /**
  *  使用时     plist文件 Application supports iTunes file sharing  = @"YES"
