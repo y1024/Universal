@@ -149,4 +149,11 @@ extern NSString *const regxAllNumbers;
 
 + (NSString *)MD5ByAStr:(NSString *)aSourceStr;
 
+/**
+ *  是否包含表情
+ *
+ *  @return <#return value description#>
+ */
+- (BOOL)isContainEmoji;
+
 @end
