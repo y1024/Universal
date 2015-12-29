@@ -6,9 +6,10 @@ Abstract:
 Custom collection view cell for a blue dot.
 */
 
-#import "Cell.h"
+#import "CircleLayoutCell.h"
 
-@implementation Cell
+
+@implementation CircleLayoutCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

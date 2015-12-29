@@ -211,12 +211,13 @@
 		8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */; };
 		8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */; };
 		8D721EA81C30D86F0055EB20 /* CollectionCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */; };
-		8D721EAE1C30D8C70055EB20 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAB1C30D8C70055EB20 /* Cell.m */; };
+		8D721EAE1C30D8C70055EB20 /* CircleLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAB1C30D8C70055EB20 /* CircleLayoutCell.m */; };
 		8D721EAF1C30D8C70055EB20 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAD1C30D8C70055EB20 /* CircleLayout.m */; };
 		8D8E41CB1BF06E7F00ADB607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */; };
 		8D8E41CD1BF06E8700ADB607 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */; };
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
 		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
+		8D9A05531C3263E600C51E61 /* CFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A05521C3263E600C51E61 /* CFunctions.c */; };
 		8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */; };
 		8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B02E1C12F98000CD720D /* ReplyViewController.m */; };
 		8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */; };
@@ -669,14 +670,15 @@
 		8D721EA41C30D86F0055EB20 /* CollectionCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCircleViewController.h; sourceTree = "<group>"; };
 		8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCircleViewController.m; sourceTree = "<group>"; };
 		8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCircleViewController.xib; sourceTree = "<group>"; };
-		8D721EAA1C30D8C70055EB20 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
-		8D721EAB1C30D8C70055EB20 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		8D721EAA1C30D8C70055EB20 /* CircleLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayoutCell.h; sourceTree = "<group>"; };
+		8D721EAB1C30D8C70055EB20 /* CircleLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayoutCell.m; sourceTree = "<group>"; };
 		8D721EAC1C30D8C70055EB20 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		8D721EAD1C30D8C70055EB20 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		8D8E41CA1BF06E7F00ADB607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D8E41CC1BF06E8700ADB607 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8D9A05521C3263E600C51E61 /* CFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFunctions.c; sourceTree = "<group>"; };
 		8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplyViewController.xib; sourceTree = "<group>"; };
 		8DC6B02E1C12F98000CD720D /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
 		8DC6B02F1C12F98000CD720D /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
@@ -824,6 +826,7 @@
 		377C11111B958FE700FD4EB6 /* CocoaKit */ = {
 			isa = PBXGroup;
 			children = (
+				8D9A05511C3263D600C51E61 /* CFunctions */,
 				8D2AC9C51C047360000143B8 /* GPUImage */,
 				CDB5841E1BDE6996008432A3 /* CocoaView */,
 				CD05BB4A1B960C7400D9B6C9 /* Optional */,
@@ -1482,12 +1485,20 @@
 		8D721EA91C30D8C70055EB20 /* CollectionCircleLayout */ = {
 			isa = PBXGroup;
 			children = (
-				8D721EAA1C30D8C70055EB20 /* Cell.h */,
-				8D721EAB1C30D8C70055EB20 /* Cell.m */,
+				8D721EAA1C30D8C70055EB20 /* CircleLayoutCell.h */,
+				8D721EAB1C30D8C70055EB20 /* CircleLayoutCell.m */,
 				8D721EAC1C30D8C70055EB20 /* CircleLayout.h */,
 				8D721EAD1C30D8C70055EB20 /* CircleLayout.m */,
 			);
 			path = CollectionCircleLayout;
+			sourceTree = "<group>";
+		};
+		8D9A05511C3263D600C51E61 /* CFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				8D9A05521C3263E600C51E61 /* CFunctions.c */,
+			);
+			path = CFunctions;
 			sourceTree = "<group>";
 		};
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
@@ -1874,7 +1885,7 @@
 				8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */,
 				8D2ACBA31C047361000143B8 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				8D2ACBC21C047361000143B8 /* GPUImageMovieWriter.m in Sources */,
-				8D721EAE1C30D8C70055EB20 /* Cell.m in Sources */,
+				8D721EAE1C30D8C70055EB20 /* CircleLayoutCell.m in Sources */,
 				8D2ACBA01C047361000143B8 /* GPUImageSoftEleganceFilter.m in Sources */,
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				8D2ACBBD1C047361000143B8 /* GPUImageWhiteBalanceFilter.m in Sources */,
@@ -2002,6 +2013,7 @@
 				8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */,
 				8D2ACB381C047361000143B8 /* GPUImageColorMatrixFilter.m in Sources */,
 				8D2ACBBE1C047361000143B8 /* GPUImageXYDerivativeFilter.m in Sources */,
+				8D9A05531C3263E600C51E61 /* CFunctions.c in Sources */,
 				377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */,
 				8D2ACB811C047361000143B8 /* GPUImageOpacityFilter.m in Sources */,
 				8D2ACBB51C047361000143B8 /* GPUImageTwoPassFilter.m in Sources */,

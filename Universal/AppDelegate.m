@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "NewViewController.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 //#import "PodHeaders.h"
 
@@ -31,13 +33,38 @@
     // Override point for customization after application launch.
     
 
-    NSLog(@"%@",[@"www.baidu.com" htmlString]);
-    NSLog(@"%@",[@"<a href='www.163.com' /a>" htmlString]);
+//    NSLog(@"%@",[@"www.baidu.com" htmlString]);
+//    NSLog(@"%@",[@"<a href='www.163.com' /a>" htmlString]);
     
 //    [self DDLog];
     
+    NSInteger a = 7;
+    CGFloat b = 15.5;
+    int c = 55;
     
     
+    
+    NSLog(@"b:  %X",b);
+    printf("b:%X",b);
+    NSLog(@"c:%f",c);
+    NSLog(@"%f", (float)(a * c));
+    NSLog(@"%f", a * b);
+    
+//    int a = 7;
+    int i;
+    for(i = sizeof(int)*8 - 1; i >= 0; i--){
+        if((1 << i) & a)
+            printf("%c", '1');
+        else
+            printf("%c", '0');
+    }
+    
+    
+    int number = 7;
+    char string[25];
+    
+//    itoa(number, string, 2);
+    printf("integer = %d string = %s\n", number, string);
     
         return YES;
 }

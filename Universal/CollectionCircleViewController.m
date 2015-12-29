@@ -7,7 +7,7 @@
 //
 
 #import "CollectionCircleViewController.h"
-#import "Cell.h"
+#import "CircleLayoutCell.h"
 #import "CircleLayout.h"
 
 NSString * const cellIdentifier = @"MY_CELL";
@@ -26,7 +26,7 @@ NSString * const cellIdentifier = @"MY_CELL";
     self.circleCollectionView.collectionViewLayout = [[CircleLayout alloc]init];
     UITapGestureRecognizer* tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     [self.circleCollectionView addGestureRecognizer:tapRecognizer];
-    [self.circleCollectionView registerClass:[Cell class] forCellWithReuseIdentifier:cellIdentifier];
+    [self.circleCollectionView registerClass:[CircleLayoutCell class] forCellWithReuseIdentifier:cellIdentifier];
     [self.circleCollectionView reloadData];
     self.circleCollectionView.backgroundColor = [UIColor whiteColor];
 }
@@ -42,7 +42,7 @@ NSString * const cellIdentifier = @"MY_CELL";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
-    Cell *cell = [cv dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    CircleLayoutCell *cell = [cv dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     return cell;
 }
 

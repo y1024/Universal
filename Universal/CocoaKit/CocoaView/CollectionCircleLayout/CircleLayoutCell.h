@@ -8,6 +8,6 @@ Custom collection view cell for a blue dot.
 
 #import <UIKit/UIKit.h>
 
-@interface Cell : UICollectionViewCell
+@interface CircleLayoutCell : UICollectionViewCell
 
 @end
