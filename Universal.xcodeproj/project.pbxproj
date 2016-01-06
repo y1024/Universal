@@ -218,6 +218,8 @@
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
 		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
 		8D9A05531C3263E600C51E61 /* CFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A05521C3263E600C51E61 /* CFunctions.c */; };
+		8DC622361C3D080A00BF8CBD /* BankCardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC622321C3D080A00BF8CBD /* BankCardTextField.m */; };
+		8DC622371C3D080A00BF8CBD /* PhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC622351C3D080A00BF8CBD /* PhoneTextField.m */; };
 		8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */; };
 		8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B02E1C12F98000CD720D /* ReplyViewController.m */; };
 		8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */; };
@@ -258,7 +260,6 @@
 		CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA128321BD5DE9200D7B22D /* NSMutableDictionary+Extension.m */; };
 		CDAA0BAE1BD0A76600A728D4 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAA0BAD1BD0A76600A728D4 /* NSMutableArray+Extension.m */; };
 		CDB5841D1BDE3278008432A3 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5841C1BDE3278008432A3 /* NewViewController.m */; };
-		CDB584221BDE6996008432A3 /* PhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB584211BDE6996008432A3 /* PhoneTextField.m */; };
 		CDB584261BDE6E56008432A3 /* CocoaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB584251BDE6E56008432A3 /* CocoaButton.m */; };
 		CDFCECB71BCF457800890E0D /* NSNull+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECB61BCF457800890E0D /* NSNull+Extension.m */; };
 		CDFCECBE1BCFA56B00890E0D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECBD1BCFA56B00890E0D /* NSObject+Extension.m */; };
@@ -679,6 +680,10 @@
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8D9A05521C3263E600C51E61 /* CFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFunctions.c; sourceTree = "<group>"; };
+		8DC622311C3D080A00BF8CBD /* BankCardTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardTextField.h; sourceTree = "<group>"; };
+		8DC622321C3D080A00BF8CBD /* BankCardTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardTextField.m; sourceTree = "<group>"; };
+		8DC622341C3D080A00BF8CBD /* PhoneTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTextField.h; sourceTree = "<group>"; };
+		8DC622351C3D080A00BF8CBD /* PhoneTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneTextField.m; sourceTree = "<group>"; };
 		8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplyViewController.xib; sourceTree = "<group>"; };
 		8DC6B02E1C12F98000CD720D /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
 		8DC6B02F1C12F98000CD720D /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
@@ -745,8 +750,6 @@
 		CDAA0BAD1BD0A76600A728D4 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
 		CDB5841B1BDE3278008432A3 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		CDB5841C1BDE3278008432A3 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
-		CDB584201BDE6996008432A3 /* PhoneTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTextField.h; sourceTree = "<group>"; };
-		CDB584211BDE6996008432A3 /* PhoneTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneTextField.m; sourceTree = "<group>"; };
 		CDB584241BDE6E56008432A3 /* CocoaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaButton.h; sourceTree = "<group>"; };
 		CDB584251BDE6E56008432A3 /* CocoaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaButton.m; sourceTree = "<group>"; };
 		CDFCECB51BCF457800890E0D /* NSNull+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Extension.h"; sourceTree = "<group>"; };
@@ -1501,6 +1504,33 @@
 			path = CFunctions;
 			sourceTree = "<group>";
 		};
+		8DC6222F1C3D080A00BF8CBD /* TextFieldKit */ = {
+			isa = PBXGroup;
+			children = (
+				8DC622301C3D080A00BF8CBD /* BankCardTextField */,
+				8DC622331C3D080A00BF8CBD /* PhoneTextField */,
+			);
+			path = TextFieldKit;
+			sourceTree = "<group>";
+		};
+		8DC622301C3D080A00BF8CBD /* BankCardTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8DC622311C3D080A00BF8CBD /* BankCardTextField.h */,
+				8DC622321C3D080A00BF8CBD /* BankCardTextField.m */,
+			);
+			path = BankCardTextField;
+			sourceTree = "<group>";
+		};
+		8DC622331C3D080A00BF8CBD /* PhoneTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8DC622341C3D080A00BF8CBD /* PhoneTextField.h */,
+				8DC622351C3D080A00BF8CBD /* PhoneTextField.m */,
+			);
+			path = PhoneTextField;
+			sourceTree = "<group>";
+		};
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1668,24 +1698,15 @@
 		CDB5841E1BDE6996008432A3 /* CocoaView */ = {
 			isa = PBXGroup;
 			children = (
+				8DC6222F1C3D080A00BF8CBD /* TextFieldKit */,
 				8D721EA91C30D8C70055EB20 /* CollectionCircleLayout */,
 				8D4C95E71C2323E100F68262 /* TTTextView */,
 				8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */,
 				8DEE76271C04A51C009C2FBC /* WeightViewController */,
 				8DE44A2B1C02E81B0056E782 /* RuleViewController */,
 				CDB584231BDE6E49008432A3 /* CocoaButton */,
-				CDB5841F1BDE6996008432A3 /* PhoneTextField */,
 			);
 			path = CocoaView;
-			sourceTree = "<group>";
-		};
-		CDB5841F1BDE6996008432A3 /* PhoneTextField */ = {
-			isa = PBXGroup;
-			children = (
-				CDB584201BDE6996008432A3 /* PhoneTextField.h */,
-				CDB584211BDE6996008432A3 /* PhoneTextField.m */,
-			);
-			path = PhoneTextField;
 			sourceTree = "<group>";
 		};
 		CDB584231BDE6E49008432A3 /* CocoaButton */ = {
@@ -1887,6 +1908,7 @@
 				8D2ACBA31C047361000143B8 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				8D2ACBC21C047361000143B8 /* GPUImageMovieWriter.m in Sources */,
 				8D721EAE1C30D8C70055EB20 /* CircleLayoutCell.m in Sources */,
+				8DC622371C3D080A00BF8CBD /* PhoneTextField.m in Sources */,
 				8D2ACBA01C047361000143B8 /* GPUImageSoftEleganceFilter.m in Sources */,
 				37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */,
 				8D2ACBBD1C047361000143B8 /* GPUImageWhiteBalanceFilter.m in Sources */,
@@ -1919,6 +1941,7 @@
 				8D2ACBBF1C047361000143B8 /* GPUImageZoomBlurFilter.m in Sources */,
 				8D2ACB531C047361000143B8 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
 				8D2ACB4A1C047361000143B8 /* GPUImageFASTCornerDetectionFilter.m in Sources */,
+				8DC622361C3D080A00BF8CBD /* BankCardTextField.m in Sources */,
 				8D2ACB641C047361000143B8 /* GPUImageJFAVoronoiFilter.m in Sources */,
 				8D2ACB621C047361000143B8 /* GPUImageHueFilter.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
@@ -1959,7 +1982,6 @@
 				8D2ACBA21C047361000143B8 /* GPUImageSolidColorGenerator.m in Sources */,
 				8D2ACB9F1C047361000143B8 /* GPUImageSobelEdgeDetectionFilter.m in Sources */,
 				8D2ACB421C047361000143B8 /* GPUImageDirectionalSobelEdgeDetectionFilter.m in Sources */,
-				CDB584221BDE6996008432A3 /* PhoneTextField.m in Sources */,
 				8DEE76341C04A51C009C2FBC /* WeightViewController.m in Sources */,
 				37D8C12B1B95A11E0073F1CC /* NSUserDefaults+Extension.m in Sources */,
 				8D2ACB7A1C047361000143B8 /* GPUImageMotionDetector.m in Sources */,

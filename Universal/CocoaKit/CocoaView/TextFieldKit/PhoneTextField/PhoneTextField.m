@@ -8,9 +8,9 @@
 
 #import "PhoneTextField.h"
 
-#define PhoneTextField_TotalLength 13
-
 @implementation PhoneTextField
+
+static const int kPhoneNumber = 11;
 
 - (NSString*)phoneTextFieldText
 {
@@ -57,7 +57,7 @@
     
     NSString *cardNumberWithoutSpaces = [self removeNonDigits:textField.text andPreserveCursorPosition:&targetCursorPosition];
     
-    if ([cardNumberWithoutSpaces length] > 11) {
+    if ([cardNumberWithoutSpaces length] > kPhoneNumber) {
         [textField setText:previousTextFieldContent];
         textField.selectedTextRange = previousSelection;
         return;
@@ -103,6 +103,17 @@
     
 }
 
+- (BOOL)appendBankWithIndex:(NSInteger)i
+{
+    if (i == 3 || i == 7) {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
 - (NSString*)insertSpacesEveryFourDigitsIntoString:(NSString*)string andPreserveCursorPosition:(NSUInteger*)cursorPosition
 {
     NSMutableString *stringWithAddedSpaces = [NSMutableString new];
@@ -110,7 +121,7 @@
     
     for (NSUInteger i = 0; i < [string length]; i++) {
         
-        if (i == 3 || i == 7) {
+        if ([self appendBankWithIndex:i]) {
             [stringWithAddedSpaces appendString:@" "];
             
             if (i < cursorPositionInSpacelessString) {
