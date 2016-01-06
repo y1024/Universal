@@ -40,6 +40,11 @@
 }
 
 
+- (void)awakeFromNib
+{
+    [self initialize];
+}
+
 -(void)initialize
 {
     self.delegate = self;

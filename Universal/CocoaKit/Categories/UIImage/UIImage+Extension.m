@@ -9,11 +9,58 @@
 #import "UIImage+Extension.h"
 #import "PodHeaders.h"
 
-
 #import <Accelerate/Accelerate.h>
 
 
+#define kMaxWidth   1080.0
+#define kMaxHeight  1920.0
+
 @implementation UIImage (Extension)
+
+
+- (UIImage *)redrawWithSize:(CGSize)size
+{
+    CGSize imageSize = self.size;
+    CGSize drawSize = size;
+    if (imageSize.width < kMaxWidth && imageSize.height < kMaxHeight) {
+        NSLog(@"图片不需要压缩");
+        drawSize.width = imageSize.width;
+        drawSize.height = imageSize.height;
+    }
+    else if (imageSize.width > kMaxWidth && imageSize.height < kMaxHeight) {
+        NSLog(@"图片比较宽，需要纵向压缩");
+        CGFloat scale = kMaxWidth / imageSize.width;
+        drawSize.width = kMaxWidth;
+        drawSize.height = imageSize.height / scale;
+    }
+    else if (imageSize.width < kMaxWidth && imageSize.height > kMaxHeight) {
+        NSLog(@"图片比较高，需要纵向压缩");
+        CGFloat scale = kMaxHeight / imageSize.height;
+        drawSize.height = kMaxHeight;
+        drawSize.width = imageSize.width / scale;
+    }
+    else
+    {
+        NSLog(@"图片宽高都需要压缩");
+        CGFloat wScale = imageSize.width/kMaxWidth;
+        CGFloat hScale = imageSize.height/kMaxHeight;
+        
+        CGFloat maxScale = MAX(wScale, hScale);
+        
+        drawSize.width = imageSize.width/maxScale;
+        drawSize.height = imageSize.height/maxScale;
+        
+    }
+    CGRect rect = CGRectMake(0.0f, 0.0f,drawSize.width, drawSize.height);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, self.scale);
+    CGContextRef c = UIGraphicsGetCurrentContext();
+    [self drawInRect:rect];
+    CGContextFillRect(c, rect);
+    UIImage *tintedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return tintedImage;
+}
 
 - (void)writeToSavedPhotosAlbum
 {
