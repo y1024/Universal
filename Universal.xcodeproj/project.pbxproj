@@ -205,6 +205,7 @@
 		8D2ACBC41C047361000143B8 /* GPUImagePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB191C047361000143B8 /* GPUImagePicture.m */; };
 		8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB1B1C047361000143B8 /* GPUImageView.m */; };
 		8D323C271C3F578400EBD1C4 /* PhotosHelperBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D323C261C3F578400EBD1C4 /* PhotosHelperBundle.bundle */; };
+		8D323C2B1C3F5B0A00EBD1C4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D323C2A1C3F5B0A00EBD1C4 /* UIViewController+Extension.m */; };
 		8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C95E91C2323E100F68262 /* TTTextView.m */; };
 		8D65C90D1C2BCD3100868FB5 /* AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9051C2BCD3100868FB5 /* AttributedLabelAttachment.m */; };
 		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
@@ -658,6 +659,8 @@
 		8D2ACB1A1C047361000143B8 /* GPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageView.h; sourceTree = "<group>"; };
 		8D2ACB1B1C047361000143B8 /* GPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageView.m; sourceTree = "<group>"; };
 		8D323C261C3F578400EBD1C4 /* PhotosHelperBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PhotosHelperBundle.bundle; sourceTree = "<group>"; };
+		8D323C291C3F5B0A00EBD1C4 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		8D323C2A1C3F5B0A00EBD1C4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		8D4C95E81C2323E100F68262 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
 		8D4C95E91C2323E100F68262 /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextView.m; sourceTree = "<group>"; };
 		8D65C9041C2BCD3100868FB5 /* AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabelAttachment.h; sourceTree = "<group>"; };
@@ -852,6 +855,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				8D323C281C3F5AF000EBD1C4 /* UIViewController+Extension */,
 				8D65C9031C2BCD3100868FB5 /* CoreTextDisplayView */,
 				CDA128301BD5DE8100D7B22D /* NSMutableDictionary */,
 				CD8349B01BD10254007E75C2 /* UIControl */,
@@ -1459,6 +1463,15 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
+		8D323C281C3F5AF000EBD1C4 /* UIViewController+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D323C291C3F5B0A00EBD1C4 /* UIViewController+Extension.h */,
+				8D323C2A1C3F5B0A00EBD1C4 /* UIViewController+Extension.m */,
+			);
+			path = "UIViewController+Extension";
+			sourceTree = "<group>";
+		};
 		8D4C95E71C2323E100F68262 /* TTTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1897,6 +1910,7 @@
 				8DEE76321C04A51C009C2FBC /* WeightCollectionViewCell.m in Sources */,
 				377C11321B959CCC00FD4EB6 /* UIDevice+Extension.m in Sources */,
 				8D2ACBAB1C047361000143B8 /* GPUImageThreeInputFilter.m in Sources */,
+				8D323C2B1C3F5B0A00EBD1C4 /* UIViewController+Extension.m in Sources */,
 				8D2ACB701C047361000143B8 /* GPUImageLuminanceRangeFilter.m in Sources */,
 				8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */,
 				8D2ACB2E1C047361000143B8 /* GPUImageBulgeDistortionFilter.m in Sources */,
