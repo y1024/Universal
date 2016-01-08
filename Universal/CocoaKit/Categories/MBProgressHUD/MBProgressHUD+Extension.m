@@ -40,7 +40,10 @@
     MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
     hub.labelText = text;
-    
+}
++ (void)hideInView:(UIView*)view
+{
+    [MBProgressHUD hideHUDForView:view animated:YES];
 }
 
 + (void)hideAll

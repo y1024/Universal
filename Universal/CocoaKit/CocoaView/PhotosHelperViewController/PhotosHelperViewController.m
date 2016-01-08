@@ -13,7 +13,7 @@
 #import "SelectedPhotoCollectionViewCellLayout.h"
 #import "SelectedPhotoCollectionViewCell.h"
 
-
+#import "MBProgressHUD+Extension.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @interface PhotosHelperViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
@@ -31,6 +31,7 @@
 
 @property(nonatomic,assign)NSInteger photosTotalCount;
 
+@property(nonatomic,strong)ALAssetsLibrary *assetsLibrary;
 
 /**
  *  拍照存入本地后 重新刷新数据源
@@ -59,16 +60,20 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
 - (void)viewDidLoad {
  
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     if (_selectMax == 0) {
         _selectMax = 3 ;
     }
     
     _autoRefreshSource = NO;
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.cameraPickerController = [self buildCameraPickerController];
     [_sourceCollectionView registerNib:[UINib nibWithNibName:@"CameraCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CameraCollectionViewCell"];
@@ -82,8 +87,9 @@
     
     [self readALAssetsLibrary];
     [self buildFinishButtonTitle];
-    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -152,32 +158,34 @@
 
 - (void)readALAssetsLibrary
 {
-     ALAssetsLibrary *assetsLibrary=[[ALAssetsLibrary alloc]init];
-    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        
-        [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
-            UIImage *image=[UIImage imageWithCGImage:result.thumbnail];
-            if (image) {
+    self.assetsLibrary=[[ALAssetsLibrary alloc]init];
 
+    [MBProgressHUD loadingInView:self.view text:nil];
+    
+    __weak __typeof(self)safeSelf = self;
+    
+    [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+            UIImage *thumbnailImage=[UIImage imageWithCGImage:result.aspectRatioThumbnail];
+            if (thumbnailImage) {
                 @autoreleasepool {
-                    
                     PhotosHelperCollectionViewCellModel *model = [[PhotosHelperCollectionViewCellModel alloc]init];
-                    model.image = image;
+                    model.thumbnailImage = thumbnailImage;
                     model.localURLString = ((NSURL*)[result valueForProperty:ALAssetPropertyAssetURL]).absoluteString;
-                    
-                    if (_autoRefreshSource == YES) {
+                    model.url = [result valueForProperty:ALAssetPropertyAssetURL];
+                    if (safeSelf.autoRefreshSource == YES) {
                         
                         *stop = YES;
                         model.selected = YES;
                         
-                        [_hasSelectedPhotosArray addObject:model];
-                        [_sourceArray insertObject:model atIndex:0];
-                        [self reloadCollectionView];
-                        [self buildFinishButtonTitle];
+                        ALAssetRepresentation *represent = [result defaultRepresentation];
+                        model.fullResolutionImage = [UIImage imageWithCGImage:[represent fullResolutionImage]];
                         
-                        if ([_delegate respondsToSelector:@selector(didSelectedImageArray:)]) {
-                            [_delegate didSelectedImageArray:_hasSelectedPhotosArray];
-                        }
+                        [safeSelf.hasSelectedPhotosArray addObject:model];
+                        [safeSelf.sourceArray insertObject:model atIndex:0];
+                        [safeSelf reloadCollectionView];
+                        [safeSelf buildFinishButtonTitle];
+                        [MBProgressHUD hideInView:self.view];
                     }
                     else
                     {
@@ -185,7 +193,8 @@
                             if ([model.localURLString isEqualToString:hasSelectedModel.localURLString]) {
                                 model = hasSelectedModel;
                                 model.selected = YES;
-                                
+                                ALAssetRepresentation *represent = [result defaultRepresentation];
+                                model.fullResolutionImage = [UIImage imageWithCGImage:[represent fullResolutionImage]];
                                 break ;
                             }
                             
@@ -199,6 +208,7 @@
                     }
                 }
                   if (index == 0) {
+                    [MBProgressHUD hideInView:self.view];
                     [self reloadCollectionView];
                 }
             }
@@ -233,8 +243,7 @@
             
             if ([self beyondLimted]) {
                 
-                NSLog(@"当前已经选择%ld张,最大可以选择%ld张",(unsigned long)_hasSelectedPhotosArray.count,(long)_selectMax);
-                
+
                 return ;
             }
             else
@@ -249,43 +258,52 @@
                 model.selected = !model.selected ;
                 if (model.selected == NO) {
                     [_hasSelectedPhotosArray removeObject:model];
+                    [self reloadCollectionView];
                 }
             }
             else
             {
                 if ([self beyondLimted]) {
-                    
-                    NSLog(@"当前已经选择%ld张,最大可以选择(long)(long)%ld张",(unsigned long)_hasSelectedPhotosArray.count,(long)_selectMax);
-                    
                     return ;
                 }
                 else
-                {   model.selected = !model.selected ;
-                    [_hasSelectedPhotosArray addObject:model];
+                {
+                    __weak __typeof(self)safeSelf = self;
+                    [self.assetsLibrary assetForURL:model.url resultBlock:^(ALAsset *asset) {
+                        model.selected = !model.selected ;
+                        ALAssetRepresentation *represent = [asset defaultRepresentation];
+                        model.fullResolutionImage = [UIImage imageWithCGImage:[represent fullResolutionImage]];
+                        [safeSelf.hasSelectedPhotosArray addObject:model];
+                        [safeSelf reloadCollectionView];
+                        [safeSelf buildFinishButtonTitle];
+                    } failureBlock:^(NSError *error) {
+                        
+                    }];
                 }
             }
-            [self reloadCollectionView];
-            [self buildFinishButtonTitle];
+            
+   
+
         }
     }
-    else
-    {
-        
-    }
+    else{}
 }
 
 - (void)reloadCollectionView
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_sourceCollectionView reloadData];
-    });
-    
+    if ([_delegate respondsToSelector:@selector(didSelectedImageArray:)]) {
+        [_delegate didSelectedImageArray:_hasSelectedPhotosArray];
+    }
+    [_sourceCollectionView reloadData];
     [_selectedCollectionView reloadData];
 }
 
 - (BOOL)beyondLimted
 {
     if (_hasSelectedPhotosArray.count >= _selectMax) {
+        
+        NSString *messageString = [NSString stringWithFormat:@"最多只能选择%ld张图片哦",_selectMax];
+        [MBProgressHUD showInView:self.view text:messageString];
         
         return YES;
     }
@@ -324,6 +342,8 @@
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     });
      _autoRefreshSource = YES;
+    [MBProgressHUD loadingInView:self.view text:nil];
+    
     [self dismissCameraPickerViewControllerWithDelay:3];
     
 }
@@ -336,6 +356,7 @@
 - (void)dismissCameraPickerViewControllerWithDelay:(NSTimeInterval)timer
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timer * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideInView:self.view];
         [self.cameraPickerController dismissViewControllerAnimated:YES completion:nil];
      });
 }
@@ -350,7 +371,7 @@
 
 - (void)buildFinishButtonTitle
 {
-    NSString *titleString = [NSString stringWithFormat:@"完成(%ld/%ld)",(unsigned long)_hasSelectedPhotosArray.count,(long)_selectMax];
+    NSString *titleString = [NSString stringWithFormat:@"完成(%ld/%ld)",_hasSelectedPhotosArray.count,_selectMax];
     
     [_finishSeletedButton setTitle:titleString forState:normal];
 }

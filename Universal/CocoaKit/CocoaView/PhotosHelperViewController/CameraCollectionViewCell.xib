@@ -16,7 +16,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zQ-Hj-myv">
                         <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_doctor_photo_white" translatesAutoresizingMaskIntoConstraints="NO" id="NWS-qk-jeo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_doctor_photo_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="NWS-qk-jeo">
                                 <rect key="frame" x="39" y="31.5" width="40" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ZpI-jl-AJm"/>
@@ -50,6 +50,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="icon_doctor_photo_white" width="41" height="36"/>
+        <image name="icon_doctor_photo_white.png" width="41" height="36"/>
     </resources>
 </document>

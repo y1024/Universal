@@ -10,6 +10,7 @@
 #import "PhotosHelperCollectionViewCellModel.h"
 
 
+
 @protocol PhotosHelperViewControllerDelegate <NSObject>
 
 - (void)didSelectedImageArray:(NSMutableArray*)array;

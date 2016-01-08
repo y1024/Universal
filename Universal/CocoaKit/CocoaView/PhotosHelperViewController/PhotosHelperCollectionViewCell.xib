@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,35 +16,40 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcP-aP-ape">
                         <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mk4-Mu-xQg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mk4-Mu-xQg">
                                 <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
-                                <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_tick2_white" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-tQ-S3h">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_tick2_orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-tQ-S3h">
                                 <rect key="frame" x="89" y="10" width="24" height="24"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="0Pu-j7-bVM"/>
                                     <constraint firstAttribute="width" constant="24" id="nmK-rK-7y9"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfb-dA-1zL">
+                                <rect key="frame" x="89" y="10" width="24" height="24"/>
+                                <connections>
+                                    <action selector="delegateButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="BjR-C5-gLS"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Mk4-Mu-xQg" secondAttribute="bottom" id="6Ja-fu-m3p"/>
+                            <constraint firstItem="xhX-tQ-S3h" firstAttribute="top" secondItem="sfb-dA-1zL" secondAttribute="top" id="9Ui-fq-90N"/>
                             <constraint firstItem="xhX-tQ-S3h" firstAttribute="top" secondItem="tcP-aP-ape" secondAttribute="top" constant="10" id="HcJ-km-apG"/>
                             <constraint firstItem="Mk4-Mu-xQg" firstAttribute="leading" secondItem="tcP-aP-ape" secondAttribute="leading" id="Iy4-2g-e3p"/>
+                            <constraint firstItem="xhX-tQ-S3h" firstAttribute="bottom" secondItem="sfb-dA-1zL" secondAttribute="bottom" id="Mit-ii-AsD"/>
                             <constraint firstAttribute="trailing" secondItem="xhX-tQ-S3h" secondAttribute="trailing" constant="5" id="bGt-76-d3Z"/>
                             <constraint firstItem="Mk4-Mu-xQg" firstAttribute="top" secondItem="tcP-aP-ape" secondAttribute="top" id="eEE-FW-DWJ"/>
+                            <constraint firstItem="xhX-tQ-S3h" firstAttribute="leading" secondItem="sfb-dA-1zL" secondAttribute="leading" id="pfA-Qv-bfc"/>
+                            <constraint firstItem="xhX-tQ-S3h" firstAttribute="trailing" secondItem="sfb-dA-1zL" secondAttribute="trailing" id="q5c-XA-OMa"/>
                             <constraint firstAttribute="trailing" secondItem="Mk4-Mu-xQg" secondAttribute="trailing" id="zPo-po-YEI"/>
                         </constraints>
                     </view>
                 </subviews>
-                <animations/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <animations/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="tcP-aP-ape" secondAttribute="trailing" id="A9E-dv-1Pi"/>
                 <constraint firstAttribute="bottom" secondItem="tcP-aP-ape" secondAttribute="bottom" id="GzX-pM-qCb"/>
@@ -60,6 +65,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="btn_tick2_white" width="24" height="24"/>
+        <image name="btn_tick2_orange.png" width="24" height="24"/>
     </resources>
 </document>

@@ -17,7 +17,7 @@
 - (void)setModel:(PhotosHelperCollectionViewCellModel *)model
 {
     _model = model;
-    _selectedImageView.image = model.image;
+    _selectedImageView.image = model.thumbnailImage;
 
 }
 

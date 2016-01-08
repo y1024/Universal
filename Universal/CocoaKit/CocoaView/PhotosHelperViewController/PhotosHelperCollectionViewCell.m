@@ -13,11 +13,16 @@
 - (void)awakeFromNib {
     // Initialization code
 }
+- (IBAction)delegateButtonClick:(id)sender {
+    if ([_delegate respondsToSelector:@selector(cellDeleteButtonClick:)]) {
+        [_delegate cellDeleteButtonClick:_indexPath];
+    }
+}
 
 - (void)setSource:(PhotosHelperCollectionViewCellModel *)source
 {
     _source = source;
-    self.photoImageView.image = source.image;
+    self.photoImageView.image = source.thumbnailImage;
     self.cellSelected = source.selected;
 }
 
@@ -31,7 +36,7 @@
 
 - (void)cellWithSource:(PhotosHelperCollectionViewCellModel*)source
 {
-    self.photoImageView.image = source.image;
+    self.photoImageView.image = source.thumbnailImage;
     if (source.selected == YES) {
         self.photoSelectedIconImageView.image = [UIImage imageNamed:@"btn_tick2_orange"];
     }

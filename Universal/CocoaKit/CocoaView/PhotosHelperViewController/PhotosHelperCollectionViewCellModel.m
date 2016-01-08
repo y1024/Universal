@@ -12,8 +12,8 @@
 
 - (CGFloat)imageWidth
 {
-    if (self.image) {
-        return self.image.size.width;
+    if (self.thumbnailImage) {
+        return self.thumbnailImage.size.width;
     }
     else
     {
@@ -23,13 +23,14 @@
 
 - (CGFloat)imageHeight
 {
-    if (self.image) {
-        return self.image.size.height;
+    if (self.thumbnailImage) {
+        return self.thumbnailImage.size.height;
     }
     else
     {
         return 0 ;
     }
 }
+
 
 @end

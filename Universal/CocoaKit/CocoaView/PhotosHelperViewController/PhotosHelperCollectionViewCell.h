@@ -11,6 +11,16 @@
 #import "PhotosHelperCollectionViewCellModel.h"
 
 
+@protocol PhotosHelperCollectionViewCellDelegate <NSObject>
+
+- (void)cellDeleteButtonClick:(NSIndexPath*)index;
+
+
+
+@end
+
+
+
 @interface PhotosHelperCollectionViewCell : UICollectionViewCell
 /**
  *  图片
@@ -21,10 +31,16 @@
  */
 @property (weak, nonatomic) IBOutlet UIImageView *photoSelectedIconImageView;
 
+@property(nonatomic,strong)NSIndexPath *indexPath;
+
 @property(nonatomic,assign)BOOL cellSelected;
 
 @property(nonatomic,strong)PhotosHelperCollectionViewCellModel *source;
 
+/**
+ *  <#Description#>
+ */
+@property(nonatomic,assign)id               delegate;
 
 - (void)cellWithSource:(PhotosHelperCollectionViewCellModel*)source;
 
