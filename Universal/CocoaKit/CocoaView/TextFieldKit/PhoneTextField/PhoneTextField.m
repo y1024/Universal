@@ -69,6 +69,10 @@ static const int kPhoneNumber = 11;
     UITextPosition *targetPosition = [textField positionFromPosition:[textField beginningOfDocument] offset:targetCursorPosition];
     
     [textField setSelectedTextRange:[textField textRangeFromPosition:targetPosition toPosition :targetPosition]];
+
+    if ([self.phoneDelegate respondsToSelector:@selector(phoneTextFieldTextDidChanged:)]) {
+        [self.phoneDelegate phoneTextFieldTextDidChanged:textField.text];
+    }
 }
 
 
@@ -102,7 +106,13 @@ static const int kPhoneNumber = 11;
     return digitsOnlyString;
     
 }
-
+/**
+ *  判断当前 text 是否需要追加空格
+ *
+ *  @param i
+ *
+ *  @return 
+ */
 - (BOOL)appendBankWithIndex:(NSInteger)i
 {
     if (i == 3 || i == 7) {

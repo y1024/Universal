@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BankCardTextFieldDelegate <NSObject>
+/**
+ *  代理方法 返回 字符串
+ *
+ *  @param text
+ */
+- (void)bankCardTextFieldTextDidChanged:(NSString*)text;
+
+@end
 
 /**
  *  格式化 银行卡输入框
@@ -25,5 +34,9 @@
  *  去除 空格
  */
 @property(nonatomic,strong,readonly)NSString *bankCardTextFieldText;
+/**
+ *
+ */
+@property(nonatomic,assign)id               bankCardDelegate;
 
 @end

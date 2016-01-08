@@ -234,6 +234,7 @@
 		8DCE9B251C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */; };
 		8DCE9B261C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */; };
 		8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */; };
+		8DD35F221C3F9CAD00A8FE18 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */; };
 		8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3960A1C102CB7006662FC /* CodeSinppet */; };
 		8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */; };
 		8DE44A361C02E81B0056E782 /* RuleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */; };
@@ -707,6 +708,8 @@
 		8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DCE9B1B1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCellLayout.h; sourceTree = "<group>"; };
 		8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCellLayout.m; sourceTree = "<group>"; };
+		8DD35F201C3F9CAD00A8FE18 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		8DD3960A1C102CB7006662FC /* CodeSinppet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeSinppet; sourceTree = "<group>"; };
 		8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RuleImages.xcassets; sourceTree = "<group>"; };
 		8DE44A2D1C02E81B0056E782 /* RuleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleTableViewCell.h; sourceTree = "<group>"; };
@@ -977,6 +980,8 @@
 				8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */,
 				8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */,
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
+				8DD35F201C3F9CAD00A8FE18 /* MyViewController.h */,
+				8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
 				37AD9BD01B943E1400F1D180 /* Supporting Files */,
@@ -2015,6 +2020,7 @@
 				8D2ACB671C047361000143B8 /* GPUImageLanczosResamplingFilter.m in Sources */,
 				8D2ACB661C047361000143B8 /* GPUImageKuwaharaRadius3Filter.m in Sources */,
 				8D2ACB3F1C047361000143B8 /* GPUImageDifferenceBlendFilter.m in Sources */,
+				8DD35F221C3F9CAD00A8FE18 /* MyViewController.m in Sources */,
 				8D2ACB561C047361000143B8 /* GPUImageHalftoneFilter.m in Sources */,
 				8D2ACB731C047361000143B8 /* GPUImageLuminosityBlendFilter.m in Sources */,
 				8D2ACB981C047361000143B8 /* GPUImageScreenBlendFilter.m in Sources */,

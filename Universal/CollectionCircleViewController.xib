@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionCircleViewController">
             <connections>
-                <outlet property="circleCollectionView" destination="dgf-Kv-XRM" id="0cx-Ss-ODB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,27 +15,13 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-Kv-XRM">
-                    <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FUe-hy-gCs">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="smg-rc-6F1"/>
-                        <outlet property="delegate" destination="-1" id="diZ-Gj-BhL"/>
-                    </connections>
-                </collectionView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQY-ga-sgl">
+                    <rect key="frame" x="61" y="285" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="dgf-Kv-XRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="99A-fq-iqR"/>
-                <constraint firstAttribute="bottom" secondItem="dgf-Kv-XRM" secondAttribute="bottom" id="L5s-Se-lY7"/>
-                <constraint firstItem="dgf-Kv-XRM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="pM8-rX-Txc"/>
-                <constraint firstAttribute="trailing" secondItem="dgf-Kv-XRM" secondAttribute="trailing" id="qhd-WC-ebN"/>
-            </constraints>
         </view>
     </objects>
 </document>

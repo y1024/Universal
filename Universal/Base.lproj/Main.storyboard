@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="237" y="-951"/>
         </scene>
-        <!--View Controller-->
+        <!--My View Controller-->
         <scene sceneID="PvK-o0-3HR">
             <objects>
-                <viewController id="jBm-oa-wI0" sceneMemberID="viewController">
+                <viewController id="jBm-oa-wI0" customClass="MyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZHY-6z-klB"/>
                         <viewControllerLayoutGuide type="bottom" id="4xG-4q-amh"/>
@@ -82,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-0V-ygs" customClass="BankCardTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-0V-ygs" customClass="PhoneTextField">
                                 <rect key="frame" x="0.0" y="220" width="600" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -96,6 +96,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YeK-zs-iTt"/>
+                    <connections>
+                        <outlet property="tf" destination="CV8-0V-ygs" id="xQm-XI-KUv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwY-SX-iIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

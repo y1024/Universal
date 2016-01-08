@@ -9,6 +9,8 @@
 #import "NewViewController.h"
 #import "CategoryHeaders.h"
 #import  "UIImageView+Extension.h"
+#import "UIViewController+Extension.h"
+
 
 @interface NewViewController ()
 
@@ -31,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
+    [self setupForDismissKeyboard];
     
     // Do any additional setup after loading the view.
     

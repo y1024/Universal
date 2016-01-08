@@ -71,6 +71,10 @@ static const int kBankCardNumber = 19;
     UITextPosition *targetPosition = [textField positionFromPosition:[textField beginningOfDocument] offset:targetCursorPosition];
     
     [textField setSelectedTextRange:[textField textRangeFromPosition:targetPosition toPosition :targetPosition]];
+    
+    if ([self.bankCardDelegate respondsToSelector:@selector(bankCardTextFieldTextDidChanged:)]) {
+        [self.bankCardDelegate bankCardTextFieldTextDidChanged:textField.text];
+    }
 }
 
 
@@ -105,6 +109,13 @@ static const int kBankCardNumber = 19;
     
 }
 
+/**
+ *  判断当前 text 是否需要追加空格
+ *
+ *  @param i
+ *
+ *  @return 
+ */
 - (BOOL)appendBankWithIndex:(NSInteger)i
 {
     if (i%4 == 0 && i > 0) {

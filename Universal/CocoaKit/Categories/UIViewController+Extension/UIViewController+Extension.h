@@ -10,6 +10,8 @@
 
 @interface UIViewController (Extension)
 
+@property(nonatomic,strong,readonly)UITapGestureRecognizer   *singleTapGR;
+
 /**
  *  返回 rootViewController
  *
@@ -29,5 +31,7 @@
  *  @param viewControllerClass
  */
 - (BOOL)popToViewController:(NSString*)viewControllerClass;
+
+- (void)setupForDismissKeyboard;
 
 @end
