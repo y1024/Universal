@@ -156,4 +156,13 @@ extern NSString *const regxAllNumbers;
  */
 - (BOOL)isContainEmoji;
 
+/**
+ *  发卡行.卡种名称
+ *
+ *  @param idCard
+ *
+ *  @return
+ */
++ (NSString *)returnBankName:(NSString*) idCard;
+
 @end
