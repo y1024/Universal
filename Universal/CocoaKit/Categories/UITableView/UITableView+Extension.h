@@ -16,4 +16,8 @@
 
 - (void)registerCellWithClass:(Class)cls;
 
+- (void)scrollToTopWithAnimated:(BOOL)animated;
+
+- (void)scrollToBottomWithAnimated:(BOOL)animated;
+
 @end
