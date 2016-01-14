@@ -19,6 +19,12 @@
 #import "ReplyViewController.h"
 #import "CollectionCircleViewController.h"
 
+#import "NSObject+Extension.h"
+
+#import "RunTimeObj.h"
+
+
+
 
 
 
@@ -26,8 +32,15 @@
 
 @interface SourceTableViewController ()<RuleViewControllerRuleChangeDelegate>
 
+{
+    NSString *_name;
+    
+    NSInteger intName;
+}
+
 @property(nonatomic,strong)NewViewController *nextVC;
 
+@property(nonatomic,strong)NSString *name;
 
 @end
 
@@ -62,6 +75,55 @@
 //    
 //    NSLog(@"%lf",[str selfWidthWithFont:18]);
     
+//    Ivar ivarName = __clsInstanceVar([self class], @"_name");
+    
+    
+//    _name = @"MyName";
+//    intName = 5;
+//    
+//    Ivar var = __clsInstanceVar([self class], @"intName");
+//    
+//    NSLog(@"%@",__objGetIvar(self, __clsInstanceVar([self class], @"intName")));
+////    NSArray *ay = [NSArray arrayWithObject:@"a"];
+////
+////    __objSetClass(ay, [NSMutableArray class]);
+//    NSLog(@"%s",__clsName([NSArray class]));
+//
+//    NSMutableArray *muay = [NSMutableArray array];
+//    
+//    NSLog(@"%s",__objGetClassName(muay));
+    
+    [self runTime];
+}
+
+- (void)runTime
+{
+    RunTimeObj *obj = [[RunTimeObj alloc]init];
+    Class cls = [RunTimeObj class];
+    NSLog(@"RunTimeObj--类型:%s",__clsName(cls));
+    NSLog(@"RunTimeObj--父类:%s",__clsName(__clsSuperClass(cls)));
+    NSLog(@"RunTimeObj--版本：%d",__clsVersion(cls));
+    NSLog(@"RunTimeObj--实例分配空间：%ld",__clsInstanceSize(cls));
+    
+    Class objClass = __objGetClass(obj);
+    NSLog(@"obj--类型:%s",__clsName(objClass));
+//    __objSetClass(obj, [NSObject class]);
+//     NSLog(@"obj--类型:%s",__clsName(objClass));
+    NSLog(@"obj--设置类型:%s",__objGetClassName(obj));
+    NSLog(@"RunTimeObj--设置类型实例分配空间：%ld",__clsInstanceSize(cls));
+    Ivar nameIvar = __clsInstanceVar([RunTimeObj class], @"_ivarName");
+    NSLog(@"ivarName:%@",__objGetIvar(obj, nameIvar));
+//#warning 由于变量是 基本变量 读取时候 会崩溃
+//    Ivar ageIvar = __clsInstanceVar([RunTimeObj class], @"ivarAge");
+//    NSLog(@"ivarAge:%@",__objGetIvar(obj, ageIvar));
+    __objSetIvar(obj, nameIvar, @"newName");
+    NSLog(@"ivarName:%@",__objGetIvar(obj, nameIvar));
+    
+    
+    NSLog(@"objc:%@",__objcGetMetaClass(__clsName(objClass)));
+    
+//    NSLog(@"%@",objc_getClass((__bridge void *)[NSObject class]));
+    
 }
 
 
@@ -85,6 +147,9 @@
      cell.textLabel.text = @"方正像素15-2";
     cell.textLabel.font = [UIFont fontWithName:@"FZXS15--GB1-0" size:17];
     
+//    __clsName([cell class]);
+//    
+//    __clsInstanceSize([cell class]);
     return cell;
 }
 
@@ -120,11 +185,11 @@
 //        ruleVC.delegate = self;
 //        [self.navigationController pushViewController:ruleVC animated:YES];
         
-//        PhotosHelperViewController *ruleVC = [[PhotosHelperViewController alloc]init];
-//        ruleVC.selectMax = 5;
-//        
-//        ruleVC.delegate = self;
-//        [self.navigationController pushViewController:ruleVC animated:YES];
+        PhotosHelperViewController *ruleVC = [[PhotosHelperViewController alloc]init];
+        ruleVC.selectMax = 5;
+        
+        ruleVC.delegate = self;
+        [self.navigationController pushViewController:ruleVC animated:YES];
 //        [tableView.layer shakeAnimation];
     }
 }

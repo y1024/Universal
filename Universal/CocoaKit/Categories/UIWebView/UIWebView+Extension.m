@@ -29,7 +29,11 @@
 }
 - (void)loadURL:(NSString*)url
 {
-    [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0f]];
+    [self loadURL:url timeOut:60.0f];
+}
+- (void)loadURL:(NSString*)url timeOut:(NSTimeInterval)time
+{
+    [self loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:time]];
 }
 
 - (void)loadHTMLString:(NSString*)htmlString

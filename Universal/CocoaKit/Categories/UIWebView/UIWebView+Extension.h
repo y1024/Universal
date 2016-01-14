@@ -13,6 +13,8 @@
 
 - (void)loadURL:(NSString*)url;
 
+- (void)loadURL:(NSString*)url timeOut:(NSTimeInterval)time;
+
 /**
  *  加载  html字符串 处理图片
  *

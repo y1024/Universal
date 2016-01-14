@@ -12,6 +12,25 @@
 
 @implementation MBProgressHUD (Extension)
 
+
++ (void)loadingInView:(UIView*)view text:(NSString*)text
+{
+    MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    
+    hub.labelText = text;
+}
++ (void)hideInView:(UIView*)view
+{
+    [MBProgressHUD hideHUDForView:view animated:YES];
+}
+
++ (void)hideAll
+{
+    UIWindow *keyWindow = [UIWindow __ldx_keyWindow];
+    
+    [MBProgressHUD hideAllHUDsForView:keyWindow animated:YES];
+}
+
 + (void)debug:(NSString*)text
 {
     UIWindow *keyWindow = [UIWindow __ldx_keyWindow];
@@ -35,22 +54,5 @@
     [hub hide:YES afterDelay:1.5f];
 }
 
-+ (void)loadingInView:(UIView*)view text:(NSString*)text
-{
-    MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    
-    hub.labelText = text;
-}
-+ (void)hideInView:(UIView*)view
-{
-    [MBProgressHUD hideHUDForView:view animated:YES];
-}
-
-+ (void)hideAll
-{
-    UIWindow *keyWindow = [UIWindow __ldx_keyWindow];
-    
-    [MBProgressHUD hideAllHUDsForView:keyWindow animated:YES];
-}
 
 @end
