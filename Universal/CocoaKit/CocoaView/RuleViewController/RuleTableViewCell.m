@@ -38,6 +38,7 @@
 //        self.ruleTableViewCellState = RuleTableViewCellStateShort;
 //        self.ruleLabel.text = [NSString stringWithFormat:@"%.0lf",model.rule];
 //    }
+    
 }
 
 - (void)setRuleTableViewCellState:(NSInteger)ruleTableViewCellState

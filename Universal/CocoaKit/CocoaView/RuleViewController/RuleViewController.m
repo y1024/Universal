@@ -28,11 +28,24 @@
 
 - (instancetype)initWithRuleMin:(CGFloat)min ruleMax:(CGFloat)max delegate:(id)delegate
 {
+    return [self initWithRuleMin:min ruleMax:max defaultValue:min delegate:delegate];
+}
+
+- (instancetype)initWithRuleMin:(CGFloat)min ruleMax:(CGFloat)max defaultValue:(CGFloat)defaultVale delegate:(id)delegate
+{
     self = [super init];
     if (self) {
         self.ruleMin = min;
         self.ruleMax = max;
         self.delegate = delegate;
+        if (defaultVale == 0) {
+             self.defaultValue = min;
+        }
+        else
+        {
+            self.defaultValue = defaultVale;
+        }
+       
     }
     return self;
 }
@@ -43,15 +56,29 @@
     [self.taleView registerNib:[UINib nibWithNibName:@"RuleTableViewCell" bundle:nil] forCellReuseIdentifier:@"RuleTableViewCell"];
     self.sourceArray = [NSMutableArray array];
     [self configSource];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     
     CGFloat screenHeight = CGRectGetHeight([UIApplication sharedApplication].keyWindow.bounds);
     
-    UIEdgeInsets insets = UIEdgeInsetsMake(screenHeight - 229 - 74, 0, 229, 0);
+    UIEdgeInsets insets = UIEdgeInsetsMake(screenHeight - 451.5 + 14, 0, 215, 0);
     
     _taleView.contentInset = insets;
-    _taleView.contentOffset = CGPointMake(0, -insets.top);
     
-    [_taleView scrollsToTop];
+//    CGFloat offsetY = insets.top + (_ruleMax - _defaultValue) * 100;
+//    
+//    _taleView.contentOffset = CGPointMake(0, offsetY);
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    CGFloat screenHeight = CGRectGetHeight([UIApplication sharedApplication].keyWindow.bounds);
+    
+    UIEdgeInsets insets = UIEdgeInsetsMake(screenHeight - 451.5 + 14, 0, 215, 0);
+    CGFloat      yOffset = _taleView.contentSize.height - insets.top - insets.bottom - (10) - (_defaultValue - _ruleMin)*100;
+ 
 }
 
 
@@ -66,11 +93,11 @@
     if (_ruleMin >= _ruleMax) {
         _ruleMax = _ruleMin + 10 ;
     }
-    _mistake = ((NSInteger)(_ruleMax - _ruleMin) + 1) * 10;
+    _mistake = ((NSInteger)(_ruleMax - _ruleMin)) * 10;
     
     CGFloat kRuleMax = _ruleMax;
     
-    for (int i = 0; i < _mistake; i ++) {
+    for (int i = 0; i <= _mistake; i ++) {
         RuleTableViewCellModel *model = [[RuleTableViewCellModel alloc]init];
         model.rule = kRuleMax ;
         
@@ -94,32 +121,21 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat screenHeight = CGRectGetHeight([UIApplication sharedApplication].keyWindow.bounds);
-    CGFloat offset =  scrollView.contentOffset.y + (screenHeight - 229 - 74);
+    CGFloat offset =  scrollView.contentOffset.y + (screenHeight - 451.5 + 14);
     CGFloat rule = _ruleMax - offset*0.1/10;
-    
-    _messageLabel.text = [NSString stringWithFormat:@"%.2lf",rule];
+    if (rule <= 0) {
+        rule = 0 ;
+    }
+    _messageLabel.text = [NSString stringWithFormat:@"%.1lf",rule];
     
     if ([_delegate respondsToSelector:@selector(ruleDidChange:)]) {
         [_delegate ruleDidChange:rule];
     }
 }
 
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

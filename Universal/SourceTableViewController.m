@@ -23,6 +23,7 @@
 
 
 
+
 @interface SourceTableViewController ()<RuleViewControllerRuleChangeDelegate>
 
 @property(nonatomic,strong)NewViewController *nextVC;
@@ -119,12 +120,12 @@
 //        ruleVC.delegate = self;
 //        [self.navigationController pushViewController:ruleVC animated:YES];
         
-        PhotosHelperViewController *ruleVC = [[PhotosHelperViewController alloc]init];
-        ruleVC.selectMax = 5;
-        
-        ruleVC.delegate = self;
-        [self.navigationController pushViewController:ruleVC animated:YES];
-        
+//        PhotosHelperViewController *ruleVC = [[PhotosHelperViewController alloc]init];
+//        ruleVC.selectMax = 5;
+//        
+//        ruleVC.delegate = self;
+//        [self.navigationController pushViewController:ruleVC animated:YES];
+//        [tableView.layer shakeAnimation];
     }
 }
 

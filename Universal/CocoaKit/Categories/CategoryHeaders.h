@@ -35,6 +35,7 @@
 #import "UIControl+Extension.h"
 #import "NSMutableDictionary+Extension.h"
 #import "NSMutableAttributedString+CoreText.h"
+#import "CALayer+Extension.h"
 
 
 #define	prop_readonly( type, name )		property (nonatomic, readonly) type name;

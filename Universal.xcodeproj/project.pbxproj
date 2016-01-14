@@ -220,6 +220,7 @@
 		8D8E41CF1BF06E9000ADB607 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41CE1BF06E9000ADB607 /* CoreData.framework */; };
 		8D8E41D11BF06E9C00ADB607 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8E41D01BF06E9C00ADB607 /* libz.tbd */; };
 		8D9A05531C3263E600C51E61 /* CFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A05521C3263E600C51E61 /* CFunctions.c */; };
+		8DB5AA861C4340900039D054 /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5AA851C4340900039D054 /* CALayer+Extension.m */; };
 		8DC622361C3D080A00BF8CBD /* BankCardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC622321C3D080A00BF8CBD /* BankCardTextField.m */; };
 		8DC622371C3D080A00BF8CBD /* PhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC622351C3D080A00BF8CBD /* PhoneTextField.m */; };
 		8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */; };
@@ -685,6 +686,8 @@
 		8D8E41CE1BF06E9000ADB607 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8D8E41D01BF06E9C00ADB607 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8D9A05521C3263E600C51E61 /* CFunctions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFunctions.c; sourceTree = "<group>"; };
+		8DB5AA841C4340900039D054 /* CALayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
+		8DB5AA851C4340900039D054 /* CALayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
 		8DC622311C3D080A00BF8CBD /* BankCardTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardTextField.h; sourceTree = "<group>"; };
 		8DC622321C3D080A00BF8CBD /* BankCardTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardTextField.m; sourceTree = "<group>"; };
 		8DC622341C3D080A00BF8CBD /* PhoneTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTextField.h; sourceTree = "<group>"; };
@@ -858,6 +861,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				8DB5AA831C43404F0039D054 /* CALayer+Extension */,
 				8D323C281C3F5AF000EBD1C4 /* UIViewController+Extension */,
 				8D65C9031C2BCD3100868FB5 /* CoreTextDisplayView */,
 				CDA128301BD5DE8100D7B22D /* NSMutableDictionary */,
@@ -1522,6 +1526,15 @@
 			path = CFunctions;
 			sourceTree = "<group>";
 		};
+		8DB5AA831C43404F0039D054 /* CALayer+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8DB5AA841C4340900039D054 /* CALayer+Extension.h */,
+				8DB5AA851C4340900039D054 /* CALayer+Extension.m */,
+			);
+			path = "CALayer+Extension";
+			sourceTree = "<group>";
+		};
 		8DC6222F1C3D080A00BF8CBD /* TextFieldKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2108,6 +2121,7 @@
 				8D2ACB3A1C047361000143B8 /* GPUImageContrastFilter.m in Sources */,
 				8D2ACB491C047361000143B8 /* GPUImageFalseColorFilter.m in Sources */,
 				8D2ACB451C047361000143B8 /* GPUImageEmbossFilter.m in Sources */,
+				8DB5AA861C4340900039D054 /* CALayer+Extension.m in Sources */,
 				8D2ACB221C047361000143B8 /* GPUImage3x3ConvolutionFilter.m in Sources */,
 				8D2ACB591C047361000143B8 /* GPUImageHazeFilter.m in Sources */,
 				8D2ACB941C047361000143B8 /* GPUImageRGBFilter.m in Sources */,

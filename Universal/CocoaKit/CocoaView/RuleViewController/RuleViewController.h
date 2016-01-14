@@ -22,9 +22,13 @@
 
 @property(nonatomic,assign)CGFloat ruleMin;
 @property(nonatomic,assign)CGFloat ruleMax;
+/**
+ *  
+ */
+@property(nonatomic,assign)CGFloat               defaultValue;
 
 
 - (instancetype)initWithRuleMin:(CGFloat)min ruleMax:(CGFloat)max delegate:(id)delegate;
 
-
+- (instancetype)initWithRuleMin:(CGFloat)min ruleMax:(CGFloat)max defaultValue:(CGFloat)defaultVale delegate:(id)delegate;
 @end
