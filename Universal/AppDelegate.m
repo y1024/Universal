@@ -38,33 +38,38 @@
     
 //    [self DDLog];
     
-    NSInteger a = 7;
-    CGFloat b = 15.5;
-    int c = 55;
+//    NSInteger a = 7;
+//    CGFloat b = 15.5;
+//    int c = 55;
+//    
+//    
+//    
+//    NSLog(@"b:  %X",b);
+//    printf("b:%X",b);
+//    NSLog(@"c:%f",c);
+//    NSLog(@"%f", (float)(a * c));
+//    NSLog(@"%f", a * b);
+//    
+////    int a = 7;
+//    int i;
+//    for(i = sizeof(int)*8 - 1; i >= 0; i--){
+//        if((1 << i) & a)
+//            printf("%c", '1');
+//        else
+//            printf("%c", '0');
+//    }
+//    
+//    
+//    int number = 7;
+//    char string[25];
+//    
+////    itoa(number, string, 2);
+//    printf("integer = %d string = %s\n", number, string);
     
     
+    float a[] = {1.0, 2.0, 3.0};
     
-    NSLog(@"b:  %X",b);
-    printf("b:%X",b);
-    NSLog(@"c:%f",c);
-    NSLog(@"%f", (float)(a * c));
-    NSLog(@"%f", a * b);
-    
-//    int a = 7;
-    int i;
-    for(i = sizeof(int)*8 - 1; i >= 0; i--){
-        if((1 << i) & a)
-            printf("%c", '1');
-        else
-            printf("%c", '0');
-    }
-    
-    
-    int number = 7;
-    char string[25];
-    
-//    itoa(number, string, 2);
-    printf("integer = %d string = %s\n", number, string);
+    NSLog(@"array encoding type: %s", @encode(typeof(a)));
     
         return YES;
 }
