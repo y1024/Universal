@@ -205,8 +205,29 @@
 		8D2ACBC31C047361000143B8 /* GPUImagePicture+TextureSubimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB171C047361000143B8 /* GPUImagePicture+TextureSubimage.m */; };
 		8D2ACBC41C047361000143B8 /* GPUImagePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB191C047361000143B8 /* GPUImagePicture.m */; };
 		8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ACB1B1C047361000143B8 /* GPUImageView.m */; };
-		8D323C271C3F578400EBD1C4 /* PhotosHelperBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D323C261C3F578400EBD1C4 /* PhotosHelperBundle.bundle */; };
 		8D323C2B1C3F5B0A00EBD1C4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D323C2A1C3F5B0A00EBD1C4 /* UIViewController+Extension.m */; };
+		8D3A0A371C585ABC00358113 /* PhotosHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A141C585ABC00358113 /* PhotosHelperViewController.m */; };
+		8D3A0A381C585ABC00358113 /* PhotosHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A151C585ABC00358113 /* PhotosHelperViewController.xib */; };
+		8D3A0A391C585ABC00358113 /* AssetsGroupSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A181C585ABC00358113 /* AssetsGroupSource.m */; };
+		8D3A0A3A1C585ABC00358113 /* AssetSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A1A1C585ABC00358113 /* AssetSource.m */; };
+		8D3A0A3B1C585ABC00358113 /* ALAssetsLibrary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A1D1C585ABC00358113 /* ALAssetsLibrary+Helper.m */; };
+		8D3A0A3C1C585ABC00358113 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A201C585ABC00358113 /* CameraCollectionViewCell.m */; };
+		8D3A0A3D1C585ABC00358113 /* CameraCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A211C585ABC00358113 /* CameraCollectionViewCell.xib */; };
+		8D3A0A3E1C585ABC00358113 /* PhotosHelperCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A231C585ABC00358113 /* PhotosHelperCollectionViewCell.m */; };
+		8D3A0A3F1C585ABC00358113 /* PhotosHelperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A241C585ABC00358113 /* PhotosHelperCollectionViewCell.xib */; };
+		8D3A0A401C585ABC00358113 /* SelectedPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A261C585ABC00358113 /* SelectedPhotoCollectionViewCell.m */; };
+		8D3A0A411C585ABC00358113 /* SelectedPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A271C585ABC00358113 /* SelectedPhotoCollectionViewCell.xib */; };
+		8D3A0A421C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A2A1C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.m */; };
+		8D3A0A431C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A0A2C1C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.m */; };
+		8D3A0A441C585ABC00358113 /* btn_tick2_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A2E1C585ABC00358113 /* btn_tick2_orange.png */; };
+		8D3A0A451C585ABC00358113 /* btn_tick2_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A2F1C585ABC00358113 /* btn_tick2_orange@2x.png */; };
+		8D3A0A461C585ABC00358113 /* btn_tick2_orange@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A301C585ABC00358113 /* btn_tick2_orange@3x.png */; };
+		8D3A0A471C585ABC00358113 /* btn_tick2_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A311C585ABC00358113 /* btn_tick2_white.png */; };
+		8D3A0A481C585ABC00358113 /* btn_tick2_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A321C585ABC00358113 /* btn_tick2_white@2x.png */; };
+		8D3A0A491C585ABC00358113 /* btn_tick2_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A331C585ABC00358113 /* btn_tick2_white@3x.png */; };
+		8D3A0A4A1C585ABC00358113 /* icon_doctor_photo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A341C585ABC00358113 /* icon_doctor_photo_white.png */; };
+		8D3A0A4B1C585ABC00358113 /* icon_doctor_photo_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A351C585ABC00358113 /* icon_doctor_photo_white@2x.png */; };
+		8D3A0A4C1C585ABC00358113 /* icon_doctor_photo_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A361C585ABC00358113 /* icon_doctor_photo_white@3x.png */; };
 		8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C95E91C2323E100F68262 /* TTTextView.m */; };
 		8D65C90D1C2BCD3100868FB5 /* AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9051C2BCD3100868FB5 /* AttributedLabelAttachment.m */; };
 		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
@@ -226,16 +247,6 @@
 		8DC622371C3D080A00BF8CBD /* PhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC622351C3D080A00BF8CBD /* PhoneTextField.m */; };
 		8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */; };
 		8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B02E1C12F98000CD720D /* ReplyViewController.m */; };
-		8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */; };
-		8DCE9B1E1C0DB408009B5054 /* CameraCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */; };
-		8DCE9B1F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */; };
-		8DCE9B201C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */; };
-		8DCE9B211C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */; };
-		8DCE9B221C0DB408009B5054 /* PhotosHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */; };
-		8DCE9B241C0DB408009B5054 /* PhotosHelperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */; };
-		8DCE9B251C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */; };
-		8DCE9B261C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */; };
-		8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */; };
 		8DD35F221C3F9CAD00A8FE18 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */; };
 		8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3960A1C102CB7006662FC /* CodeSinppet */; };
 		8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */; };
@@ -663,9 +674,39 @@
 		8D2ACB191C047361000143B8 /* GPUImagePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImagePicture.m; sourceTree = "<group>"; };
 		8D2ACB1A1C047361000143B8 /* GPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageView.h; sourceTree = "<group>"; };
 		8D2ACB1B1C047361000143B8 /* GPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageView.m; sourceTree = "<group>"; };
-		8D323C261C3F578400EBD1C4 /* PhotosHelperBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PhotosHelperBundle.bundle; sourceTree = "<group>"; };
 		8D323C291C3F5B0A00EBD1C4 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		8D323C2A1C3F5B0A00EBD1C4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		8D3A0A131C585ABC00358113 /* PhotosHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperViewController.h; sourceTree = "<group>"; };
+		8D3A0A141C585ABC00358113 /* PhotosHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperViewController.m; sourceTree = "<group>"; };
+		8D3A0A151C585ABC00358113 /* PhotosHelperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosHelperViewController.xib; sourceTree = "<group>"; };
+		8D3A0A171C585ABC00358113 /* AssetsGroupSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsGroupSource.h; sourceTree = "<group>"; };
+		8D3A0A181C585ABC00358113 /* AssetsGroupSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsGroupSource.m; sourceTree = "<group>"; };
+		8D3A0A191C585ABC00358113 /* AssetSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetSource.h; sourceTree = "<group>"; };
+		8D3A0A1A1C585ABC00358113 /* AssetSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetSource.m; sourceTree = "<group>"; };
+		8D3A0A1C1C585ABC00358113 /* ALAssetsLibrary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+Helper.h"; sourceTree = "<group>"; };
+		8D3A0A1D1C585ABC00358113 /* ALAssetsLibrary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+Helper.m"; sourceTree = "<group>"; };
+		8D3A0A1F1C585ABC00358113 /* CameraCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCollectionViewCell.h; sourceTree = "<group>"; };
+		8D3A0A201C585ABC00358113 /* CameraCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionViewCell.m; sourceTree = "<group>"; };
+		8D3A0A211C585ABC00358113 /* CameraCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D3A0A221C585ABC00358113 /* PhotosHelperCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperCollectionViewCell.h; sourceTree = "<group>"; };
+		8D3A0A231C585ABC00358113 /* PhotosHelperCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperCollectionViewCell.m; sourceTree = "<group>"; };
+		8D3A0A241C585ABC00358113 /* PhotosHelperCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosHelperCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D3A0A251C585ABC00358113 /* SelectedPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		8D3A0A261C585ABC00358113 /* SelectedPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		8D3A0A271C585ABC00358113 /* SelectedPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D3A0A291C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCellLayout.h; sourceTree = "<group>"; };
+		8D3A0A2A1C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCellLayout.m; sourceTree = "<group>"; };
+		8D3A0A2B1C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewFlowLayout+PhotoSource.h"; sourceTree = "<group>"; };
+		8D3A0A2C1C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewFlowLayout+PhotoSource.m"; sourceTree = "<group>"; };
+		8D3A0A2E1C585ABC00358113 /* btn_tick2_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_tick2_orange.png; sourceTree = "<group>"; };
+		8D3A0A2F1C585ABC00358113 /* btn_tick2_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_tick2_orange@2x.png"; sourceTree = "<group>"; };
+		8D3A0A301C585ABC00358113 /* btn_tick2_orange@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_tick2_orange@3x.png"; sourceTree = "<group>"; };
+		8D3A0A311C585ABC00358113 /* btn_tick2_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_tick2_white.png; sourceTree = "<group>"; };
+		8D3A0A321C585ABC00358113 /* btn_tick2_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_tick2_white@2x.png"; sourceTree = "<group>"; };
+		8D3A0A331C585ABC00358113 /* btn_tick2_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_tick2_white@3x.png"; sourceTree = "<group>"; };
+		8D3A0A341C585ABC00358113 /* icon_doctor_photo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_doctor_photo_white.png; sourceTree = "<group>"; };
+		8D3A0A351C585ABC00358113 /* icon_doctor_photo_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_doctor_photo_white@2x.png"; sourceTree = "<group>"; };
+		8D3A0A361C585ABC00358113 /* icon_doctor_photo_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_doctor_photo_white@3x.png"; sourceTree = "<group>"; };
 		8D4C95E81C2323E100F68262 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
 		8D4C95E91C2323E100F68262 /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextView.m; sourceTree = "<group>"; };
 		8D65C9041C2BCD3100868FB5 /* AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabelAttachment.h; sourceTree = "<group>"; };
@@ -698,22 +739,6 @@
 		8DC6B02D1C12F98000CD720D /* ReplyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplyViewController.xib; sourceTree = "<group>"; };
 		8DC6B02E1C12F98000CD720D /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
 		8DC6B02F1C12F98000CD720D /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
-		8DCE9B0C1C0DB408009B5054 /* CameraCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCollectionViewCell.h; sourceTree = "<group>"; };
-		8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionViewCell.m; sourceTree = "<group>"; };
-		8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraCollectionViewCell.xib; sourceTree = "<group>"; };
-		8DCE9B0F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperCollectionViewCell.h; sourceTree = "<group>"; };
-		8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperCollectionViewCell.m; sourceTree = "<group>"; };
-		8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosHelperCollectionViewCell.xib; sourceTree = "<group>"; };
-		8DCE9B121C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperCollectionViewCellModel.h; sourceTree = "<group>"; };
-		8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperCollectionViewCellModel.m; sourceTree = "<group>"; };
-		8DCE9B141C0DB408009B5054 /* PhotosHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosHelperViewController.h; sourceTree = "<group>"; };
-		8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosHelperViewController.m; sourceTree = "<group>"; };
-		8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosHelperViewController.xib; sourceTree = "<group>"; };
-		8DCE9B181C0DB408009B5054 /* SelectedPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCell.h; sourceTree = "<group>"; };
-		8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCell.m; sourceTree = "<group>"; };
-		8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		8DCE9B1B1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPhotoCollectionViewCellLayout.h; sourceTree = "<group>"; };
-		8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoCollectionViewCellLayout.m; sourceTree = "<group>"; };
 		8DD35F201C3F9CAD00A8FE18 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		8DD3960A1C102CB7006662FC /* CodeSinppet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeSinppet; sourceTree = "<group>"; };
@@ -1486,6 +1511,79 @@
 			path = "UIViewController+Extension";
 			sourceTree = "<group>";
 		};
+		8D3A0A121C585ABC00358113 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A0A131C585ABC00358113 /* PhotosHelperViewController.h */,
+				8D3A0A141C585ABC00358113 /* PhotosHelperViewController.m */,
+				8D3A0A151C585ABC00358113 /* PhotosHelperViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8D3A0A161C585ABC00358113 /* SourceModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A0A171C585ABC00358113 /* AssetsGroupSource.h */,
+				8D3A0A181C585ABC00358113 /* AssetsGroupSource.m */,
+				8D3A0A191C585ABC00358113 /* AssetSource.h */,
+				8D3A0A1A1C585ABC00358113 /* AssetSource.m */,
+			);
+			path = SourceModel;
+			sourceTree = "<group>";
+		};
+		8D3A0A1B1C585ABC00358113 /* ALAssetsLibraryHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A0A1C1C585ABC00358113 /* ALAssetsLibrary+Helper.h */,
+				8D3A0A1D1C585ABC00358113 /* ALAssetsLibrary+Helper.m */,
+			);
+			path = ALAssetsLibraryHelper;
+			sourceTree = "<group>";
+		};
+		8D3A0A1E1C585ABC00358113 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A0A1F1C585ABC00358113 /* CameraCollectionViewCell.h */,
+				8D3A0A201C585ABC00358113 /* CameraCollectionViewCell.m */,
+				8D3A0A211C585ABC00358113 /* CameraCollectionViewCell.xib */,
+				8D3A0A221C585ABC00358113 /* PhotosHelperCollectionViewCell.h */,
+				8D3A0A231C585ABC00358113 /* PhotosHelperCollectionViewCell.m */,
+				8D3A0A241C585ABC00358113 /* PhotosHelperCollectionViewCell.xib */,
+				8D3A0A251C585ABC00358113 /* SelectedPhotoCollectionViewCell.h */,
+				8D3A0A261C585ABC00358113 /* SelectedPhotoCollectionViewCell.m */,
+				8D3A0A271C585ABC00358113 /* SelectedPhotoCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		8D3A0A281C585ABC00358113 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A0A291C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.h */,
+				8D3A0A2A1C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.m */,
+				8D3A0A2B1C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.h */,
+				8D3A0A2C1C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.m */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		8D3A0A2D1C585ABC00358113 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A0A2E1C585ABC00358113 /* btn_tick2_orange.png */,
+				8D3A0A2F1C585ABC00358113 /* btn_tick2_orange@2x.png */,
+				8D3A0A301C585ABC00358113 /* btn_tick2_orange@3x.png */,
+				8D3A0A311C585ABC00358113 /* btn_tick2_white.png */,
+				8D3A0A321C585ABC00358113 /* btn_tick2_white@2x.png */,
+				8D3A0A331C585ABC00358113 /* btn_tick2_white@3x.png */,
+				8D3A0A341C585ABC00358113 /* icon_doctor_photo_white.png */,
+				8D3A0A351C585ABC00358113 /* icon_doctor_photo_white@2x.png */,
+				8D3A0A361C585ABC00358113 /* icon_doctor_photo_white@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		8D4C95E71C2323E100F68262 /* TTTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1570,23 +1668,12 @@
 		8DCE9B0B1C0DB408009B5054 /* PhotosHelperViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8D323C261C3F578400EBD1C4 /* PhotosHelperBundle.bundle */,
-				8DCE9B141C0DB408009B5054 /* PhotosHelperViewController.h */,
-				8DCE9B151C0DB408009B5054 /* PhotosHelperViewController.m */,
-				8DCE9B171C0DB408009B5054 /* PhotosHelperViewController.xib */,
-				8DCE9B0C1C0DB408009B5054 /* CameraCollectionViewCell.h */,
-				8DCE9B0D1C0DB408009B5054 /* CameraCollectionViewCell.m */,
-				8DCE9B0E1C0DB408009B5054 /* CameraCollectionViewCell.xib */,
-				8DCE9B0F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.h */,
-				8DCE9B101C0DB408009B5054 /* PhotosHelperCollectionViewCell.m */,
-				8DCE9B111C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib */,
-				8DCE9B121C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.h */,
-				8DCE9B131C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m */,
-				8DCE9B181C0DB408009B5054 /* SelectedPhotoCollectionViewCell.h */,
-				8DCE9B191C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m */,
-				8DCE9B1A1C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib */,
-				8DCE9B1B1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.h */,
-				8DCE9B1C1C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m */,
+				8D3A0A121C585ABC00358113 /* ViewController */,
+				8D3A0A161C585ABC00358113 /* SourceModel */,
+				8D3A0A1B1C585ABC00358113 /* ALAssetsLibraryHelper */,
+				8D3A0A1E1C585ABC00358113 /* CollectionCell */,
+				8D3A0A281C585ABC00358113 /* CollectionViewLayout */,
+				8D3A0A2D1C585ABC00358113 /* Resource */,
 			);
 			path = PhotosHelperViewController;
 			sourceTree = "<group>";
@@ -1807,7 +1894,7 @@
 				TargetAttributes = {
 					37AD9BCC1B943E1400F1D180 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 5Y63ECDBPN;
+						DevelopmentTeam = G5297VUG3A;
 					};
 				};
 			};
@@ -1836,27 +1923,35 @@
 			files = (
 				8DEE76351C04A51C009C2FBC /* WeightViewController.xcassets in Resources */,
 				8D721EA81C30D86F0055EB20 /* CollectionCircleViewController.xib in Resources */,
+				8D3A0A471C585ABC00358113 /* btn_tick2_white.png in Resources */,
 				8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */,
 				8DEF5D271BF43B42003F14EE /* 方正像素15-2.TTF in Resources */,
-				8DCE9B201C0DB408009B5054 /* PhotosHelperCollectionViewCell.xib in Resources */,
+				8D3A0A461C585ABC00358113 /* btn_tick2_orange@3x.png in Resources */,
 				8DEE76331C04A51C009C2FBC /* WeightCollectionViewCell.xib in Resources */,
-				8DCE9B261C0DB408009B5054 /* SelectedPhotoCollectionViewCell.xib in Resources */,
 				8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */,
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
+				8D3A0A3D1C585ABC00358113 /* CameraCollectionViewCell.xib in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
 				8D2ACB1D1C047361000143B8 /* lookup_amatorka.png in Resources */,
+				8D3A0A4C1C585ABC00358113 /* icon_doctor_photo_white@3x.png in Resources */,
 				8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */,
+				8D3A0A3F1C585ABC00358113 /* PhotosHelperCollectionViewCell.xib in Resources */,
+				8D3A0A441C585ABC00358113 /* btn_tick2_orange.png in Resources */,
 				8D2ACBC01C047361000143B8 /* Info.plist in Resources */,
 				8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */,
+				8D3A0A411C585ABC00358113 /* SelectedPhotoCollectionViewCell.xib in Resources */,
 				37AD9BE11B943E1400F1D180 /* LaunchScreen.xib in Resources */,
-				8D323C271C3F578400EBD1C4 /* PhotosHelperBundle.bundle in Resources */,
 				8D2ACB201C047361000143B8 /* lookup_soft_elegance_2.png in Resources */,
-				8DCE9B1E1C0DB408009B5054 /* CameraCollectionViewCell.xib in Resources */,
 				8D2ACB1C1C047361000143B8 /* lookup.png in Resources */,
 				8DEE76361C04A51C009C2FBC /* WeightViewController.xib in Resources */,
 				8DE44A3A1C02E81B0056E782 /* RuleViewController.xib in Resources */,
+				8D3A0A4B1C585ABC00358113 /* icon_doctor_photo_white@2x.png in Resources */,
+				8D3A0A481C585ABC00358113 /* btn_tick2_white@2x.png in Resources */,
+				8D3A0A491C585ABC00358113 /* btn_tick2_white@3x.png in Resources */,
+				8D3A0A451C585ABC00358113 /* btn_tick2_orange@2x.png in Resources */,
 				8D2ACB1F1C047361000143B8 /* lookup_soft_elegance_1.png in Resources */,
-				8DCE9B241C0DB408009B5054 /* PhotosHelperViewController.xib in Resources */,
+				8D3A0A381C585ABC00358113 /* PhotosHelperViewController.xib in Resources */,
+				8D3A0A4A1C585ABC00358113 /* icon_doctor_photo_white.png in Resources */,
 				8D2ACB1E1C047361000143B8 /* lookup_miss_etikate.png in Resources */,
 				37AD9BDE1B943E1400F1D180 /* Images.xcassets in Resources */,
 			);
@@ -1937,6 +2032,7 @@
 				8D2ACB701C047361000143B8 /* GPUImageLuminanceRangeFilter.m in Sources */,
 				8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */,
 				8D2ACB2E1C047361000143B8 /* GPUImageBulgeDistortionFilter.m in Sources */,
+				8D3A0A431C585ABC00358113 /* UICollectionViewFlowLayout+PhotoSource.m in Sources */,
 				8D2ACBA91C047361000143B8 /* GPUImageTextureInput.m in Sources */,
 				8D2ACB2F1C047361000143B8 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				8D2ACB291C047361000143B8 /* GPUImageAverageLuminanceThresholdFilter.m in Sources */,
@@ -1967,13 +2063,14 @@
 				8D2ACBA51C047361000143B8 /* GPUImageStillCamera.m in Sources */,
 				8D2ACB5A1C047361000143B8 /* GPUImageHighlightShadowFilter.m in Sources */,
 				8D2ACB571C047361000143B8 /* GPUImageHardLightBlendFilter.m in Sources */,
-				8DCE9B271C0DB408009B5054 /* SelectedPhotoCollectionViewCellLayout.m in Sources */,
+				8D3A0A401C585ABC00358113 /* SelectedPhotoCollectionViewCell.m in Sources */,
 				8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */,
 				8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */,
 				CDB5841D1BDE3278008432A3 /* NewViewController.m in Sources */,
 				CD8703BE1BC90D860023512D /* UITableView+Extension.m in Sources */,
 				8D0C67771C47D180006CCFC9 /* RunTimeObj.m in Sources */,
 				8D2ACB2A1C047361000143B8 /* GPUImageBilateralFilter.m in Sources */,
+				8D3A0A371C585ABC00358113 /* PhotosHelperViewController.m in Sources */,
 				CD19B46C1BC7B25900B063DC /* AFHTTPResponseSerializer+Extension.m in Sources */,
 				8D2ACBA61C047361000143B8 /* GPUImageStretchDistortionFilter.m in Sources */,
 				8D2ACBBF1C047361000143B8 /* GPUImageZoomBlurFilter.m in Sources */,
@@ -1984,6 +2081,7 @@
 				8D2ACB621C047361000143B8 /* GPUImageHueFilter.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
 				8D2ACB841C047361000143B8 /* GPUImageOverlayBlendFilter.m in Sources */,
+				8D3A0A3E1C585ABC00358113 /* PhotosHelperCollectionViewCell.m in Sources */,
 				8D2ACB601C047361000143B8 /* GPUImageHSBFilter.m in Sources */,
 				8D2ACB2C1C047361000143B8 /* GPUImageBrightnessFilter.m in Sources */,
 				8D2ACB851C047361000143B8 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
@@ -1994,14 +2092,15 @@
 				8D2ACB281C047361000143B8 /* GPUImageAverageColor.m in Sources */,
 				8D2ACB8C1C047361000143B8 /* GPUImagePolkaDotFilter.m in Sources */,
 				8D2ACB9B1C047361000143B8 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
+				8D3A0A421C585ABC00358113 /* SelectedPhotoCollectionViewCellLayout.m in Sources */,
 				8D2ACB501C047361000143B8 /* GPUImageGammaFilter.m in Sources */,
 				8D2ACB521C047361000143B8 /* GPUImageGaussianBlurPositionFilter.m in Sources */,
 				8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */,
+				8D3A0A3B1C585ABC00358113 /* ALAssetsLibrary+Helper.m in Sources */,
 				8D2ACBAF1C047361000143B8 /* GPUImageTiltShiftFilter.m in Sources */,
 				8D2ACB4E1C047361000143B8 /* GPUImageFramebuffer.m in Sources */,
 				8D2ACB411C047361000143B8 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
 				8D2ACBBC1C047361000143B8 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
-				8DCE9B1D1C0DB408009B5054 /* CameraCollectionViewCell.m in Sources */,
 				8D2ACB6C1C047361000143B8 /* GPUImageLineGenerator.m in Sources */,
 				8D2ACB551C047361000143B8 /* GPUImageGrayscaleFilter.m in Sources */,
 				37D8C1371B95B4140073F1CC /* NSDictionary+Extension.m in Sources */,
@@ -2032,6 +2131,7 @@
 				8D2ACB9C1C047361000143B8 /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */,
 				8D2ACB321C047361000143B8 /* GPUImageChromaKeyFilter.m in Sources */,
 				8D2ACB481C047361000143B8 /* GPUImageExposureFilter.m in Sources */,
+				8D3A0A3C1C585ABC00358113 /* CameraCollectionViewCell.m in Sources */,
 				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,
 				8D2ACB8F1C047361000143B8 /* GPUImageRawDataInput.m in Sources */,
 				8D2ACB691C047361000143B8 /* GPUImageLevelsFilter.m in Sources */,
@@ -2078,13 +2178,13 @@
 				8D9A05531C3263E600C51E61 /* CFunctions.c in Sources */,
 				377C112A1B959A4000FD4EB6 /* UIApplication+Extension.m in Sources */,
 				8D2ACB811C047361000143B8 /* GPUImageOpacityFilter.m in Sources */,
+				8D3A0A3A1C585ABC00358113 /* AssetSource.m in Sources */,
 				8D2ACBB51C047361000143B8 /* GPUImageTwoPassFilter.m in Sources */,
 				376DBB071B96A658008A84B7 /* UIWebView+Extension.m in Sources */,
 				8D2ACB631C047361000143B8 /* GPUImageiOSBlurFilter.m in Sources */,
 				8D2ACBB21C047361000143B8 /* GPUImageTransformFilter.m in Sources */,
 				8D2ACBB31C047361000143B8 /* GPUImageTwoInputCrossTextureSamplingFilter.m in Sources */,
 				8D2ACB891C047361000143B8 /* GPUImagePixellatePositionFilter.m in Sources */,
-				8DCE9B1F1C0DB408009B5054 /* PhotosHelperCollectionViewCell.m in Sources */,
 				8D2ACB371C047361000143B8 /* GPUImageColorInvertFilter.m in Sources */,
 				8D2ACB861C047361000143B8 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				8D2ACBB41C047361000143B8 /* GPUImageTwoInputFilter.m in Sources */,
@@ -2095,7 +2195,6 @@
 				8D2ACB751C047361000143B8 /* GPUImageMedianFilter.m in Sources */,
 				8D2ACBA11C047361000143B8 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				8D2ACBAC1C047361000143B8 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
-				8DCE9B211C0DB408009B5054 /* PhotosHelperCollectionViewCellModel.m in Sources */,
 				8D2ACB871C047361000143B8 /* GPUImagePinchDistortionFilter.m in Sources */,
 				37AD9BD61B943E1400F1D180 /* AppDelegate.m in Sources */,
 				CD8703BA1BC900700023512D /* SourceTableViewController.m in Sources */,
@@ -2106,7 +2205,6 @@
 				8D2ACB271C047361000143B8 /* GPUImageAmatorkaFilter.m in Sources */,
 				8D2ACBC11C047361000143B8 /* GPUImageContext.m in Sources */,
 				8D2ACB611C047361000143B8 /* GPUImageHueBlendFilter.m in Sources */,
-				8DCE9B251C0DB408009B5054 /* SelectedPhotoCollectionViewCell.m in Sources */,
 				8D2ACB801C047361000143B8 /* GPUImageNormalBlendFilter.m in Sources */,
 				8D2ACB4C1C047361000143B8 /* GPUImageFilterGroup.m in Sources */,
 				8D2ACB681C047361000143B8 /* GPUImageLaplacianFilter.m in Sources */,
@@ -2140,7 +2238,6 @@
 				8D2ACBB01C047361000143B8 /* GPUImageToneCurveFilter.m in Sources */,
 				8D2ACB721C047361000143B8 /* GPUImageLuminosity.m in Sources */,
 				37D8C1231B959EAF0073F1CC /* NSString+Extension.m in Sources */,
-				8DCE9B221C0DB408009B5054 /* PhotosHelperViewController.m in Sources */,
 				8D2ACB961C047361000143B8 /* GPUImageSaturationBlendFilter.m in Sources */,
 				8D2ACB261C047361000143B8 /* GPUImageAlphaBlendFilter.m in Sources */,
 				8D2ACB2D1C047361000143B8 /* GPUImageBuffer.m in Sources */,
@@ -2158,6 +2255,7 @@
 				8D2ACBB81C047361000143B8 /* GPUImageUnsharpMaskFilter.m in Sources */,
 				8D2ACB391C047361000143B8 /* GPUImageColorPackingFilter.m in Sources */,
 				8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */,
+				8D3A0A391C585ABC00358113 /* AssetsGroupSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2289,7 +2387,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iOSDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9f7bd908-a16d-4292-be89-364d563b85f8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2313,7 +2411,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iOSDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9f7bd908-a16d-4292-be89-364d563b85f8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

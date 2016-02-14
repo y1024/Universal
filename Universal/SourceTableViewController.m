@@ -186,9 +186,18 @@
 //        [self.navigationController pushViewController:ruleVC animated:YES];
         
         PhotosHelperViewController *ruleVC = [[PhotosHelperViewController alloc]init];
+        
+//        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:ruleVC];
+        
+        
         ruleVC.selectMax = 5;
         
         ruleVC.delegate = self;
+        
+//        [self presentViewController:nav animated:YES completion:^{
+//            
+//        }];
+        
         [self.navigationController pushViewController:ruleVC animated:YES];
 //        [tableView.layer shakeAnimation];
     }

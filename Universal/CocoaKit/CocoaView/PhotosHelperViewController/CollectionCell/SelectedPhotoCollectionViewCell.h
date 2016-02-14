@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhotosHelperCollectionViewCellModel.h"
+#import "AssetSource.h"
+
 
 
 
@@ -17,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *selectedImageView;
 
 
-@property(nonatomic,strong)PhotosHelperCollectionViewCellModel *model;
+@property(nonatomic,strong)AssetSource *model;
 
 
 @end

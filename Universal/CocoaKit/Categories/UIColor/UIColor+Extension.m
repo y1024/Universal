@@ -7,7 +7,7 @@
 //
 
 #import "UIColor+Extension.h"
-#import "PodHeaders.h"
+
 @implementation UIColor (Extension)
 
 + (UIColor*)hexString:(NSString*)_HexString

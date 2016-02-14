@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhotosHelperCollectionViewCellModel.h"
+
 
 
 
