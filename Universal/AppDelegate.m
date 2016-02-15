@@ -10,6 +10,7 @@
 #import "NewViewController.h"
 #include <stdlib.h>
 #include <stdio.h>
+#import "NSMutableArray+Extension.h"
 
 //#import "PodHeaders.h"
 
@@ -32,6 +33,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+//
+//    [array addObject:@"a"];
+//    [array addObject:nil];
+    NSLog(@"%@",[array objectAtIndex:10]);
 
 //    NSLog(@"%@",[@"www.baidu.com" htmlString]);
 //    NSLog(@"%@",[@"<a href='www.163.com' /a>" htmlString]);

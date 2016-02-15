@@ -10,6 +10,5 @@
 
 @interface NSMutableArray (Extension)
 
-- (void)safeAddObject:(id)obj;
 
 @end

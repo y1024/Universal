@@ -35,6 +35,7 @@
 		8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567B1C2D28DA0095913F /* HTMLNode.m */; };
 		8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567D1C2D28DA0095913F /* HTMLParser.m */; };
 		8D1456811C2D29C00095913F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1456801C2D29C00095913F /* libxml2.tbd */; };
+		8D201AC51C707D63001E6ADC /* NSObject+MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D201AC41C707D63001E6ADC /* NSObject+MethodSwizzle.m */; };
 		8D2ACB1C1C047361000143B8 /* lookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AC9C71C047360000143B8 /* lookup.png */; };
 		8D2ACB1D1C047361000143B8 /* lookup_amatorka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AC9C81C047360000143B8 /* lookup_amatorka.png */; };
 		8D2ACB1E1C047361000143B8 /* lookup_miss_etikate.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AC9C91C047360000143B8 /* lookup_miss_etikate.png */; };
@@ -336,6 +337,8 @@
 		8D14567C1C2D28DA0095913F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
 		8D14567D1C2D28DA0095913F /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
 		8D1456801C2D29C00095913F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		8D201AC31C707D63001E6ADC /* NSObject+MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzle.h"; sourceTree = "<group>"; };
+		8D201AC41C707D63001E6ADC /* NSObject+MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzle.m"; sourceTree = "<group>"; };
 		8D2AC9C71C047360000143B8 /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
 		8D2AC9C81C047360000143B8 /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
 		8D2AC9C91C047360000143B8 /* lookup_miss_etikate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_miss_etikate.png; sourceTree = "<group>"; };
@@ -1855,6 +1858,8 @@
 			children = (
 				CDFCECBC1BCFA56B00890E0D /* NSObject+Extension.h */,
 				CDFCECBD1BCFA56B00890E0D /* NSObject+Extension.m */,
+				8D201AC31C707D63001E6ADC /* NSObject+MethodSwizzle.h */,
+				8D201AC41C707D63001E6ADC /* NSObject+MethodSwizzle.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -2144,6 +2149,7 @@
 				8D2ACB731C047361000143B8 /* GPUImageLuminosityBlendFilter.m in Sources */,
 				8D2ACB981C047361000143B8 /* GPUImageScreenBlendFilter.m in Sources */,
 				8D2ACBAA1C047361000143B8 /* GPUImageTextureOutput.m in Sources */,
+				8D201AC51C707D63001E6ADC /* NSObject+MethodSwizzle.m in Sources */,
 				8D2ACB3E1C047361000143B8 /* GPUImageDarkenBlendFilter.m in Sources */,
 				8DEE76311C04A51C009C2FBC /* WeightCollectionFlowLayout.m in Sources */,
 				8D2ACB581C047361000143B8 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,

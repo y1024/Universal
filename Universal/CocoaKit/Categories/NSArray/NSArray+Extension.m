@@ -7,55 +7,31 @@
 //
 
 #import "NSArray+Extension.h"
-
-//#import <objc/runtime.h>
-//
-//#import "NSObject+Extension.h"
-
-
-
+#import "NSObject+MethodSwizzle.h"
 
 @implementation NSArray (Extension)
 
 
-
-//+ (void)load
-//{
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        NSArray         *instanceArray = [NSArray array];
-//        
-//        [self methodSwizzleWithClassName:NSStringFromClass([instanceArray class])];
-//        
-//        
-//    });
-//    
-//}
-//
-//+ (void)methodSwizzleWithClassName:(NSString*)clsName
-//{
-//    const char *clsCharName = clsName.UTF8String;
-//    
-//    Class subclass = objc_getClass(clsCharName);
-//    
-//    BOOL arrayIOverStepMethod =  [subclass methodSwizzle:@selector(objectAtIndex:) withMethod:@selector(safeObjectAtIndex:) error:nil];
-//    if (arrayIOverStepMethod) {
-//         NSLog(@"SEL:%@",NSStringFromSelector(@selector(safeObjectAtIndex:)));
-//    }
-//}
-
-
-- (id)safeObjectAtIndex:(NSUInteger)index
++ (void)load
 {
-    if (index >= self.count) {
- 
-        return nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        id obj = [[self alloc] init];
+        [obj instanceMethodSwizzle:@selector(objectAtIndex:) withMethod:@selector(safeObjectAtIndex:)];
+    });
+}
+
+- (id)safeObjectAtIndex:(NSInteger)index
+{
+    if(index<[self count]){
+        return [self safeObjectAtIndex:index];
     }
     else
     {
-        return [self objectAtIndex:index];
+        DEBUGAssert(DEBUGSWITCH, @"index is beyond bounds");
     }
-    
+    return nil;
 }
+
 
 @end

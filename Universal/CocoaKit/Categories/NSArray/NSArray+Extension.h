@@ -10,9 +10,4 @@
 
 @interface NSArray (Extension)
 
-
-- (id)safeObjectAtIndex:(NSUInteger)index;
-
-
-
 @end
