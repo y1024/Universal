@@ -229,6 +229,15 @@
 		8D3A0A4A1C585ABC00358113 /* icon_doctor_photo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A341C585ABC00358113 /* icon_doctor_photo_white.png */; };
 		8D3A0A4B1C585ABC00358113 /* icon_doctor_photo_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A351C585ABC00358113 /* icon_doctor_photo_white@2x.png */; };
 		8D3A0A4C1C585ABC00358113 /* icon_doctor_photo_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A0A361C585ABC00358113 /* icon_doctor_photo_white@3x.png */; };
+		8D42E0A71C74521500BF155F /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0941C74521500BF155F /* JBBarChartView.m */; };
+		8D42E0A81C74521500BF155F /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0961C74521500BF155F /* JBChartView.m */; };
+		8D42E0A91C74521500BF155F /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0981C74521500BF155F /* JBLineChartView.m */; };
+		8D42E0AA1C74521500BF155F /* ServiceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E09C1C74521500BF155F /* ServiceMonitor.m */; };
+		8D42E0AB1C74521500BF155F /* ServiceMonitorCPUModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E09E1C74521500BF155F /* ServiceMonitorCPUModel.m */; };
+		8D42E0AC1C74521500BF155F /* ServiceMonitorFPSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0A01C74521500BF155F /* ServiceMonitorFPSModel.m */; };
+		8D42E0AD1C74521500BF155F /* ServiceMonitorMemoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0A21C74521500BF155F /* ServiceMonitorMemoryModel.m */; };
+		8D42E0AE1C74521500BF155F /* ServiceMonitorNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0A41C74521500BF155F /* ServiceMonitorNetworkModel.m */; };
+		8D42E0AF1C74521500BF155F /* ServiceMonitorStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D42E0A61C74521500BF155F /* ServiceMonitorStatusBar.m */; };
 		8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C95E91C2323E100F68262 /* TTTextView.m */; };
 		8D65C90D1C2BCD3100868FB5 /* AttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9051C2BCD3100868FB5 /* AttributedLabelAttachment.m */; };
 		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
@@ -710,6 +719,25 @@
 		8D3A0A341C585ABC00358113 /* icon_doctor_photo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_doctor_photo_white.png; sourceTree = "<group>"; };
 		8D3A0A351C585ABC00358113 /* icon_doctor_photo_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_doctor_photo_white@2x.png"; sourceTree = "<group>"; };
 		8D3A0A361C585ABC00358113 /* icon_doctor_photo_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_doctor_photo_white@3x.png"; sourceTree = "<group>"; };
+		8D42E0931C74521500BF155F /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		8D42E0941C74521500BF155F /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		8D42E0951C74521500BF155F /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		8D42E0961C74521500BF155F /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		8D42E0971C74521500BF155F /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		8D42E0981C74521500BF155F /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		8D42E0991C74521500BF155F /* Monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monitor.h; sourceTree = "<group>"; };
+		8D42E09B1C74521500BF155F /* ServiceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMonitor.h; sourceTree = "<group>"; };
+		8D42E09C1C74521500BF155F /* ServiceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMonitor.m; sourceTree = "<group>"; };
+		8D42E09D1C74521500BF155F /* ServiceMonitorCPUModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMonitorCPUModel.h; sourceTree = "<group>"; };
+		8D42E09E1C74521500BF155F /* ServiceMonitorCPUModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMonitorCPUModel.m; sourceTree = "<group>"; };
+		8D42E09F1C74521500BF155F /* ServiceMonitorFPSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMonitorFPSModel.h; sourceTree = "<group>"; };
+		8D42E0A01C74521500BF155F /* ServiceMonitorFPSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMonitorFPSModel.m; sourceTree = "<group>"; };
+		8D42E0A11C74521500BF155F /* ServiceMonitorMemoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMonitorMemoryModel.h; sourceTree = "<group>"; };
+		8D42E0A21C74521500BF155F /* ServiceMonitorMemoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMonitorMemoryModel.m; sourceTree = "<group>"; };
+		8D42E0A31C74521500BF155F /* ServiceMonitorNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMonitorNetworkModel.h; sourceTree = "<group>"; };
+		8D42E0A41C74521500BF155F /* ServiceMonitorNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMonitorNetworkModel.m; sourceTree = "<group>"; };
+		8D42E0A51C74521500BF155F /* ServiceMonitorStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceMonitorStatusBar.h; sourceTree = "<group>"; };
+		8D42E0A61C74521500BF155F /* ServiceMonitorStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceMonitorStatusBar.m; sourceTree = "<group>"; };
 		8D4C95E81C2323E100F68262 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
 		8D4C95E91C2323E100F68262 /* TTTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTextView.m; sourceTree = "<group>"; };
 		8D65C9041C2BCD3100868FB5 /* AttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabelAttachment.h; sourceTree = "<group>"; };
@@ -869,6 +897,7 @@
 		377C11111B958FE700FD4EB6 /* CocoaKit */ = {
 			isa = PBXGroup;
 			children = (
+				8D42E0911C74521500BF155F /* Monitor */,
 				8D9A05511C3263D600C51E61 /* CFunctions */,
 				8D2AC9C51C047360000143B8 /* GPUImage */,
 				CDB5841E1BDE6996008432A3 /* CocoaView */,
@@ -1587,6 +1616,48 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		8D42E0911C74521500BF155F /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				8D42E0921C74521500BF155F /* JBChartView */,
+				8D42E0991C74521500BF155F /* Monitor.h */,
+				8D42E09A1C74521500BF155F /* ServiceMonitor */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		8D42E0921C74521500BF155F /* JBChartView */ = {
+			isa = PBXGroup;
+			children = (
+				8D42E0931C74521500BF155F /* JBBarChartView.h */,
+				8D42E0941C74521500BF155F /* JBBarChartView.m */,
+				8D42E0951C74521500BF155F /* JBChartView.h */,
+				8D42E0961C74521500BF155F /* JBChartView.m */,
+				8D42E0971C74521500BF155F /* JBLineChartView.h */,
+				8D42E0981C74521500BF155F /* JBLineChartView.m */,
+			);
+			path = JBChartView;
+			sourceTree = "<group>";
+		};
+		8D42E09A1C74521500BF155F /* ServiceMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				8D42E09B1C74521500BF155F /* ServiceMonitor.h */,
+				8D42E09C1C74521500BF155F /* ServiceMonitor.m */,
+				8D42E09D1C74521500BF155F /* ServiceMonitorCPUModel.h */,
+				8D42E09E1C74521500BF155F /* ServiceMonitorCPUModel.m */,
+				8D42E09F1C74521500BF155F /* ServiceMonitorFPSModel.h */,
+				8D42E0A01C74521500BF155F /* ServiceMonitorFPSModel.m */,
+				8D42E0A11C74521500BF155F /* ServiceMonitorMemoryModel.h */,
+				8D42E0A21C74521500BF155F /* ServiceMonitorMemoryModel.m */,
+				8D42E0A31C74521500BF155F /* ServiceMonitorNetworkModel.h */,
+				8D42E0A41C74521500BF155F /* ServiceMonitorNetworkModel.m */,
+				8D42E0A51C74521500BF155F /* ServiceMonitorStatusBar.h */,
+				8D42E0A61C74521500BF155F /* ServiceMonitorStatusBar.m */,
+			);
+			path = ServiceMonitor;
+			sourceTree = "<group>";
+		};
 		8D4C95E71C2323E100F68262 /* TTTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2045,6 +2116,7 @@
 				8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */,
 				8D2ACBA31C047361000143B8 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				8D2ACBC21C047361000143B8 /* GPUImageMovieWriter.m in Sources */,
+				8D42E0A91C74521500BF155F /* JBLineChartView.m in Sources */,
 				8D721EAE1C30D8C70055EB20 /* CircleLayoutCell.m in Sources */,
 				8DC622371C3D080A00BF8CBD /* PhoneTextField.m in Sources */,
 				8D2ACBA01C047361000143B8 /* GPUImageSoftEleganceFilter.m in Sources */,
@@ -2053,6 +2125,7 @@
 				8D2ACBAD1C047361000143B8 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				8D2ACB361C047361000143B8 /* GPUImageColorDodgeBlendFilter.m in Sources */,
 				8D2ACB651C047361000143B8 /* GPUImageKuwaharaFilter.m in Sources */,
+				8D42E0AA1C74521500BF155F /* ServiceMonitor.m in Sources */,
 				8D65C90D1C2BCD3100868FB5 /* AttributedLabelAttachment.m in Sources */,
 				8D2ACBC31C047361000143B8 /* GPUImagePicture+TextureSubimage.m in Sources */,
 				CDA128331BD5DE9200D7B22D /* NSMutableDictionary+Extension.m in Sources */,
@@ -2066,8 +2139,10 @@
 				8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */,
 				8D2ACB6B1C047361000143B8 /* GPUImageLinearBurnBlendFilter.m in Sources */,
 				8D2ACBA51C047361000143B8 /* GPUImageStillCamera.m in Sources */,
+				8D42E0AD1C74521500BF155F /* ServiceMonitorMemoryModel.m in Sources */,
 				8D2ACB5A1C047361000143B8 /* GPUImageHighlightShadowFilter.m in Sources */,
 				8D2ACB571C047361000143B8 /* GPUImageHardLightBlendFilter.m in Sources */,
+				8D42E0AC1C74521500BF155F /* ServiceMonitorFPSModel.m in Sources */,
 				8D3A0A401C585ABC00358113 /* SelectedPhotoCollectionViewCell.m in Sources */,
 				8D2ACBC51C047361000143B8 /* GPUImageView.m in Sources */,
 				8D4C95EA1C2323E100F68262 /* TTTextView.m in Sources */,
@@ -2084,6 +2159,7 @@
 				8DC622361C3D080A00BF8CBD /* BankCardTextField.m in Sources */,
 				8D2ACB641C047361000143B8 /* GPUImageJFAVoronoiFilter.m in Sources */,
 				8D2ACB621C047361000143B8 /* GPUImageHueFilter.m in Sources */,
+				8D42E0A71C74521500BF155F /* JBBarChartView.m in Sources */,
 				377C11221B9596B100FD4EB6 /* NSBundle+Extension.m in Sources */,
 				8D2ACB841C047361000143B8 /* GPUImageOverlayBlendFilter.m in Sources */,
 				8D3A0A3E1C585ABC00358113 /* PhotosHelperCollectionViewCell.m in Sources */,
@@ -2138,6 +2214,7 @@
 				8D2ACB481C047361000143B8 /* GPUImageExposureFilter.m in Sources */,
 				8D3A0A3C1C585ABC00358113 /* CameraCollectionViewCell.m in Sources */,
 				37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */,
+				8D42E0A81C74521500BF155F /* JBChartView.m in Sources */,
 				8D2ACB8F1C047361000143B8 /* GPUImageRawDataInput.m in Sources */,
 				8D2ACB691C047361000143B8 /* GPUImageLevelsFilter.m in Sources */,
 				8D2ACB771C047361000143B8 /* GPUImageMonochromeFilter.m in Sources */,
@@ -2149,6 +2226,7 @@
 				8D2ACB731C047361000143B8 /* GPUImageLuminosityBlendFilter.m in Sources */,
 				8D2ACB981C047361000143B8 /* GPUImageScreenBlendFilter.m in Sources */,
 				8D2ACBAA1C047361000143B8 /* GPUImageTextureOutput.m in Sources */,
+				8D42E0AB1C74521500BF155F /* ServiceMonitorCPUModel.m in Sources */,
 				8D201AC51C707D63001E6ADC /* NSObject+MethodSwizzle.m in Sources */,
 				8D2ACB3E1C047361000143B8 /* GPUImageDarkenBlendFilter.m in Sources */,
 				8DEE76311C04A51C009C2FBC /* WeightCollectionFlowLayout.m in Sources */,
@@ -2194,6 +2272,7 @@
 				8D2ACB371C047361000143B8 /* GPUImageColorInvertFilter.m in Sources */,
 				8D2ACB861C047361000143B8 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				8D2ACBB41C047361000143B8 /* GPUImageTwoInputFilter.m in Sources */,
+				8D42E0AE1C74521500BF155F /* ServiceMonitorNetworkModel.m in Sources */,
 				377C111E1B95958700FD4EB6 /* UIScreen+Extension.m in Sources */,
 				8D2ACB7D1C047361000143B8 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				8D2ACB901C047361000143B8 /* GPUImageRawDataOutput.m in Sources */,
@@ -2248,6 +2327,7 @@
 				8D2ACB261C047361000143B8 /* GPUImageAlphaBlendFilter.m in Sources */,
 				8D2ACB2D1C047361000143B8 /* GPUImageBuffer.m in Sources */,
 				8D2ACB971C047361000143B8 /* GPUImageSaturationFilter.m in Sources */,
+				8D42E0AF1C74521500BF155F /* ServiceMonitorStatusBar.m in Sources */,
 				8D2ACB5C1C047361000143B8 /* GPUImageHistogramEqualizationFilter.m in Sources */,
 				8D2ACB471C047361000143B8 /* GPUImageExclusionBlendFilter.m in Sources */,
 				8D2ACB241C047361000143B8 /* GPUImageAdaptiveThresholdFilter.m in Sources */,

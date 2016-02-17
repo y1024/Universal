@@ -17,5 +17,6 @@
 
 @property(nonatomic,strong)NSString *name;
 @property(nonatomic,assign)NSInteger age;
+@property(strong,nonatomic)NSNumber *sAge;
 
 @end

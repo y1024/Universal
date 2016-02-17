@@ -14,22 +14,27 @@
 {
     NSMethodSignature *signature = [super methodSignatureForSelector:selector];
     
-    if (signature != nil) return signature;
-    
-    for (NSObject *object in XYNullObjects)
+    if (nil != signature)
     {
-        signature = [object methodSignatureForSelector:selector];
-        
-        if (signature)
-        {
-            if (strcmp(signature.methodReturnType, "@") == 0)
-            {
-                signature = [[NSNull null] methodSignatureForSelector:@selector(__uxy_nil)];
-            }
-            break;
-        }
+        return signature;
     }
     
+    else
+    {
+        for (NSObject *object in XYNullObjects)
+        {
+            signature = [object methodSignatureForSelector:selector];
+            
+            if (signature)
+            {
+                if (strcmp(signature.methodReturnType, "@") == 0)
+                {
+                    signature = [[NSNull null] methodSignatureForSelector:@selector(__uxy_nil)];
+                }
+                break;
+            }
+        }
+    }
     return signature;
 }
 

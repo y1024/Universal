@@ -11,7 +11,6 @@
 
 @implementation NSArray (Extension)
 
-
 + (void)load
 {
     static dispatch_once_t onceToken;
