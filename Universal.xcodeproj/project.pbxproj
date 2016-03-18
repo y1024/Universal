@@ -290,6 +290,19 @@
 		CDFCECBE1BCFA56B00890E0D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFCECBD1BCFA56B00890E0D /* NSObject+Extension.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8DF2DFFA1C993CBB009FC99D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		376DBB001B96A4A6008A84B7 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
 		376DBB011B96A4A6008A84B7 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
@@ -1948,7 +1961,8 @@
 				37AD9BCB1B943E1400F1D180 /* Resources */,
 				8852C606EE333B2F83104E02 /* Copy Pods Resources */,
 				0CF131417B9642A5C2256928 /* Embed Pods Frameworks */,
-				8D00805A1C0C89CE0006415D /* ShellScript */,
+				8D00805A1C0C89CE0006415D /* Build Number */,
+				8DF2DFFA1C993CBB009FC99D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2066,13 +2080,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8D00805A1C0C89CE0006415D /* ShellScript */ = {
+		8D00805A1C0C89CE0006415D /* Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Number";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
