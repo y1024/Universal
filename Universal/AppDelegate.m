@@ -88,6 +88,12 @@
     
     [[ServiceMonitor instance]install];
     
+    if ([UIApplication isHTTPEnable]) {
+        NSLog(@"HTTP enable");
+    } else {
+        NSLog(@"HTTP disable");
+    }
+    
         return YES;
 }
 
