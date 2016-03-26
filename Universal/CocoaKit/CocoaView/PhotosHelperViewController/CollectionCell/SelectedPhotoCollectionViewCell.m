@@ -14,7 +14,7 @@
     // Initialization code
 }
 
-- (void)setModel:(PhotosHelperCollectionViewCellModel *)model
+- (void)setModel:(AssetSource *)model
 {
     _model = model;
     _selectedImageView.image = model.thumbnailImage;

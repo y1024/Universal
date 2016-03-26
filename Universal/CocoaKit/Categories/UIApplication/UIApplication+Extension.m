@@ -38,7 +38,14 @@
 {
     [[UIWindow __ldx_keyWindow]resignFirstResponder];
 }
-
+#pragma mark HTTP权限
++ (BOOL)isHTTPEnable {
+    if([[[UIDevice currentDevice] systemVersion] compare:@"9.0" options:NSNumericSearch] != NSOrderedAscending){
+        NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+        return [[[infoDict objectForKey:@"NSAppTransportSecurity"] objectForKey:@"NSAllowsArbitraryLoads"] boolValue];
+    }
+    return YES;
+}
 
 + (NSString*)netWorkName
 {

@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "PhotosHelperCollectionViewCellModel.h"
+//#import "PhotosHelperCollectionViewCellModel.h"
 
+#import "AssetSource.h"
+
+
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @protocol PhotosHelperCollectionViewCellDelegate <NSObject>
 
@@ -35,13 +39,14 @@
 
 @property(nonatomic,assign)BOOL cellSelected;
 
-@property(nonatomic,strong)PhotosHelperCollectionViewCellModel *source;
+@property(nonatomic,strong)AssetSource *source;
 
 /**
  *  <#Description#>
  */
 @property(nonatomic,assign)id               delegate;
+@property(nonatomic,strong)ALAssetsLibrary *assetsLibrary;
 
-- (void)cellWithSource:(PhotosHelperCollectionViewCellModel*)source;
+- (void)cellWithSource:(AssetSource*)source;
 
 @end

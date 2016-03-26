@@ -12,7 +12,6 @@
 @interface NSObject (Extension)
 
 
-
 /**
  *  类名
  *
@@ -720,10 +719,6 @@ void __objcRemoveAssociatedObjects(id object);
 
 /* Associative References */
 
-
-
-
-+ (BOOL)methodSwizzle:(SEL)originalSelector withMethod:(SEL)swizzledSelector error:(NSError **)error;
 
 - (void)receiveTextFieldChangeNotificationWithObj:(id)obj action:(SEL)sel;
 

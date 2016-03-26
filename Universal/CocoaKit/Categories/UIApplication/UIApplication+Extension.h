@@ -36,4 +36,7 @@
 
 + (void)log;
 
++ (BOOL)isHTTPEnable;
+
+
 @end

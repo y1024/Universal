@@ -10,6 +10,7 @@
 #import "NewViewController.h"
 #include <stdlib.h>
 #include <stdio.h>
+#import "NSMutableArray+Extension.h"
 
 //#import "PodHeaders.h"
 
@@ -17,6 +18,8 @@
 //#import "NSMutableArray+Extension.h"
 
 #import "CategoryHeaders.h"
+
+#import "ServiceMonitor.h"
 
 
 //#import <CocoaLumberjack/CocoaLumberjack.h>
@@ -32,6 +35,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+//    NSMutableArray *array = [[NSMutableArray alloc] init];
+////
+////    [array addObject:@"a"];
+////    [array addObject:nil];
+//    NSLog(@"%@",[array objectAtIndex:10]);
 
 //    NSLog(@"%@",[@"www.baidu.com" htmlString]);
 //    NSLog(@"%@",[@"<a href='www.163.com' /a>" htmlString]);
@@ -67,9 +75,24 @@
 //    printf("integer = %d string = %s\n", number, string);
     
     
+    
+    NSNull *nul = [NSNull null];
+    
+    NSArray *nulArray = (NSArray*)nul;
+    NSLog(@"nul:%@",[nulArray objectAtIndex:0]);
+    
+    
     float a[] = {1.0, 2.0, 3.0};
     
     NSLog(@"array encoding type: %s", @encode(typeof(a)));
+    
+    [[ServiceMonitor instance]install];
+    
+    if ([UIApplication isHTTPEnable]) {
+        NSLog(@"HTTP enable");
+    } else {
+        NSLog(@"HTTP disable");
+    }
     
         return YES;
 }

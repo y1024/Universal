@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WDQuickFrameWork.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>37AD9BCC1B943E1400F1D180</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DF2DFED1C993CBA009FC99D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

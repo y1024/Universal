@@ -19,7 +19,7 @@
     }
 }
 
-- (void)setSource:(PhotosHelperCollectionViewCellModel *)source
+- (void)setSource:(AssetSource *)source
 {
     _source = source;
     self.photoImageView.image = source.thumbnailImage;
@@ -34,16 +34,11 @@
     
 }
 
-- (void)cellWithSource:(PhotosHelperCollectionViewCellModel*)source
+- (void)cellWithSource:(AssetSource*)source
 {
     self.photoImageView.image = source.thumbnailImage;
-    if (source.selected == YES) {
-        self.photoSelectedIconImageView.image = [UIImage imageNamed:@"btn_tick2_orange"];
-    }
-    else
-    {
-        self.photoSelectedIconImageView.image = [UIImage imageNamed:@"btn_tick2_white"];
-    }
+    self.cellSelected = source.selected;
+
 }
 
 @end

@@ -55,14 +55,14 @@
 }
 
 
-+ (void)load
-{
-    [super load];
-    Method normalMethod = class_getInstanceMethod(self, @selector(sendEvent:));
-    Method borderMethod = class_getInstanceMethod(self, @selector(borderViewSendEvent:));
-    
-    method_exchangeImplementations(normalMethod, borderMethod);
-}
+//+ (void)load
+//{
+//    [super load];
+////    Method normalMethod = class_getInstanceMethod(self, @selector(sendEvent:));
+////    Method borderMethod = class_getInstanceMethod(self, @selector(borderViewSendEvent:));
+////    
+////    method_exchangeImplementations(normalMethod, borderMethod);
+//}
 
 
 - (void)borderViewSendEvent:(UIEvent*)event;
