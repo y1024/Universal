@@ -243,6 +243,7 @@
 		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
 		8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */; };
 		8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */; };
+		8D677A571CF3FB3A00A7A003 /* CocoaSecurity+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D677A561CF3FB3A00A7A003 /* CocoaSecurity+AES.m */; };
 		8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */; };
 		8D721EA81C30D86F0055EB20 /* CollectionCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */; };
 		8D721EAE1C30D8C70055EB20 /* CircleLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAB1C30D8C70055EB20 /* CircleLayoutCell.m */; };
@@ -762,6 +763,8 @@
 		8D65C90A1C2BCD3100868FB5 /* CoreTextHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextHeaders.h; sourceTree = "<group>"; };
 		8D65C90B1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CoreText.h"; sourceTree = "<group>"; };
 		8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CoreText.m"; sourceTree = "<group>"; };
+		8D677A551CF3FB3A00A7A003 /* CocoaSecurity+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity+AES.h"; sourceTree = "<group>"; };
+		8D677A561CF3FB3A00A7A003 /* CocoaSecurity+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CocoaSecurity+AES.m"; sourceTree = "<group>"; };
 		8D721EA41C30D86F0055EB20 /* CollectionCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCircleViewController.h; sourceTree = "<group>"; };
 		8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCircleViewController.m; sourceTree = "<group>"; };
 		8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCircleViewController.xib; sourceTree = "<group>"; };
@@ -934,6 +937,9 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				8D677A551CF3FB3A00A7A003 /* CocoaSecurity+AES.h */,
+				8D677A561CF3FB3A00A7A003 /* CocoaSecurity+AES.m */,
+				8D677A541CF3FB3100A7A003 /* CocoaSecurityCategory */,
 				8DB5AA831C43404F0039D054 /* CALayer+Extension */,
 				8D323C281C3F5AF000EBD1C4 /* UIViewController+Extension */,
 				8D65C9031C2BCD3100868FB5 /* CoreTextDisplayView */,
@@ -1697,6 +1703,13 @@
 			path = CoreTextDisplayView;
 			sourceTree = "<group>";
 		};
+		8D677A541CF3FB3100A7A003 /* CocoaSecurityCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CocoaSecurityCategory;
+			sourceTree = "<group>";
+		};
 		8D721EA91C30D8C70055EB20 /* CollectionCircleLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -2349,6 +2362,7 @@
 				8D2ACB5E1C047361000143B8 /* GPUImageHistogramGenerator.m in Sources */,
 				8D2ACB8B1C047361000143B8 /* GPUImagePolarPixellateFilter.m in Sources */,
 				376DBB0B1B96DD23008A84B7 /* MBProgressHUD+Extension.m in Sources */,
+				8D677A571CF3FB3A00A7A003 /* CocoaSecurity+AES.m in Sources */,
 				8D2ACB6A1C047361000143B8 /* GPUImageLightenBlendFilter.m in Sources */,
 				8D2ACB8A1C047361000143B8 /* GPUImagePoissonBlendFilter.m in Sources */,
 				8D2ACB5B1C047361000143B8 /* GPUImageHighPassFilter.m in Sources */,
