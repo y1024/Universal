@@ -19,7 +19,7 @@ char *change(int val, int base, char *retbuf )
     
     do { *--p = str[val % base]; }
     while( val /= base );
-    strcpy(retbuf,p);
+//    strcpy(retbuf,p);
     
     return retbuf;
 }

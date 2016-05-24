@@ -31,6 +31,7 @@
 		37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */; };
 		37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */; };
 		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
+		5264AE321CD0F054003A062E /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264AE311CD0F054003A062E /* NSData+AES256.m */; };
 		8D0C67771C47D180006CCFC9 /* RunTimeObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C67761C47D180006CCFC9 /* RunTimeObj.m */; };
 		8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567B1C2D28DA0095913F /* HTMLNode.m */; };
 		8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567D1C2D28DA0095913F /* HTMLParser.m */; };
@@ -351,6 +352,8 @@
 		37D8C1411B95C3EA0073F1CC /* NSURLCache+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCache+Extension.h"; sourceTree = "<group>"; };
 		37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+Extension.m"; sourceTree = "<group>"; };
 		387FC035A8EBA73BB6238623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5264AE301CD0F054003A062E /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		5264AE311CD0F054003A062E /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
 		77D685AB5BD7E49DCCFC6944 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8D0C67751C47D180006CCFC9 /* RunTimeObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeObj.h; sourceTree = "<group>"; };
 		8D0C67761C47D180006CCFC9 /* RunTimeObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeObj.m; sourceTree = "<group>"; };
@@ -1046,6 +1049,8 @@
 			children = (
 				37AD9BD41B943E1400F1D180 /* AppDelegate.h */,
 				37AD9BD51B943E1400F1D180 /* AppDelegate.m */,
+				5264AE301CD0F054003A062E /* NSData+AES256.h */,
+				5264AE311CD0F054003A062E /* NSData+AES256.m */,
 				CD8703B81BC900700023512D /* SourceTableViewController.h */,
 				CD8703B91BC900700023512D /* SourceTableViewController.m */,
 				8D0C67751C47D180006CCFC9 /* RunTimeObj.h */,
@@ -2292,6 +2297,7 @@
 				8D2ACB7D1C047361000143B8 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				8D2ACB901C047361000143B8 /* GPUImageRawDataOutput.m in Sources */,
 				CDFCECB71BCF457800890E0D /* NSNull+Extension.m in Sources */,
+				5264AE321CD0F054003A062E /* NSData+AES256.m in Sources */,
 				8D2ACB751C047361000143B8 /* GPUImageMedianFilter.m in Sources */,
 				8D2ACBA11C047361000143B8 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				8D2ACBAC1C047361000143B8 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
@@ -2475,6 +2481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
@@ -2499,6 +2506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
