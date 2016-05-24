@@ -66,7 +66,7 @@
     return self.selectedViewController.preferredStatusBarUpdateAnimation;
 }
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+- (NSUInteger)supportedInterfaceOrientations {
     UIInterfaceOrientationMask orientationMask = UIInterfaceOrientationMaskAll;
     for (UIViewController *viewController in [self viewControllers]) {
         if (![viewController respondsToSelector:@selector(supportedInterfaceOrientations)]) {

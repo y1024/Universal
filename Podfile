@@ -1,3 +1,6 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
 platform :ios, '7.0'
 
 pod "AFNetworking", "~> 2.0"
@@ -18,6 +21,7 @@ pod 'SWTableViewCell', '~> 0.3.7'
 pod 'ZXingObjC', '~> 3.0'
 pod 'pop', '~> 1.0'
 pod 'CocoaAsyncSocket'
+pod 'CocoaSecurity'
 #pod 'DTCoreText'
 
 #pod 'APAddressBook'
@@ -38,3 +42,13 @@ pod 'CocoaAsyncSocket'
 #pod 'RESideMenu', '~> 4.0.7'
 #pod 'PNChart'
 
+
+
+
+target 'Universal' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Universal
+
+end
