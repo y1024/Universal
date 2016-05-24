@@ -95,18 +95,18 @@
 //    } else {
 //        NSLog(@"HTTP disable");
 //    }
-    NSString *key = @"P)KSU0JNU&D=&^Dyuu^DB!#D";
-    NSString *ivString = @"AGS1WIG!IE*IQ9UW";
-    NSString *iv = @"";
-    for (int i = 0 ; i < ivString.length; i ++) {
-        NSLog(@"char:%x",[ivString characterAtIndex:i]);
-        iv = [iv stringByAppendingString:[NSString stringWithFormat:@"0x%x,",[ivString characterAtIndex:i]]];
-    };
-    
-    NSString *string = @"VERIFYCODE_KEY|1459911352|13907550001";
-    NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
-    NSLog(@"%@",[[NSString alloc]initWithData:[data AES256EncryptWithKey:key] encoding:NSUTF8StringEncoding]);
-  NSLog(@"%@",[NSData AES256EncryptWithPlainText:string]);
+//    NSString *key = @"P)KSU0JNU&D=&^Dyuu^DB!#D";
+//    NSString *ivString = @"AGS1WIG!IE*IQ9UW";
+//    NSString *iv = @"";
+//    for (int i = 0 ; i < ivString.length; i ++) {
+//        NSLog(@"char:%x",[ivString characterAtIndex:i]);
+//        iv = [iv stringByAppendingString:[NSString stringWithFormat:@"0x%x,",[ivString characterAtIndex:i]]];
+//    };
+//    
+//    NSString *string = @"VERIFYCODE_KEY|1459911352|13907550001";
+//    NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
+//    NSLog(@"%@",[[NSString alloc]initWithData:[data AES256EncryptWithKey:key] encoding:NSUTF8StringEncoding]);
+//  NSLog(@"%@",[NSData AES256EncryptWithPlainText:string]);
     
         return YES;
 }
