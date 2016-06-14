@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #import "NSMutableArray+Extension.h"
+#import "NSData+Extension.h"
 
 //#import "PodHeaders.h"
 
@@ -18,6 +19,7 @@
 //#import "NSMutableArray+Extension.h"
 
 #import "CategoryHeaders.h"
+#import "NSData+AES256.h"
 
 #import "ServiceMonitor.h"
 
@@ -76,23 +78,35 @@
     
     
     
-    NSNull *nul = [NSNull null];
-    
-    NSArray *nulArray = (NSArray*)nul;
-    NSLog(@"nul:%@",[nulArray objectAtIndex:0]);
-    
-    
-    float a[] = {1.0, 2.0, 3.0};
-    
-    NSLog(@"array encoding type: %s", @encode(typeof(a)));
-    
-    [[ServiceMonitor instance]install];
-    
-    if ([UIApplication isHTTPEnable]) {
-        NSLog(@"HTTP enable");
-    } else {
-        NSLog(@"HTTP disable");
-    }
+//    NSNull *nul = [NSNull null];
+//    
+//    NSArray *nulArray = (NSArray*)nul;
+//    NSLog(@"nul:%@",[nulArray objectAtIndex:0]);
+//    
+//    
+//    float a[] = {1.0, 2.0, 3.0};
+//    
+//    NSLog(@"array encoding type: %s", @encode(typeof(a)));
+//    
+//    [[ServiceMonitor instance]install];
+//    
+//    if ([UIApplication isHTTPEnable]) {
+//        NSLog(@"HTTP enable");
+//    } else {
+//        NSLog(@"HTTP disable");
+//    }
+//    NSString *key = @"P)KSU0JNU&D=&^Dyuu^DB!#D";
+//    NSString *ivString = @"AGS1WIG!IE*IQ9UW";
+//    NSString *iv = @"";
+//    for (int i = 0 ; i < ivString.length; i ++) {
+//        NSLog(@"char:%x",[ivString characterAtIndex:i]);
+//        iv = [iv stringByAppendingString:[NSString stringWithFormat:@"0x%x,",[ivString characterAtIndex:i]]];
+//    };
+//    
+//    NSString *string = @"VERIFYCODE_KEY|1459911352|13907550001";
+//    NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
+//    NSLog(@"%@",[[NSString alloc]initWithData:[data AES256EncryptWithKey:key] encoding:NSUTF8StringEncoding]);
+//  NSLog(@"%@",[NSData AES256EncryptWithPlainText:string]);
     
         return YES;
 }
