@@ -31,6 +31,7 @@
 		37D8C13B1B95C0E90073F1CC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13A1B95C0E90073F1CC /* UIImage+Extension.m */; };
 		37D8C13F1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C13E1B95C34E0073F1CC /* NSHTTPCookieStorage+Extension.m */; };
 		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
+		52996C1F1D119E0D00F23A99 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 52996C1E1D119E0D00F23A99 /* SimplePing.m */; };
 		8D0C67771C47D180006CCFC9 /* RunTimeObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C67761C47D180006CCFC9 /* RunTimeObj.m */; };
 		8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567B1C2D28DA0095913F /* HTMLNode.m */; };
 		8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567D1C2D28DA0095913F /* HTMLParser.m */; };
@@ -353,6 +354,8 @@
 		37D8C1411B95C3EA0073F1CC /* NSURLCache+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCache+Extension.h"; sourceTree = "<group>"; };
 		37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+Extension.m"; sourceTree = "<group>"; };
 		4BBB06FA753FD498E1D2961C /* Pods-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Universal.release.xcconfig"; path = "Pods/Target Support Files/Pods-Universal/Pods-Universal.release.xcconfig"; sourceTree = "<group>"; };
+		52996C1D1D119E0D00F23A99 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		52996C1E1D119E0D00F23A99 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		8D0C67751C47D180006CCFC9 /* RunTimeObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeObj.h; sourceTree = "<group>"; };
 		8D0C67761C47D180006CCFC9 /* RunTimeObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeObj.m; sourceTree = "<group>"; };
 		8D14567A1C2D28DA0095913F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
@@ -1165,6 +1168,15 @@
 			path = NSURLCache;
 			sourceTree = "<group>";
 		};
+		52996C1C1D119E0D00F23A99 /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				52996C1D1D119E0D00F23A99 /* SimplePing.h */,
+				52996C1E1D119E0D00F23A99 /* SimplePing.m */,
+			);
+			path = SimplePing;
+			sourceTree = "<group>";
+		};
 		8D1456791C2D28DA0095913F /* HTMLParser */ = {
 			isa = PBXGroup;
 			children = (
@@ -1840,6 +1852,7 @@
 			isa = PBXGroup;
 			children = (
 				CD05BB4F1B960CA600D9B6C9 /* OptionalHeaders.h */,
+				52996C1C1D119E0D00F23A99 /* SimplePing */,
 				8DEF5D251BF43B42003F14EE /* Fonts */,
 				CD05BB621B96113D00D9B6C9 /* BundleFiles */,
 				CD05BB4B1B960C7400D9B6C9 /* GZIP */,
@@ -2168,6 +2181,7 @@
 				8D2ACB6B1C047361000143B8 /* GPUImageLinearBurnBlendFilter.m in Sources */,
 				8D2ACBA51C047361000143B8 /* GPUImageStillCamera.m in Sources */,
 				8D42E0AD1C74521500BF155F /* ServiceMonitorMemoryModel.m in Sources */,
+				52996C1F1D119E0D00F23A99 /* SimplePing.m in Sources */,
 				8D2ACB5A1C047361000143B8 /* GPUImageHighlightShadowFilter.m in Sources */,
 				8D2ACB571C047361000143B8 /* GPUImageHardLightBlendFilter.m in Sources */,
 				8D42E0AC1C74521500BF155F /* ServiceMonitorFPSModel.m in Sources */,

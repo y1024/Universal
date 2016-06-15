@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "SimplePing.h"
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,SimplePingDelegate>
+
+@property (strong, nonatomic) SimplePing  *ping;
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) NSTimer  *sendTimer;
 
 
 @end
