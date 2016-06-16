@@ -24,6 +24,9 @@
 #import "ServiceMonitor.h"
 
 
+
+
+
 //#import <CocoaLumberjack/CocoaLumberjack.h>
 
 
@@ -33,8 +36,43 @@
 
 @implementation AppDelegate
 
+- (void)simplePing:(SimplePing *)pinger didStartWithAddress:(NSData *)address{
+    
+}
+- (void)simplePing:(SimplePing *)pinger didFailWithError:(NSError *)error {
+    
+}
+- (void)simplePing:(SimplePing *)pinger didSendPacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber {
+    
+}
+- (void)simplePing:(SimplePing *)pinger didFailToSendPacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber error:(NSError *)error {
+    
+}
+- (void)simplePing:(SimplePing *)pinger didReceivePingResponsePacket:(NSData *)packet sequenceNumber:(uint16_t)sequenceNumber {
+    
+}
+- (void)simplePing:(SimplePing *)pinger didReceiveUnexpectedPacket:(NSData *)packet {
+    
+}
+
+- (void)sendPind {
+    [self.ping sendPingWithData:nil];
+}
+
+- (NSString*)addressWithData:(NSData*)data {
+    
+}
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSString *hostName = @"www.baidu.com";
+    self.ping = [[SimplePing alloc]initWithHostName:hostName];
+    self.ping.delegate = self;
+    self.ping.addressStyle = SimplePingAddressStyleAny;
+    [self.ping start];
+    
     // Override point for customization after application launch.
     
 //    NSMutableArray *array = [[NSMutableArray alloc] init];
