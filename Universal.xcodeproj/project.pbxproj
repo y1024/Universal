@@ -243,7 +243,6 @@
 		8D65C90E1C2BCD3100868FB5 /* AttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9071C2BCD3100868FB5 /* AttributedLabelURL.m */; };
 		8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C9091C2BCD3100868FB5 /* CoreTextDisplayView.m */; };
 		8D65C9101C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */; };
-		8D677A571CF3FB3A00A7A003 /* CocoaSecurity+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D677A561CF3FB3A00A7A003 /* CocoaSecurity+AES.m */; };
 		8D721EA71C30D86F0055EB20 /* CollectionCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */; };
 		8D721EA81C30D86F0055EB20 /* CollectionCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */; };
 		8D721EAE1C30D8C70055EB20 /* CircleLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D721EAB1C30D8C70055EB20 /* CircleLayoutCell.m */; };
@@ -260,6 +259,7 @@
 		8DC6B0311C12F98100CD720D /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6B02E1C12F98000CD720D /* ReplyViewController.m */; };
 		8DD35F221C3F9CAD00A8FE18 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */; };
 		8DD3960B1C102CB7006662FC /* CodeSinppet in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3960A1C102CB7006662FC /* CodeSinppet */; };
+		8DE091491D0FEBEA006EAA52 /* CocoaSecurity+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE091481D0FEBEA006EAA52 /* CocoaSecurity+AES.m */; };
 		8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */; };
 		8DE44A361C02E81B0056E782 /* RuleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */; };
 		8DE44A371C02E81B0056E782 /* RuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A2F1C02E81B0056E782 /* RuleTableViewCell.xib */; };
@@ -763,8 +763,6 @@
 		8D65C90A1C2BCD3100868FB5 /* CoreTextHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextHeaders.h; sourceTree = "<group>"; };
 		8D65C90B1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CoreText.h"; sourceTree = "<group>"; };
 		8D65C90C1C2BCD3100868FB5 /* NSMutableAttributedString+CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CoreText.m"; sourceTree = "<group>"; };
-		8D677A551CF3FB3A00A7A003 /* CocoaSecurity+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity+AES.h"; sourceTree = "<group>"; };
-		8D677A561CF3FB3A00A7A003 /* CocoaSecurity+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CocoaSecurity+AES.m"; sourceTree = "<group>"; };
 		8D721EA41C30D86F0055EB20 /* CollectionCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCircleViewController.h; sourceTree = "<group>"; };
 		8D721EA51C30D86F0055EB20 /* CollectionCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCircleViewController.m; sourceTree = "<group>"; };
 		8D721EA61C30D86F0055EB20 /* CollectionCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCircleViewController.xib; sourceTree = "<group>"; };
@@ -789,6 +787,8 @@
 		8DD35F201C3F9CAD00A8FE18 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		8DD3960A1C102CB7006662FC /* CodeSinppet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CodeSinppet; sourceTree = "<group>"; };
+		8DE091471D0FEBEA006EAA52 /* CocoaSecurity+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaSecurity+AES.h"; sourceTree = "<group>"; };
+		8DE091481D0FEBEA006EAA52 /* CocoaSecurity+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CocoaSecurity+AES.m"; sourceTree = "<group>"; };
 		8DE44A2C1C02E81B0056E782 /* RuleImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RuleImages.xcassets; sourceTree = "<group>"; };
 		8DE44A2D1C02E81B0056E782 /* RuleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleTableViewCell.h; sourceTree = "<group>"; };
 		8DE44A2E1C02E81B0056E782 /* RuleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleTableViewCell.m; sourceTree = "<group>"; };
@@ -937,8 +937,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
-				8D677A551CF3FB3A00A7A003 /* CocoaSecurity+AES.h */,
-				8D677A561CF3FB3A00A7A003 /* CocoaSecurity+AES.m */,
+				8DE091461D0FEBEA006EAA52 /* CocoaSecurity+AES */,
 				8D677A541CF3FB3100A7A003 /* CocoaSecurityCategory */,
 				8DB5AA831C43404F0039D054 /* CALayer+Extension */,
 				8D323C281C3F5AF000EBD1C4 /* UIViewController+Extension */,
@@ -1778,6 +1777,15 @@
 			path = PhotosHelperViewController;
 			sourceTree = "<group>";
 		};
+		8DE091461D0FEBEA006EAA52 /* CocoaSecurity+AES */ = {
+			isa = PBXGroup;
+			children = (
+				8DE091471D0FEBEA006EAA52 /* CocoaSecurity+AES.h */,
+				8DE091481D0FEBEA006EAA52 /* CocoaSecurity+AES.m */,
+			);
+			path = "CocoaSecurity+AES";
+			sourceTree = "<group>";
+		};
 		8DE44A2B1C02E81B0056E782 /* RuleViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -2362,7 +2370,7 @@
 				8D2ACB5E1C047361000143B8 /* GPUImageHistogramGenerator.m in Sources */,
 				8D2ACB8B1C047361000143B8 /* GPUImagePolarPixellateFilter.m in Sources */,
 				376DBB0B1B96DD23008A84B7 /* MBProgressHUD+Extension.m in Sources */,
-				8D677A571CF3FB3A00A7A003 /* CocoaSecurity+AES.m in Sources */,
+				8DE091491D0FEBEA006EAA52 /* CocoaSecurity+AES.m in Sources */,
 				8D2ACB6A1C047361000143B8 /* GPUImageLightenBlendFilter.m in Sources */,
 				8D2ACB8A1C047361000143B8 /* GPUImagePoissonBlendFilter.m in Sources */,
 				8D2ACB5B1C047361000143B8 /* GPUImageHighPassFilter.m in Sources */,
