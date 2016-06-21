@@ -30,6 +30,17 @@ PODS:
   - CocoaAsyncSocket/GCD (7.4.3)
   - CocoaAsyncSocket/RunLoop (7.4.3)
   - CocoaSecurity (1.2.4)
+  - DTCoreText (1.6.17):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.10)
+  - DTFoundation/DTAnimatedGIF (1.7.10)
+  - DTFoundation/DTHTMLParser (1.7.10):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.10):
+    - DTFoundation/Core
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -66,6 +77,7 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - CocoaAsyncSocket
   - CocoaSecurity
+  - DTCoreText
   - FMDB
   - IQKeyboardManager
   - KVOController
@@ -88,6 +100,8 @@ SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
+  DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
   KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
@@ -105,6 +119,6 @@ SPEC CHECKSUMS:
   YTKNetwork: a41c1df80d4f3b9d05c19c514a2c604e7a6ac341
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-PODFILE CHECKSUM: 53103ed102adac09cadce6991a5feb83953b755c
+PODFILE CHECKSUM: 92b32daff425cc6ccc7c25b1eaa494397e190259
 
 COCOAPODS: 1.0.1

@@ -22,6 +22,23 @@
 @end
 
 @implementation UIDevice (Extension)
+#pragma mark 国际化区域名称
++ (NSString*)deviceLocationModel {
+    return [UIDevice currentDevice].localizedModel;
+}
+#pragma mark 系统名称
++ (NSString*)systemName {
+    return [[UIDevice currentDevice] systemName];
+}
+#pragma mark 设备型号
++ (NSString*)deviceModel {
+    return [[UIDevice currentDevice] model];
+}
+
+#pragma mark 用户定义设备名称
++ (NSString*)deviceName {
+    return [[UIDevice currentDevice] name];
+}
 
 + (BOOL)IPhone
 {

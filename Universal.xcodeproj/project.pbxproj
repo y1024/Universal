@@ -36,6 +36,7 @@
 		8D0F805C1D18E5FA000DD048 /* GIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F805A1D18E5FA000DD048 /* GIFViewController.m */; };
 		8D0F805D1D18E5FA000DD048 /* GIFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F805B1D18E5FA000DD048 /* GIFViewController.xib */; };
 		8D0F805F1D18E653000DD048 /* fight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F805E1D18E653000DD048 /* fight.gif */; };
+		8D0F80631D18EB77000DD048 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F80621D18EB77000DD048 /* Reachability.m */; };
 		8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567B1C2D28DA0095913F /* HTMLNode.m */; };
 		8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567D1C2D28DA0095913F /* HTMLParser.m */; };
 		8D1456811C2D29C00095913F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1456801C2D29C00095913F /* libxml2.tbd */; };
@@ -366,6 +367,8 @@
 		8D0F805A1D18E5FA000DD048 /* GIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFViewController.m; sourceTree = "<group>"; };
 		8D0F805B1D18E5FA000DD048 /* GIFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFViewController.xib; sourceTree = "<group>"; };
 		8D0F805E1D18E653000DD048 /* fight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fight.gif; sourceTree = "<group>"; };
+		8D0F80611D18EB77000DD048 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8D0F80621D18EB77000DD048 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		8D14567A1C2D28DA0095913F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
 		8D14567B1C2D28DA0095913F /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
 		8D14567C1C2D28DA0095913F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
@@ -926,6 +929,7 @@
 		377C11111B958FE700FD4EB6 /* CocoaKit */ = {
 			isa = PBXGroup;
 			children = (
+				8D0F80601D18EB77000DD048 /* Reachability */,
 				8D42E0911C74521500BF155F /* Monitor */,
 				8D9A05511C3263D600C51E61 /* CFunctions */,
 				8D2AC9C51C047360000143B8 /* GPUImage */,
@@ -1189,6 +1193,15 @@
 				52996C1E1D119E0D00F23A99 /* SimplePing.m */,
 			);
 			path = SimplePing;
+			sourceTree = "<group>";
+		};
+		8D0F80601D18EB77000DD048 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8D0F80611D18EB77000DD048 /* Reachability.h */,
+				8D0F80621D18EB77000DD048 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		8D1456791C2D28DA0095913F /* HTMLParser */ = {
@@ -2420,6 +2433,7 @@
 				8D2ACB391C047361000143B8 /* GPUImageColorPackingFilter.m in Sources */,
 				8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */,
 				8DE88D041D13D1FA00E36CC1 /* UIView+FixViewDebugging.m in Sources */,
+				8D0F80631D18EB77000DD048 /* Reachability.m in Sources */,
 				8D3A0A391C585ABC00358113 /* AssetsGroupSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

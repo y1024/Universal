@@ -36,5 +36,29 @@
  *   @return 设备的唯一ID
  */
 + (NSString *)uniqueGlobalDeviceIdentifier;
+/**
+ *  用户定义设备名称
+ *
+ *  @return
+ */
++ (NSString*)deviceName;
+/**
+ *  系统名称
+ *
+ *  @return
+ */
++ (NSString*)systemName;
+/**
+ *  设备型号
+ *
+ *  @return
+ */
++ (NSString*)deviceModel;
+/**
+ *  国际化区域名称
+ *
+ *  @return
+ */
++ (NSString*)deviceLocationModel;
 
 @end

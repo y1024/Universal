@@ -22,6 +22,7 @@ pod 'ZXingObjC', '~> 3.0'
 pod 'pop', '~> 1.0'
 pod 'CocoaAsyncSocket'
 pod 'CocoaSecurity'
+pod 'DTCoreText'
 #pod  'MobileVLCKit'
 
 #pod 'DTCoreText'
