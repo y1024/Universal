@@ -267,6 +267,7 @@
 		8DE44A381C02E81B0056E782 /* RuleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A311C02E81B0056E782 /* RuleTableViewCellModel.m */; };
 		8DE44A391C02E81B0056E782 /* RuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE44A331C02E81B0056E782 /* RuleViewController.m */; };
 		8DE44A3A1C02E81B0056E782 /* RuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE44A341C02E81B0056E782 /* RuleViewController.xib */; };
+		8DE88D041D13D1FA00E36CC1 /* UIView+FixViewDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE88CFD1D13D0EF00E36CC1 /* UIView+FixViewDebugging.m */; };
 		8DEE76311C04A51C009C2FBC /* WeightCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE76291C04A51C009C2FBC /* WeightCollectionFlowLayout.m */; };
 		8DEE76321C04A51C009C2FBC /* WeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE762B1C04A51C009C2FBC /* WeightCollectionViewCell.m */; };
 		8DEE76331C04A51C009C2FBC /* WeightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEE762C1C04A51C009C2FBC /* WeightCollectionViewCell.xib */; };
@@ -801,6 +802,8 @@
 		8DE44A321C02E81B0056E782 /* RuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleViewController.h; sourceTree = "<group>"; };
 		8DE44A331C02E81B0056E782 /* RuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleViewController.m; sourceTree = "<group>"; };
 		8DE44A341C02E81B0056E782 /* RuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RuleViewController.xib; sourceTree = "<group>"; };
+		8DE88CFC1D13D0EF00E36CC1 /* UIView+FixViewDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FixViewDebugging.h"; sourceTree = "<group>"; };
+		8DE88CFD1D13D0EF00E36CC1 /* UIView+FixViewDebugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FixViewDebugging.m"; sourceTree = "<group>"; };
 		8DEE76281C04A51C009C2FBC /* WeightCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCollectionFlowLayout.h; sourceTree = "<group>"; };
 		8DEE76291C04A51C009C2FBC /* WeightCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCollectionFlowLayout.m; sourceTree = "<group>"; };
 		8DEE762A1C04A51C009C2FBC /* WeightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCollectionViewCell.h; sourceTree = "<group>"; };
@@ -940,6 +943,7 @@
 			isa = PBXGroup;
 			children = (
 				377C11161B95945200FD4EB6 /* CategoryHeaders.h */,
+				8DE88CF81D13D0C300E36CC1 /* UIView+ FixViewDebugging */,
 				8DE091461D0FEBEA006EAA52 /* CocoaSecurity+AES */,
 				8D677A541CF3FB3100A7A003 /* CocoaSecurityCategory */,
 				8DB5AA831C43404F0039D054 /* CALayer+Extension */,
@@ -1814,6 +1818,15 @@
 			path = RuleViewController;
 			sourceTree = "<group>";
 		};
+		8DE88CF81D13D0C300E36CC1 /* UIView+ FixViewDebugging */ = {
+			isa = PBXGroup;
+			children = (
+				8DE88CFC1D13D0EF00E36CC1 /* UIView+FixViewDebugging.h */,
+				8DE88CFD1D13D0EF00E36CC1 /* UIView+FixViewDebugging.m */,
+			);
+			path = "UIView+ FixViewDebugging";
+			sourceTree = "<group>";
+		};
 		8DEE76271C04A51C009C2FBC /* WeightViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1989,14 +2002,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37AD9BF01B943E1400F1D180 /* Build configuration list for PBXNativeTarget "Universal" */;
 			buildPhases = (
-				9ABAA34DF402B29CBBA2FDB7 /* 📦 Check Pods Manifest.lock */,
+				9ABAA34DF402B29CBBA2FDB7 /* [CP] Check Pods Manifest.lock */,
 				37AD9BC91B943E1400F1D180 /* Sources */,
 				37AD9BCA1B943E1400F1D180 /* Frameworks */,
 				37AD9BCB1B943E1400F1D180 /* Resources */,
 				8D00805A1C0C89CE0006415D /* Build Number */,
 				8DF2DFFA1C993CBB009FC99D /* Embed Frameworks */,
-				806CDE5253DED96185737F63 /* 📦 Embed Pods Frameworks */,
-				B6BABE78A581A0DB762466D0 /* 📦 Copy Pods Resources */,
+				806CDE5253DED96185737F63 /* [CP] Embed Pods Frameworks */,
+				B6BABE78A581A0DB762466D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2084,14 +2097,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		806CDE5253DED96185737F63 /* 📦 Embed Pods Frameworks */ = {
+		806CDE5253DED96185737F63 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2113,14 +2126,14 @@
 			shellPath = /bin/sh;
 			shellScript = "# build number 使用日期格式\nbuildNumber=$(date +%Y%m%d%H%M%S)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
 		};
-		9ABAA34DF402B29CBBA2FDB7 /* 📦 Check Pods Manifest.lock */ = {
+		9ABAA34DF402B29CBBA2FDB7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2128,14 +2141,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B6BABE78A581A0DB762466D0 /* 📦 Copy Pods Resources */ = {
+		B6BABE78A581A0DB762466D0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2392,6 +2405,7 @@
 				8D2ACBB81C047361000143B8 /* GPUImageUnsharpMaskFilter.m in Sources */,
 				8D2ACB391C047361000143B8 /* GPUImageColorPackingFilter.m in Sources */,
 				8D65C90F1C2BCD3100868FB5 /* CoreTextDisplayView.m in Sources */,
+				8DE88D041D13D1FA00E36CC1 /* UIView+FixViewDebugging.m in Sources */,
 				8D3A0A391C585ABC00358113 /* AssetsGroupSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

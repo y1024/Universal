@@ -59,9 +59,9 @@
     [self.ping sendPingWithData:nil];
 }
 
-- (NSString*)addressWithData:(NSData*)data {
-    
-}
+//- (NSString*)addressWithData:(NSData*)data {
+//    
+//}
 
 
 
