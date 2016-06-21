@@ -33,6 +33,9 @@
 		37D8C1431B95C3EA0073F1CC /* NSURLCache+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D8C1421B95C3EA0073F1CC /* NSURLCache+Extension.m */; };
 		52996C1F1D119E0D00F23A99 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 52996C1E1D119E0D00F23A99 /* SimplePing.m */; };
 		8D0C67771C47D180006CCFC9 /* RunTimeObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C67761C47D180006CCFC9 /* RunTimeObj.m */; };
+		8D0F805C1D18E5FA000DD048 /* GIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F805A1D18E5FA000DD048 /* GIFViewController.m */; };
+		8D0F805D1D18E5FA000DD048 /* GIFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F805B1D18E5FA000DD048 /* GIFViewController.xib */; };
+		8D0F805F1D18E653000DD048 /* fight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F805E1D18E653000DD048 /* fight.gif */; };
 		8D14567E1C2D28DA0095913F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567B1C2D28DA0095913F /* HTMLNode.m */; };
 		8D14567F1C2D28DA0095913F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D14567D1C2D28DA0095913F /* HTMLParser.m */; };
 		8D1456811C2D29C00095913F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1456801C2D29C00095913F /* libxml2.tbd */; };
@@ -359,6 +362,10 @@
 		52996C1E1D119E0D00F23A99 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		8D0C67751C47D180006CCFC9 /* RunTimeObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeObj.h; sourceTree = "<group>"; };
 		8D0C67761C47D180006CCFC9 /* RunTimeObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeObj.m; sourceTree = "<group>"; };
+		8D0F80591D18E5FA000DD048 /* GIFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFViewController.h; sourceTree = "<group>"; };
+		8D0F805A1D18E5FA000DD048 /* GIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFViewController.m; sourceTree = "<group>"; };
+		8D0F805B1D18E5FA000DD048 /* GIFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIFViewController.xib; sourceTree = "<group>"; };
+		8D0F805E1D18E653000DD048 /* fight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fight.gif; sourceTree = "<group>"; };
 		8D14567A1C2D28DA0095913F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
 		8D14567B1C2D28DA0095913F /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
 		8D14567C1C2D28DA0095913F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
@@ -1073,6 +1080,10 @@
 				37AD9BDA1B943E1400F1D180 /* Main.storyboard */,
 				8DD35F201C3F9CAD00A8FE18 /* MyViewController.h */,
 				8DD35F211C3F9CAD00A8FE18 /* MyViewController.m */,
+				8D0F80591D18E5FA000DD048 /* GIFViewController.h */,
+				8D0F805A1D18E5FA000DD048 /* GIFViewController.m */,
+				8D0F805B1D18E5FA000DD048 /* GIFViewController.xib */,
+				8D0F805E1D18E653000DD048 /* fight.gif */,
 				37AD9BDD1B943E1400F1D180 /* Images.xcassets */,
 				37AD9BDF1B943E1400F1D180 /* LaunchScreen.xib */,
 				37AD9BD01B943E1400F1D180 /* Supporting Files */,
@@ -2066,9 +2077,11 @@
 				8D3A0A461C585ABC00358113 /* btn_tick2_orange@3x.png in Resources */,
 				8DEE76331C04A51C009C2FBC /* WeightCollectionViewCell.xib in Resources */,
 				8DE44A351C02E81B0056E782 /* RuleImages.xcassets in Resources */,
+				8D0F805F1D18E653000DD048 /* fight.gif in Resources */,
 				37AD9BDC1B943E1400F1D180 /* Main.storyboard in Resources */,
 				8D3A0A3D1C585ABC00358113 /* CameraCollectionViewCell.xib in Resources */,
 				CD05BB641B96113D00D9B6C9 /* GPXFileBundle.bundle in Resources */,
+				8D0F805D1D18E5FA000DD048 /* GIFViewController.xib in Resources */,
 				8D2ACB1D1C047361000143B8 /* lookup_amatorka.png in Resources */,
 				8D3A0A4C1C585ABC00358113 /* icon_doctor_photo_white@3x.png in Resources */,
 				8DC6B0301C12F98000CD720D /* ReplyViewController.xib in Resources */,
@@ -2399,6 +2412,7 @@
 				376DBB0B1B96DD23008A84B7 /* MBProgressHUD+Extension.m in Sources */,
 				8DE091491D0FEBEA006EAA52 /* CocoaSecurity+AES.m in Sources */,
 				8D2ACB6A1C047361000143B8 /* GPUImageLightenBlendFilter.m in Sources */,
+				8D0F805C1D18E5FA000DD048 /* GIFViewController.m in Sources */,
 				8D2ACB8A1C047361000143B8 /* GPUImagePoissonBlendFilter.m in Sources */,
 				8D2ACB5B1C047361000143B8 /* GPUImageHighPassFilter.m in Sources */,
 				8D2ACB461C047361000143B8 /* GPUImageErosionFilter.m in Sources */,

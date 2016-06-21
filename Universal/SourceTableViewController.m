@@ -23,6 +23,9 @@
 
 #import "RunTimeObj.h"
 
+#import "GIFViewController.h"
+
+
 
 
 
@@ -137,7 +140,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 2;
+    return 3;
 }
 
 
@@ -174,7 +177,7 @@
 
 //        [self.navigationController pushViewController:_nextVC animated:YES];
     }
-    else
+    else if(indexPath.row == 1)
     {
 //        NSLog(@"viewControll:%ld",self.navigationController.viewControllers.count);
         
@@ -200,6 +203,9 @@
         
         [self.navigationController pushViewController:ruleVC animated:YES];
 //        [tableView.layer shakeAnimation];
+    }else {
+        GIFViewController *GIFVC = [[GIFViewController alloc]init];
+        [self.navigationController pushViewController:GIFVC animated:YES];
     }
 }
 
